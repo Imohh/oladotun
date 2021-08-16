@@ -331,7 +331,7 @@ foreach ($result as $row) {
 					<div class="form-group">
 						<input type="text" class="form-control search-top" placeholder="<?php echo LANG_VALUE_2; ?>" name="search_text">
 					</div>
-					<button type="submit" class="btn btn-default"><?php echo LANG_VALUE_3; ?></button>
+					<button type="submit" class="btn btn-default"><i class="fa fa-search"></i><?//php echo LANG_VALUE_3; ?></button>
 				</form>
 			</div>
 		</div>

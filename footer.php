@@ -123,7 +123,7 @@ This link will be active only for 24 hours.
 	<div class="container">
 		<div class="row">
 			
-			<div class="col-md-3 copyright footer-end">
+			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>need help</h4>
 				<ul>
 					<li><a href="#">Contact Us</a></li>
@@ -132,7 +132,7 @@ This link will be active only for 24 hours.
 					<li><a href="#">FAQs</a></li>
 				</ul>
 			</div>
-			<div class="col-md-3 copyright footer-end">
+			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>the company</h4>
 				<ul>
 					<li><a href="#">About Dotun</a></li>
@@ -140,7 +140,7 @@ This link will be active only for 24 hours.
 					<li><a href="#">Privacy</a></li>
 				</ul>
 			</div>
-			<div class="col-md-3 copyright footer-end">
+			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>find us on</h4>
 				<ul>
 					<li><a href="#">Facebook</a></li>
@@ -149,7 +149,7 @@ This link will be active only for 24 hours.
 					<li><a href="#">Youtube</a></li>
 				</ul>
 			</div>
-			<div class="col-md-3 copyright footer-end">
+			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>Sign up for Dotun updates</h4>
 				<p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and many more.</p>
 			</div>

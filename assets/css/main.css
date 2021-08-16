@@ -217,6 +217,7 @@ a:hover {
     display: none;
     padding: 20px;
     color: #fff;
+    background: red;
 }
 
 .menu-mobile:hover {
