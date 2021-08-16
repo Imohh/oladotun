@@ -126,27 +126,27 @@ This link will be active only for 24 hours.
 			<div class="col-md-3 copyright footer-end">
 				<h4>need help</h4>
 				<ul>
-					<li>Contact Us</li>
-					<li>Shipping services</li>
-					<li>Payment Options</li>
-					<li>FAQs</li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Shipping services</a></li>
+					<li><a href="#">Payment Options</a></li>
+					<li><a href="#">FAQs</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 copyright footer-end">
 				<h4>the company</h4>
 				<ul>
-					<li>About Dotun</li>
-					<li>Legal</li>
-					<li>Privacy</li>
+					<li><a href="#">About Dotun</a></li>
+					<li><a href="#">Legal</a></li>
+					<li><a href="#">Privacy</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 copyright footer-end">
 				<h4>find us on</h4>
 				<ul>
-					<li>Facebook</li>
-					<li>Twitter</li>
-					<li>Instagram</li>
-					<li>Youtube</li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Youtube</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 copyright footer-end">

@@ -1045,6 +1045,15 @@ Mobile style's
     text-align: left;
 }
 
+.footer-bottom .footer-end ul li a {
+    color: #000;
+}
+
+.footer-bottom .footer-end ul li a:hover {
+    color: #ccc;
+    transition: 0.4s;
+}
+
 
 .scrollup {
     position: fixed;
