@@ -1009,10 +1009,9 @@ Mobile style's
 
 
 .footer-bottom {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
-    background: red;
     padding: 14px 0;
 }
 .footer-bottom .copyright {
@@ -2178,3 +2177,6 @@ div.pagination span.disabled {
     }
 
 }
+
+
+/*CONTACT FORM*/

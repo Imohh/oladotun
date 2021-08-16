@@ -120,7 +120,7 @@ This link will be active only for 24 hours.
 
 
 <div class="footer-bottom">
-	<div class="container">
+	<div class="container" style="width: 70%;">
 		<div class="row">
 			
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
@@ -158,7 +158,7 @@ This link will be active only for 24 hours.
 </div>
 
 <div class="footer-bottom">
-	<div class="container">
+	<div class="container" style="width: 70%;">
 		<div class="row">
 			<div class="col-md-12 copyright bottom-hr">
 				<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a><br>
