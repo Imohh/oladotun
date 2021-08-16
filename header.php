@@ -279,7 +279,7 @@ foreach ($result as $row) {
 <div class="header">
 	<div class="container">
 		<div class="row inner">
-			<div class="col-md-4 logo">
+			<div class="col-md-4 col-sm-3 col-xs-3 logo">
 				<a href="contact.php">Contact Us</a><!-- <i class="fa fa-phone"></i> -->
 			</div>
 			

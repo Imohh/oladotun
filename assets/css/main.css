@@ -2165,3 +2165,17 @@ div.pagination span.disabled {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
+
+/*MY MEDIA QUERY*/
+@media only screen and (max-width: 600px) {
+    .header .logo a {
+        display: none;
+    }
+
+    .header .right {
+        margin-top: 2%;
+    }
+
+}
