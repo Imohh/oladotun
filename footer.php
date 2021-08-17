@@ -120,7 +120,7 @@ This link will be active only for 24 hours.
 
 
 <div class="footer-bottom">
-	<div class="container" style="width: 70%;">
+	<div class="container">
 		<div class="row">
 			
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
@@ -143,10 +143,10 @@ This link will be active only for 24 hours.
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>find us on</h4>
 				<ul>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Instagram</a></li>
-					<li><a href="#">Youtube</a></li>
+					<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
@@ -158,7 +158,7 @@ This link will be active only for 24 hours.
 </div>
 
 <div class="footer-bottom">
-	<div class="container" style="width: 70%;">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12 copyright bottom-hr">
 				<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a><br>

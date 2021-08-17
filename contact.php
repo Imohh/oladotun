@@ -198,7 +198,4 @@ if(isset($_POST['form_contact']))
     </div>
 </div>
 
-
-
-
 <?php require_once('footer.php'); ?>
