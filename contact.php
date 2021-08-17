@@ -168,7 +168,7 @@ if(isset($_POST['form_contact']))
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="submit" value="Send Message" class="btn btn-primary pull-right" name="form_contact">
+                                    <input type="submit" value="Send Message" class="btn pull-right" name="form_contact">
                                 </div>
                             </div>
                             </form>
