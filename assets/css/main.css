@@ -2173,6 +2173,7 @@ div.pagination span.disabled {
 }
 .home-newsletter .single h2 {
     font-size: 22px;
+    font-weight: 900;
     color: #000;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -2254,9 +2255,25 @@ div.pagination span.disabled {
     color: #fff;
 }
 
+/*HOME PAGE*/
+/*second section*/
+.second-home-section .second-home-inner {
+    background: url(../img/display.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
 
+.second-home-section .second-home-inner button {
+    backround: red;
 
+}
 
+.second-home-section h2 {
+    backround: red;
+
+}
 
 
 

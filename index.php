@@ -265,6 +265,19 @@ foreach ($result as $row)
 
 <!-- MY SECOND SECTION -->
 
+<section class="second-home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 second-home-inner">
+                <h2>Men's Fall-Winter 2021</h2>
+                <button>discover the campaign</button>
+                <button>discover the collection</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- END OF MY SECOND SECTION -->
 
 
