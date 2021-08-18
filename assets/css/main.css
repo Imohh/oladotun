@@ -1051,6 +1051,7 @@ Mobile style's
     text-align: left;
     font-family: 'Futura';
     text-transform: uppercase;
+    font-weight: 900;
 }
 
 .footer-bottom .footer-end ul {

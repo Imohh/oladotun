@@ -92,6 +92,8 @@ foreach ($result as $row)
 </div>
 
 
+
+<!-- FIRST SECTION -->
 <?php if($home_service_on_off == 1): ?>
 <div class="service bg-gray">
     <div class="container">
@@ -119,6 +121,17 @@ foreach ($result as $row)
 </div>
 <?php endif; ?>
 
+
+
+<!-- MY FIRST SECTION -->
+
+
+<!-- END OF MY FIRST SECTION -->
+
+
+
+
+<!-- FEATURED PRODUCTS -->
 <?php if($home_featured_product_on_off == 1): ?>
 <div class="product pt_70 pb_70">
     <div class="container">
@@ -248,6 +261,16 @@ foreach ($result as $row)
 <?php endif; ?>
 
 
+
+
+<!-- MY SECOND SECTION -->
+
+<!-- END OF MY SECOND SECTION -->
+
+
+
+
+<!-- LATEST PRODUCTS -->
 <?php if($home_latest_product_on_off == 1): ?>
 <div class="product bg-gray pt_70 pb_30">
     <div class="container">
