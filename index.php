@@ -94,198 +94,82 @@ foreach ($result as $row)
 
 
 <!-- FIRST SECTION -->
-<?php if($home_service_on_off == 1): ?>
-<div class="service bg-gray">
+<?// php if($home_service_on_off == 1): ?>
+<!-- <div class="service bg-gray">
     <div class="container">
         <div class="row">
-            <?php
-                $statement = $pdo->prepare("SELECT * FROM tbl_service");
-                $statement->execute();
-                $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
-                foreach ($result as $row) {
+            <?//php
+              //  $statement = $pdo->prepare("SELECT * FROM tbl_service");
+              //  $statement->execute();
+              //  $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+              //  foreach ($result as $row) {
                     ?>
                     <div class="col-md-4">
                         <div class="item">
-                            <div class="photo"><img src="assets/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['title']; ?>"></div>
-                            <h3><?php echo $row['title']; ?></h3>
+                            <div class="photo"><img src="assets/uploads/<?//php echo $row['photo']; ?>" alt="<?// php echo $row['title']; ?>"></div>
+                            <h3><?//php echo $row['title']; ?></h3>
                             <p>
-                                <?php echo nl2br($row['content']); ?>
+                                <?//php echo nl2br($row['content']); ?>
                             </p>
                         </div>
                     </div>
-                    <?php
-                }
+                    <?//php
+                // }
             ?>
         </div>
     </div>
-</div>
-<?php endif; ?>
+</div> -->
+<?// php endif; ?>
+
+
+
+<!-- LITTLE INTRO -->
+
+<section class="little-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>double breasted jacket</h2>
+                <p>checkout the latest fashion trend specifically designed for you</p>
+                <button>shop now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END OF LITTLE INTRO -->
 
 
 
 <!-- MY FIRST SECTION -->
 
+<section class="first-home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 first-home-inne">
+                <div class="first-text">
+                    <h2>Men's Fall-Winter 2021</h2>
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="col-lg-8 first-home-inner">
+                <div class="first-text">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- END OF MY FIRST SECTION -->
 
 
 
 
-<!-- FEATURED PRODUCTS -->
-<?php if($home_featured_product_on_off == 1): ?>
-<div class="product pt_70 pb_70">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="headline">
-                    <h2><?php echo $featured_product_title; ?></h2>
-                    <h3><?php echo $featured_product_subtitle; ?></h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-
-                <div class="product-carousel">
-                    
-                    <?php
-                    $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_is_featured=? AND p_is_active=? LIMIT ".$total_featured_product_home);
-                    $statement->execute(array(1,1));
-                    $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
-                    foreach ($result as $row) {
-                        ?>
-                        <div class="item">
-                            <div class="thumb">
-                                <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="text">
-                                <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
-                                <h4>
-                                    $<?php echo $row['p_current_price']; ?> 
-                                    <?php if($row['p_old_price'] != ''): ?>
-                                    <del>
-                                        $<?php echo $row['p_old_price']; ?>
-                                    </del>
-                                    <?php endif; ?>
-                                </h4>
-                                <div class="rating">
-                                    <?php
-                                    $t_rating = 0;
-                                    $statement1 = $pdo->prepare("SELECT * FROM tbl_rating WHERE p_id=?");
-                                    $statement1->execute(array($row['p_id']));
-                                    $tot_rating = $statement1->rowCount();
-                                    if($tot_rating == 0) {
-                                        $avg_rating = 0;
-                                    } else {
-                                        $result1 = $statement1->fetchAll(PDO::FETCH_ASSOC);
-                                        foreach ($result1 as $row1) {
-                                            $t_rating = $t_rating + $row1['rating'];
-                                        }
-                                        $avg_rating = $t_rating / $tot_rating;
-                                    }
-                                    ?>
-                                    <?php
-                                    if($avg_rating == 0) {
-                                        echo '';
-                                    }
-                                    elseif($avg_rating == 1.5) {
-                                        echo '
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        ';
-                                    } 
-                                    elseif($avg_rating == 2.5) {
-                                        echo '
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        ';
-                                    }
-                                    elseif($avg_rating == 3.5) {
-                                        echo '
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        ';
-                                    }
-                                    elseif($avg_rating == 4.5) {
-                                        echo '
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        ';
-                                    }
-                                    else {
-                                        for($i=1;$i<=5;$i++) {
-                                            ?>
-                                            <?php if($i>$avg_rating): ?>
-                                                <i class="fa fa-star-o"></i>
-                                            <?php else: ?>
-                                                <i class="fa fa-star"></i>
-                                            <?php endif; ?>
-                                            <?php
-                                        }
-                                    }
-                                    ?>
-                                </div>
-
-                                <?php if($row['p_qty'] == 0): ?>
-                                    <div class="out-of-stock">
-                                        <div class="inner">
-                                            Out Of Stock
-                                        </div>
-                                    </div>
-                                <?php else: ?>
-                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>">Add to Cart</a></p>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-
-
-
-
-<!-- MY SECOND SECTION -->
-
-<section class="second-home-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 second-home-inner">
-                <h2>Men's Fall-Winter 2021</h2>
-                <button>discover the campaign</button>
-                <button>discover the collection</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- END OF MY SECOND SECTION -->
-
-
-
 
 <!-- LATEST PRODUCTS -->
 <?php if($home_latest_product_on_off == 1): ?>
-<div class="product bg-gray pt_70 pb_30">
+<div class="product pt_70 pb_30">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -413,6 +297,206 @@ foreach ($result as $row)
     </div>
 </div>
 <?php endif; ?>
+
+
+
+
+
+
+
+
+
+<section class="first-home-section first-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 first-home-inner">
+                <div class="first-text">
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 first-home-inne">
+                <div class="first-text first-text-right">
+                    <h2>Men's Fall-Winter 2021</h2>
+                    <button>shop now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FEATURED PRODUCTS -->
+<?//php if($home_featured_product_on_off == 1): ?>
+<!-- <div class="product pt_70 pb_70">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="headline">
+                    <h2><?//php echo $featured_product_title; ?></h2>
+                    <h3><?//php echo $featured_product_subtitle; ?></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="product-carousel">
+                    
+                    <?php
+                    // $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_is_featured=? AND p_is_active=? LIMIT ".$total_featured_product_home);
+                    // $statement->execute(array(1,1));
+                    // $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+                    // foreach ($result as $row) {
+                        ?>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="photo" style="background-image:url(assets/uploads/<?//php echo $row['p_featured_photo']; ?>);"></div>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="text">
+                                <h3><a href="product.php?id=<?//php echo $row['p_id']; ?>"><?//php echo $row['p_name']; ?></a></h3>
+                                <h4>
+                                    $<?//php echo $row['p_current_price']; ?> 
+                                    <?//php if($row['p_old_price'] != ''): ?>
+                                    <del>
+                                        $<?//php echo $row['p_old_price']; ?>
+                                    </del>
+                                    <?//php endif; ?>
+                                </h4>
+                                <div class="rating">
+                                    <?//php
+                                    // $t_rating = 0;
+                                    // $statement1 = $pdo->prepare("SELECT * FROM tbl_rating WHERE p_id=?");
+                                    // $statement1->execute(array($row['p_id']));
+                                    // $tot_rating = $statement1->rowCount();
+                                    //if($tot_rating == 0) {
+                                        //$avg_rating = 0;
+                                    //} else {
+                                        //$result1 = $statement1->fetchAll(PDO::FETCH_ASSOC);
+                                        //foreach ($result1 as $row1) {
+                                            //$t_rating = $t_rating + $row1['rating'];
+                                        //}
+                                        //$avg_rating = $t_rating / $tot_rating;
+                                    //}
+                                    ?>
+                                    <?//php
+                                    //if($avg_rating == 0) {
+                                        //echo '';
+                                    //}
+                                    // elseif($avg_rating == 1.5) {
+                                    //     echo '
+                                    //         <i class="fa fa-star"></i>
+                                    //         <i class="fa fa-star-half-o"></i>
+                                    //         <i class="fa fa-star-o"></i>
+                                    //         <i class="fa fa-star-o"></i>
+                                    //         <i class="fa fa-star-o"></i>
+                                    //     ';
+                                    // } 
+                                    // elseif($avg_rating == 2.5) {
+                                    //     echo '
+                                    //         <i class="fa fa-star"></i>
+                                    //         <i class="fa fa-star"></i>
+                                    //         <i class="fa fa-star-half-o"></i>
+                                    //         <i class="fa fa-star-o"></i>
+                                    //         <i class="fa fa-star-o"></i>
+                                        //';
+                                    //}
+                                    //elseif($avg_rating == 3.5) {
+                                        //echo '
+                                            // <i class="fa fa-star"></i>
+                                            // <i class="fa fa-star"></i>
+                                            // <i class="fa fa-star"></i>
+                                            // <i class="fa fa-star-half-o"></i>
+                                            // <i class="fa fa-star-o"></i>
+                                        //';
+                                    //}
+                                    //elseif($avg_rating == 4.5) {
+                                    //    echo '
+                                    //        <i class="fa fa-star"></i>
+                                    //        <i class="fa fa-star"></i>
+                                    //        <i class="fa fa-star"></i>
+                                    //        <i class="fa fa-star"></i>
+                                    //        <i class="fa fa-star-half-o"></i>
+                                    //    ';
+                                    //}
+                                    //else {
+                                    //    for($i=1;$i<=5;$i++) {
+                                            ?>
+                                            <?//php if($i>$avg_rating): ?>
+                                                <i class="fa fa-star-o"></i>
+                                            <?//php else: ?>
+                                                <i class="fa fa-star"></i>
+                                            <?//php endif; ?>
+                                            <?//php
+                                        //}
+                                    //}
+                                    ?>
+                                </div>
+
+                                <?//php if($row['p_qty'] == 0): ?>
+                                    <div class="out-of-stock">
+                                        <div class="inner">
+                                            Out Of Stock
+                                        </div>
+                                    </div>
+                                <?//php else: ?>
+                                    <p><a href="product.php?id=<?//php echo $row['p_id']; ?>">Add to Cart</a></p>
+                                <?//php endif; ?>
+                            </div>
+                        </div>
+                        <?//php
+                    //}
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<?//php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MY SECOND SECTION -->
+
+<section class="second-home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 second-home-inner">
+                <div class="second-text">
+                    <h2>Men's Fall-Winter 2021</h2>
+                    <button class="first-button">discover the campaign</button>
+                    <button>discover the collection</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- END OF MY SECOND SECTION -->
+
+
+
+
 
 
 <?php if($home_popular_product_on_off == 1): ?>

@@ -202,7 +202,7 @@ if(isset($_POST['form1'])) {
                     <ul>
                         <li><input type="submit" value="<?php echo LANG_VALUE_20; ?>" class="btn btn-primary" name="form1"></li>
                         <li><a href="index.php" class="btn btn-primary"><?php echo LANG_VALUE_85; ?></a></li>
-                        <li><a href="checkout.php" class="btn btn-primary"><?php echo LANG_VALUE_23; ?></a></li>
+                        <li><a href="checkout.php" class="btn btn-primary continue"><?php echo LANG_VALUE_23; ?></a></li>
                     </ul>
                 </div>
                 </form>

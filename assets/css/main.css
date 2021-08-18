@@ -51,16 +51,25 @@ a:hover {
 }
 
 .headline h2 {
-    font-size: 28px;
-    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 0;
+    font-size: 4rem;
+    letter-spacing: 0.14em;
+    line-height: 36px;
+    font-weight: 700;
 }
 
 .headline h3 {
-    font-size: 18px;
     margin-top: 0;
+    font-size: 17px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
 }
 
 .headline-white {
@@ -151,6 +160,7 @@ a:hover {
 .header .logo a{
     margin-right: 5%;
     color: #000;
+
 }
 
 .header .logo img {
@@ -201,6 +211,13 @@ a:hover {
 
 .header .right ul li a {
 	color: #0d1452;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
 }
 
 .header .navbar-form .search-top {
@@ -297,6 +314,13 @@ a:hover {
     color: #000;
     text-align: center;
     text-transform: uppercase;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 14px;
 }
 
 .menu > ul > li a:hover {
@@ -1032,6 +1056,13 @@ Mobile style's
     color: #000;
     text-align: center;
     font-family: 'Futura';
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
 }
 
 .footer-bottom .bottom-hr {
@@ -1050,8 +1081,25 @@ Mobile style's
 .footer-bottom .footer-end h4 {
     text-align: left;
     font-family: 'Futura';
+    font-size: 15px;
     text-transform: uppercase;
-    font-weight: 900;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+}
+
+.footer-bottom .footer-end {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
 }
 
 .footer-bottom .footer-end ul {
@@ -1065,6 +1113,13 @@ Mobile style's
 
 .footer-bottom .footer-end ul li a {
     color: #000;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
 }
 
 .footer-bottom .footer-end ul li a i {
@@ -1354,20 +1409,46 @@ ul.nav-tabs {
 
 .cart-buttons li input[type="submit"],
 .cart-buttons li a {
-    background: #0d1452;
-    border: 0;
+    background: transparent;
     border-radius: 0;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    font-size: 18px;
     padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(36, 36, 36);
+    border-image: initial;
+}
+
+.cart-buttons li .continue {
+    background: #000;
     color: #fff;
+}
+
+.cart-buttons li .continue:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
 
 .cart-buttons li input[type="submit"]:hover,
 .cart-buttons li a:hover {
     background: #333;
     color: #fff;
+    border: 1px solid #333;
 }
 
 
@@ -2178,6 +2259,13 @@ div.pagination span.disabled {
     text-transform: uppercase;
     margin-bottom: 40px;
     margin-top: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
 }
 .home-newsletter .single .form-control {
     height: 50px;
@@ -2206,7 +2294,6 @@ div.pagination span.disabled {
 
 }
 
-
 @media (min-width: 992px) {
     /*.nav {
         position: absolute;
@@ -2216,8 +2303,6 @@ div.pagination span.disabled {
         background: #fff;
     }*/
 }
-
-
 
 /*CONTACT FORM*/
 .contact-right {
@@ -2256,7 +2341,130 @@ div.pagination span.disabled {
 }
 
 /*HOME PAGE*/
+/*little intro*/
+.little-intro {
+    text-align: center;
+    padding: 30px 0px 70px 0px;
+}
+
+.little-intro h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 36px;
+}
+
+.little-intro p {
+    font-size: 17px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+}
+
+.little-intro button {
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: rgb(36, 36, 36);
+    padding: 13px 30px;
+    text-decoration: none;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(36, 36, 36);
+    border-image: initial;
+}
+
+.little-intro button:hover {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    transition: 0.4s;
+}
+
+/*first section*/
+
+.first-home-section {
+    margin-bottom: 5%;
+}
+
+.first-bg {
+    margin-top: 5%;
+}
+
+.first-home-inner {
+    background: url(../img/display.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.first-text {
+    margin-top: 100%;
+}
+
+.first-text-right {
+    text-align: right;
+}
+
+.first-text h2 {
+    font-size: 2rem;
+    letter-spacing: 0.14em;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.first-text button {
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: rgb(36, 36, 36);
+    padding: 13px 30px;
+    text-decoration: none;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(36, 36, 36);
+    border-image: initial;
+}
+
+.first-text button:hover {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    transition: 0.4s;
+}
+
 /*second section*/
+
+.second-home-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .second-home-section .second-home-inner {
     background: url(../img/display.jpg);
     background-position: 100% 100%;
@@ -2265,17 +2473,65 @@ div.pagination span.disabled {
     height: 500px;
 }
 
-.second-home-section .second-home-inner button {
-    backround: red;
-
+.second-text {
+    width: 49%;
+    margin-top: 17%;
+    margin-left: 5%;
 }
 
-.second-home-section h2 {
-    backround: red;
-
+.second-text h2 {
+    font-weight: 900;
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 5%;
 }
 
+.second-text button {
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: rgb(36, 36, 36);
+    padding: 13px 30px;
+    text-decoration: none;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(36, 36, 36);
+    border-image: initial;
+}
 
+.second-text .first-button {
+    background: #000;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 13px 30px;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(36, 36, 36);
+    border-image: initial;
+}
 
-
-
+.second-text button:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    transition: 0.4s;
+}
