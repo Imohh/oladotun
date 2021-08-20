@@ -7,6 +7,11 @@
     src: url("../fonts/futura.ttf");
 }
 
+@font-face {
+    font-family: 'Futura Extra Black';
+    src: url("../fonts/futura-extra-black.ttf");
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -1200,9 +1205,17 @@ ul.nav-tabs {
 }
 .product .p-title h2 {
     color: #0d1452;
+    font-family: 'Futura Extra Black', sans-serif;
     margin-top: 0;
     font-size: 24px;
     font-weight: 700;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
 }
 
 .product .p-status {
@@ -1231,6 +1244,18 @@ ul.nav-tabs {
 
 .product .p-short-des {
     margin-bottom: 30px;
+
+}
+
+.product .p-short-des p {
+    font-size: 17px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
 }
 
 .product .p-quantity {
