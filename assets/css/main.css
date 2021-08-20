@@ -2726,7 +2726,7 @@ div.pagination span.disabled {
 .bottom-faq {
     background: #fff;
     padding: 35px;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .bottom-faq .btn {
@@ -2754,6 +2754,13 @@ div.pagination span.disabled {
     padding: 0;
     margin: 0;
     background: #f6f5f3;
+}
+
+.panel-group h2 {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .panel {
