@@ -311,7 +311,7 @@ if($success_message1 != '') {
 
 				<div class="product">
 					<div class="row">
-						<div class="col-md-5">
+						<div class="col-md-8">
 							<ul class="prod-slider">
                                 
 								<li style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>);">
@@ -346,7 +346,7 @@ if($success_message1 != '') {
                                 ?>
 							</div>
 						</div>
-						<div class="col-md-7">
+						<div class="col-md-4">
 							<div class="p-title"><h2><?php echo $p_name; ?></h2></div>
 							<div class="p-review">
 								<div class="rating">
