@@ -477,7 +477,36 @@ if($success_message1 != '') {
                             </form>
 							<div class="share">
                                 <?php echo LANG_VALUE_58; ?> <br>
-								<div class="sharethis-inline-share-buttons"></div>
+                                    <div class="modal-box">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-lg show-modal" data-toggle="modal" data-target="#myModal">
+                                          Login Form
+                                        </button>
+                                     
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content clearfix">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    <div class="modal-body">
+                                                        <p class="title">share this</p>
+                                                        <h2><?php echo $p_name; ?></h2>
+                                                            
+                                                        <ul>
+                                                            <li><span><i class="fa fa-facebook"></i></span></li>
+                                                            <li><span><i class="fa fa-twitter"></i></span></li>
+                                                            <li><span><i class="fa fa-instagram"></i></span></li>
+                                                            <li><span><i class="fa fa-email"></i></span></li>
+                                                        </ul>
+
+                                                        <p><span><i class="fa fa-share"></i></span>this is the link to this product</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
 							</div>
 						</div>
 					</div>

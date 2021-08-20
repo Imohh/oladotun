@@ -2584,12 +2584,9 @@ div.pagination span.disabled {
     font-size: 18px;
     font-weight: 600;
     text-transform: capitalize;
-    padding: 10px 15px;
-    margin: 200px auto 0;
     border: none;
     outline: none;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    display: block;
     transition: all 0.3s ease 0s;
 }
 .show-modal:hover,
@@ -2598,10 +2595,10 @@ div.pagination span.disabled {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     outline: none;
 }
-.modal-dialog{
+/*.modal-dialog{
     width: 400px;
     margin: 70px auto 0;
-}
+}*/
 .modal-dialog{ transform: scale(0.5); }
 .modal-dialog{ transform: scale(1); }
 .modal-dialog .modal-content{
@@ -2610,7 +2607,6 @@ div.pagination span.disabled {
 }
 .modal-content .close{
     color: #fff;
-    background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
     font-size: 25px;
     font-weight: 400;
     text-shadow: none;
