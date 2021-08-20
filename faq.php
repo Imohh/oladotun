@@ -10,11 +10,11 @@ foreach ($result as $row) {
 }
 ?>
 
-<div class="page-banner" style="background-image: url(assets/uploads/<?php echo $faq_banner; ?>);">
+<!-- <div class="page-banner" style="background-image: url(assets/uploads/<?//php echo $faq_banner; ?>);">
     <div class="inner">
-        <h1><?php echo $faq_title; ?></h1>
+        <h1><?//php echo $faq_title; ?></h1>
     </div>
-</div>
+</div> -->
 
 <div class="page faq-top">
     <div class="container">
@@ -41,7 +41,7 @@ foreach ($result as $row) {
                             </div>
                             <div id="question<?php echo $row['faq_id']; ?>" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-                                    <h5><span class="label label-primary">Answer</span></h5>
+                                    <!-- <h5><span class="label label-primary">Answer</span></h5> -->
                                     <p>
                                         <?php echo $row['faq_content']; ?>
                                     </p>

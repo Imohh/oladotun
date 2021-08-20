@@ -12,6 +12,11 @@
     src: url("../fonts/futura-extra-black.ttf");
 }
 
+@font-face {
+    font-family: 'Futura Bold';
+    src: url("../fonts/futura-bold.ttf");
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -1204,10 +1209,10 @@ ul.nav-tabs {
     margin-top: 50px;
 }
 .product .p-title h2 {
-    color: #0d1452;
+    color: #000;
     font-family: 'Futura Extra Black', sans-serif;
     margin-top: 0;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 700;
     display: block;
     margin-block-start: 1em;
@@ -1216,6 +1221,7 @@ ul.nav-tabs {
     margin-inline-end: 0px;
     letter-spacing: 0.1em;
     line-height: 24px;
+    text-transform: uppercase;
 }
 
 .product .p-status {
@@ -2484,6 +2490,7 @@ div.pagination span.disabled {
 
 .first-text h2 {
     font-size: 2rem;
+    font-family: 'Futura Bold', sans-serif;
     letter-spacing: 0.14em;
     line-height: 36px;
     font-weight: 700;
@@ -2755,8 +2762,21 @@ div.pagination span.disabled {
 .panel-group h2 {
     padding-top: 10%;
     padding-bottom: 5%;
-    font-weight: 900;
+    font-family: 'Futura Extra Black', sans-serif;
     text-transform: uppercase;
+}
+
+.panel-group .panel-body {
+    font-family: 'Futura', sans-serif;
+}
+
+.panel-group .panel-body span {
+    font-family: 'Futura', sans-serif;
+}
+
+
+.panel-group .panel-body ol li {
+    font-family: 'Futura', sans-serif;    
 }
 
 .panel {
