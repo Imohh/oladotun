@@ -1259,8 +1259,16 @@ ul.nav-tabs {
 .product .btn-cart1 input[type="submit"] {
     border: 0;
     padding: 10px 14px;
-    background: #0d1452;
+    background: #000;
     color: #fff;
+}
+
+.product .btn-cart1 input[type="submit"]:hover {
+    border: 0;
+    padding: 10px 14px;
+    background: #333;
+    color: #fff;
+    transiytion: 0.5s;
 }
 
 .product .share {
@@ -2776,3 +2784,8 @@ div.pagination span.disabled {
 .panel h4 {
     text-transform: uppercase;
 }
+
+
+/*PRODUCTS DETAIL PAGE*/
+
+

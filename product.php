@@ -490,6 +490,7 @@ if($success_message1 != '') {
 								<li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab"><?php echo LANG_VALUE_60; ?></a></li>
                                 <li role="presentation"><a href="#condition" aria-controls="condition" role="tab" data-toggle="tab"><?php echo LANG_VALUE_61; ?></a></li>
                                 <li role="presentation"><a href="#return_policy" aria-controls="return_policy" role="tab" data-toggle="tab"><?php echo LANG_VALUE_62; ?></a></li>
+                                <li role="presentation"><a href="#payment_option" aria-controls="payment_option" role="tab" data-toggle="tab">Payment Option</a></li>
                                <!-- <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab"><?php echo LANG_VALUE_63; ?></a></li> -->
 							</ul>
 
@@ -529,6 +530,17 @@ if($success_message1 != '') {
                                     </p>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="return_policy" style="margin-top: -30px;">
+                                    <p>
+                                        <?php
+                                        if($p_return_policy == '') {
+                                            echo LANG_VALUE_73;
+                                        } else {
+                                            echo $p_return_policy;
+                                        }
+                                        ?>
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="payment_option" style="margin-top: -30px;">
                                     <p>
                                         <?php
                                         if($p_return_policy == '') {
