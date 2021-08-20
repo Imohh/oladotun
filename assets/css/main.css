@@ -2724,17 +2724,48 @@ div.pagination span.disabled {
 
 /*FAQ PAGE*/
 .bottom-faq {
-    background: red;
+    background: #fff;
+    padding: 35px;
+    margin-top: 5%;
 }
 
 .bottom-faq .btn {
-    color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.bottom-faq .btn:hover {
     background: #000;
+    color: #fff;
+    transition: 0.4s;
 }
 
 .bottom-faq h2 {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 19px;
+    font-weight: 900;
 }
 
+.faq {
+    background: #f6f5f3;
+}
 
+.faq-top {
+    padding: 0;
+    margin: 0;
+    background: #f6f5f3;
+}
+
+.panel {
+    padding: 20px 10px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.panel span {
+    float: right;
+}
+
+.panel h4 {
+    text-transform: uppercase;
+}
