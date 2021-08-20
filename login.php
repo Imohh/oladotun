@@ -60,12 +60,13 @@ if(isset($_POST['form1'])) {
             <div class="col-md-12">
                 <div class="user-content">
 
-                    
                     <form action="" method="post">
                         <?php $csrf->echoInputField(); ?>                  
                         <div class="row">
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
+
+                                <h2>i already have an account</h2>
                                 <?php
                                 if($error_message != '') {
                                     echo "<div class='error' style='padding: 10px;background:#f1f1f1;margin-bottom:20px;'>".$error_message."</div>";
@@ -82,11 +83,22 @@ if(isset($_POST['form1'])) {
                                     <label for=""><?php echo LANG_VALUE_96; ?> *</label>
                                     <input type="password" class="form-control" name="cust_password">
                                 </div>
+                                <a href="forget-password.php" class="forgot-password"><?php echo LANG_VALUE_97; ?></a>
                                 <div class="form-group">
                                     <label for=""></label>
-                                    <input type="submit" class="btn btn-primary" value="<?php echo LANG_VALUE_4; ?>" name="form1">
-                                </div>
-                                <a href="forget-password.php" style="color:#e4144d;"><?php echo LANG_VALUE_97; ?></a>
+                                    <input type="submit" class="btn" value="<?php echo LANG_VALUE_4; ?>" name="form1">
+                                </div><br><br>
+
+                                <h2>i don't have an account</h2>
+
+                                <p>Get accustomed to Dotun luxury brand</p>
+
+                                <a href="registration.php"><input type="text" class="btn" value="Create an account" name=""></a>
+                                
+                            </div>
+
+                            <div class="col-md-4 bottom-user-content">
+
                             </div>
                         </div>                        
                     </form>

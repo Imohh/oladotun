@@ -19,7 +19,7 @@ foreach ($result as $row) {
 <div class="page">
     <div class="container">
         <div class="row">            
-            <div class="col-md-12">
+            <div class="col-md-6">
                 
                 <div class="panel-group" id="faqAccordion">                    
 
@@ -51,6 +51,14 @@ foreach ($result as $row) {
                 </div>
 
             </div>
+
+            <div class="col-md-6 bottom-faq">
+                <h2>interact with us</h2>
+                <p>you can leave a message with us and well be with you.</p>
+
+                <a href="contact.php"><input type="text" class="btn" value="Contact Us" name=""></a>
+            </div>
+
         </div>
     </div>
 </div>

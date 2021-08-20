@@ -31,6 +31,15 @@ foreach ($result as $row)
 
 ?>
 
+
+
+
+
+
+
+
+
+
 <div id="bootstrap-touch-slider" class="carousel bs-slider fade control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="false" >
 
     <!-- Indicators -->
@@ -164,6 +173,52 @@ foreach ($result as $row)
 <!-- END OF MY FIRST SECTION -->
 
 
+
+
+<!-- POPUP ALERT -->
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="modal-box">
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary btn-lg show-modal" data-toggle="modal" data-target="#myModal">
+                  Login Form
+                </button> -->
+ 
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content clearfix">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                                <h3 class="title">Login Form</h3>
+                                <p class="description">Login here Using Email & Password</p>
+                                <div class="form-group">
+                                    <span class="input-icon"><i class="fa fa-user"></i></span>
+                                    <input type="email" class="form-control" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <span class="input-icon"><i class="fas fa-key"></i></span>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="form-group checkbox">
+                                    <input type="checkbox">
+                                    <label>Remamber me</label>
+                                </div>
+                                <a href="" class="forgot-pass">Forgot Password?</a>
+                                <button class="btn">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
