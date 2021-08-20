@@ -476,12 +476,12 @@ if($success_message1 != '') {
 							</div>
                             </form>
 							<div class="share">
-                                <?php echo LANG_VALUE_58; ?>  <br>
+                                <!-- <?//php echo LANG_VALUE_58; ?>  <br> -->
                                     <div class="modal-box">
                                         <!-- Button trigger modal -->
-                                        <a class="btn btn-primary btn-lg show-modal" data-toggle="modal" data-target="#myModal">
-                                          Login Form
-                                        </a> | may we help you
+                                        <a class="btn show-modal" data-toggle="modal" data-target="#myModal">
+                                          <img src="https://img.icons8.com/ios-glyphs/30/000000/share--v1.png"/>
+                                        </a> | <a href="faq.php"> may we help you?</a>
                                      
                                         <!-- Modal -->
                                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
