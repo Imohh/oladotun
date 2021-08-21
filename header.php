@@ -306,7 +306,7 @@ foreach ($result as $row) {
 						<?php
 					} else {
 						?>
-						<li><a href="login.php"><i class="fa fa-sign-in"></i> <?php echo LANG_VALUE_9; ?></a></li>
+						<li><a href="login.php"><img src="https://img.icons8.com/material-outlined/15/000000/guest-male.png"/> <?php echo LANG_VALUE_9; ?></a></li>
 						<li><a href="registration.php"><i class="fa fa-user-plus"></i> <?php echo LANG_VALUE_15; ?></a></li>
 						<?php	
 					}
