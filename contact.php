@@ -27,7 +27,7 @@ foreach ($result as $row) {
 
 <div class="page">
     <div class="container">
-        <div class="row">            
+        <div class="row">
             <div class="col-md-12">
                 <h3>Contact Form</h3>
                 <div class="row cform">
