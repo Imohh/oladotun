@@ -615,7 +615,7 @@ Mobile style's
 }
 
 .product .text {
-    background: #F2F3F3;
+    /*background: #F2F3F3;*/
     padding: 14px;
     overflow: hidden;
 }
