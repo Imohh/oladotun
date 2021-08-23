@@ -1271,7 +1271,10 @@ ul.nav-tabs {
     line-height: 30px;
     margin-bottom: 35px;
     font-size: 14px;
+    /*background: red;*/
 }
+
+
 
 .product .p-quantity input[type="number"] {
     height: 30px;

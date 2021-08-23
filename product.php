@@ -413,7 +413,7 @@ if($success_message1 != '') {
                             <div class="p-quantity">
                                 <div class="row">
                                     <?php if(isset($size)): ?>
-                                    <div class="col-md-12 mb_20">
+                                    <div class="col-md-6 mb_20">
                                         <?php echo LANG_VALUE_52; ?> <br>
                                         <select name="size_id" class="form-control select2" style="width:auto;">
                                             <?php
@@ -433,7 +433,7 @@ if($success_message1 != '') {
                                     <?php endif; ?>
 
                                     <?php if(isset($color)): ?>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <?php echo LANG_VALUE_53; ?> <br>
                                         <select name="color_id" class="form-control select2" style="width:auto;">
                                             <?php
