@@ -409,13 +409,18 @@ if($success_message1 != '') {
 									<?php echo $p_short_description; ?>
 								</p>
 							</div>
+
+
+
+
                             <form action="" method="post">
                             <div class="p-quantity">
                                 <div class="row">
                                     <?php if(isset($size)): ?>
-                                    <div class="col-md-6 mb_20">
-                                        <?php echo LANG_VALUE_52; ?> <br>
-                                        <select name="size_id" class="form-control select2" style="width:auto;">
+                                    <div class="col-md-12 mb_20 new-select">
+                                        <span class="span-product"><?php echo LANG_VALUE_52; ?></span> <br>
+
+                                        <select name="size_id" class="form-control select2 selectpicker">
                                             <?php
                                             $statement = $pdo->prepare("SELECT * FROM tbl_size");
                                             $statement->execute();
@@ -433,9 +438,9 @@ if($success_message1 != '') {
                                     <?php endif; ?>
 
                                     <?php if(isset($color)): ?>
-                                    <div class="col-md-6">
-                                        <?php echo LANG_VALUE_53; ?> <br>
-                                        <select name="color_id" class="form-control select2" style="width:auto;">
+                                    <div class="col-md-12 new-select">
+                                        <span class="span-product"><?php echo LANG_VALUE_53; ?></span> <br>
+                                        <select name="color_id" class="form-control select2">
                                             <?php
                                             $statement = $pdo->prepare("SELECT * FROM tbl_color");
                                             $statement->execute();
@@ -455,8 +460,8 @@ if($success_message1 != '') {
                                 </div>
                                 
                             </div>
-							<div class="p-price">
-                                <span style="font-size:14px;"><?php echo LANG_VALUE_54; ?></span><br>
+							<div class="p-price new-select">
+                                <span class="span-product" style="font-size: 17px"><?php echo LANG_VALUE_54; ?></span><br>
                                 <span>
                                     <?php if($p_old_price!=''): ?>
                                         <del><?php echo LANG_VALUE_1; ?><?php echo $p_old_price; ?></del>
@@ -467,8 +472,8 @@ if($success_message1 != '') {
                             <input type="hidden" name="p_current_price" value="<?php echo $p_current_price; ?>">
                             <input type="hidden" name="p_name" value="<?php echo $p_name; ?>">
                             <input type="hidden" name="p_featured_photo" value="<?php echo $p_featured_photo; ?>">
-							<div class="p-quantity">
-                                <?php echo LANG_VALUE_55; ?> <br>
+							<div class="p-quantity new-select">
+                                <span class="span-product"><?php echo LANG_VALUE_55; ?></span> <br>
 								<input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric">
 							</div>
 							<div class="btn-cart btn-cart1">
