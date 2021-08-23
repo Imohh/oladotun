@@ -468,10 +468,11 @@ if($success_message1 != '') {
                             <input type="hidden" name="p_name" value="<?php echo $p_name; ?>">
                             <input type="hidden" name="p_featured_photo" value="<?php echo $p_featured_photo; ?>">
 							<div class="p-quantity">
-                                <?php echo LANG_VALUE_55; ?> <br>
-								<input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric">
+                                <!-- <?//php echo LANG_VALUE_55; ?> <br>
+								<input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric"> -->
 							</div>
 							<div class="btn-cart btn-cart1">
+                                <input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric">
                                 <input type="submit" value="<?php echo LANG_VALUE_154; ?>" name="form_add_to_cart">
 							</div>
                             </form>
@@ -505,7 +506,6 @@ if($success_message1 != '') {
                                             </div>
                                         </div>
                                     </div>
-
 
 							</div>
 						</div>
@@ -692,6 +692,23 @@ if($success_message1 != '') {
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="product bg-gray pt_70 pb_70">
     <div class="container">

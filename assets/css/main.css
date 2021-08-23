@@ -194,6 +194,8 @@ a:hover {
 
 .header .search-area button {
 	width: 70px;
+    background: #000;
+    color: #fff;
 }
 
 .header .search-area form {
@@ -1169,7 +1171,7 @@ Mobile style's
 
 
 ul.prod-slider li {
-    height: 450px;
+    height: 550px;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -1212,7 +1214,7 @@ ul.nav-tabs {
     color: #000;
     font-family: 'Futura Extra Black', sans-serif;
     margin-top: 0;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     display: block;
     margin-block-start: 1em;
@@ -1287,11 +1289,17 @@ ul.nav-tabs {
     color: #fff;
 }
 
+
+.product .btn-cart1 input[type="number"] {
+    width: 30%;
+}
+
 .product .btn-cart1 input[type="submit"] {
     border: 0;
     padding: 10px 14px;
     background: #000;
     color: #fff;
+    width: 60%;
 }
 
 .product .btn-cart1 input[type="submit"]:hover {
@@ -2609,8 +2617,15 @@ div.pagination span.disabled {
 
 
 /*POPUP*/
-       .modal-box{ font-family: 'Futura', sans-serif; }
-.show-modal{
+.modal-box{ font-family: 'Futura', sans-serif; }
+
+.modal-box a {
+    color: #000;
+}
+
+.modal-box a:hover {
+    color: #333;
+    transition: 0.4s;
 }
 
 .show-modal a {
