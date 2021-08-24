@@ -1175,7 +1175,7 @@ ul.prod-slider li {
     height: 550px;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
-    background-size: cover;
+    background-size: 70% 100%;
     background-position: top center;
     position: relative;
 }
