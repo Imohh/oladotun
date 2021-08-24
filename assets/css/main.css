@@ -2721,24 +2721,27 @@ div.pagination span.disabled {
 
 .modal-body ul {
     text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .modal-body ul li {
     display: inline;
     margin: 0 auto;
+
 }
 
 .modal-body ul li a {
     text-align: center;
     margin-right: 40px;
     margin-left: 40px;
-    border: 2px solid #333;
+    border: 2px solid #ccc;
     padding: 10px;
     border-radius: 5px;
 }
 
 .modal-body .bottom-link {
-    background: red;
+    background: #ccc;
     width: 80%;
     padding: 10px;
     margin: 0 auto;
