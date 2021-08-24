@@ -486,7 +486,7 @@ if($success_message1 != '') {
                                     <div class="modal-box">
                                         <!-- Button trigger modal -->
                                         <a class="btn show-modal" data-toggle="modal" data-target="#myModal">
-                                          <img src="https://img.icons8.com/ios-glyphs/30/000000/share--v1.png"/>
+                                          <img src="https://img.icons8.com/ios-glyphs/20/000000/share--v1.png"/>
                                         </a> | <a href="faq.php"> may we help you?</a>
 
                                         <!-- Modal -->
