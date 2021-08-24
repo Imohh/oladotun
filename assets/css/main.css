@@ -2638,7 +2638,8 @@ div.pagination span.disabled {
 
 
 /*POPUP*/
-.modal-box{ font-family: 'Futura', sans-serif; }
+.modal-box{ 
+    font-family: 'Futura', sans-serif; }
 
 .modal-box a {
     color: #000;
@@ -2685,14 +2686,20 @@ div.pagination span.disabled {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 .close:focus{ outline: none; }
-.modal-body{ padding: 60px 40px 40px !important; }
+.modal-body{padding: 60px 40px 40px !important; }
 .modal-body .title{
-    color: #026fd4;
-    font-size: 33px;
+    color: #333;
+    font-size: 17px;
     font-weight: 700;
     letter-spacing: 1px;
     margin: 0 0 10px;
+    text-transform: uppercase;
 }
+
+.modal-body h2 {
+    text-transform: capitalize;
+}
+
 .modal-body .description{
     color: #9A9EA9;
     font-size: 16px;
@@ -2711,6 +2718,22 @@ div.pagination span.disabled {
     top: 50%;
     left: 20px;
 }
+
+.modal-body ul {
+    text-align: center;
+}
+
+.modal-body ul li {
+    display: inline;
+    padding-right: 50px;
+    text-align: center;
+    background: red;
+}
+
+.modal-body ul li a {
+    text-align: center;
+}
+
 .modal-body .form-control{
     font-size: 17px;
     height: 45px;

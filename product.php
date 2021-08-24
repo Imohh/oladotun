@@ -488,7 +488,7 @@ if($success_message1 != '') {
                                         <a class="btn show-modal" data-toggle="modal" data-target="#myModal">
                                           <img src="https://img.icons8.com/ios-glyphs/30/000000/share--v1.png"/>
                                         </a> | <a href="faq.php"> may we help you?</a>
-                                     
+
                                         <!-- Modal -->
                                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                             <div class="modal-dialog" role="document">
@@ -499,10 +499,10 @@ if($success_message1 != '') {
                                                         <h2><?php echo $p_name; ?></h2>
                                                             
                                                         <ul>
-                                                            <li><span><i class="fa fa-facebook"></i></span></li>
-                                                            <li><span><i class="fa fa-twitter"></i></span></li>
-                                                            <li><span><i class="fa fa-instagram"></i></span></li>
-                                                            <li><span><i class="fa fa-email"></i></span></li>
+                                                            <li align="center"><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                                                            <li><a href="#"><span><span><i class="fa fa-twitter"></i></span></a></li>
+                                                            <li><a href="#"><span><span><i class="fa fa-instagram"></i></span></a></li>
+                                                            <li><a href="#"><span><span><img src="https://img.icons8.com/ios-glyphs/20/000000/filled-message.png"/></span></a></li>
                                                         </ul>
 
                                                         <p><span><i class="fa fa-share"></i></span>this is the link to this product</p>
