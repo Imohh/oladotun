@@ -2740,6 +2740,10 @@ div.pagination span.disabled {
     border-radius: 5px;
 }
 
+.modal-body ul li a span {
+    padding-right: 1%;
+}
+
 .modal-body .bottom-link {
     background: #f5f5f5;
     width: 80%;
