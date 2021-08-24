@@ -719,14 +719,13 @@ Mobile style's
 }
 
 .product .item:hover .thumb .overlay {
-    /*opacity: 1;
+    opacity: 1;
     filter: alpha(opacity=1);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
-    transform: scale(1);*/
-    transform-origin: 0 0;
-  transition: transform .25s, visibility .25s ease-in;
+    transform: scale(1);
+    /*last code here*/
 }
 
 .product-cat {
