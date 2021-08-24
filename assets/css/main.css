@@ -2733,18 +2733,22 @@ div.pagination span.disabled {
 
 .modal-body ul li a {
     text-align: center;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
     border: 2px solid #ccc;
     padding: 10px;
     border-radius: 5px;
 }
 
 .modal-body .bottom-link {
-    background: #ccc;
+    background: #f5f5f5;
     width: 80%;
     padding: 10px;
     margin: 0 auto;
+}
+
+.modal-body .bottom-link span {
+    float: left;
 }
 
 .modal-body .form-control{

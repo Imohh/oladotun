@@ -499,10 +499,10 @@ if($success_message1 != '') {
                                                         <h2><?php echo $p_name; ?></h2>
                                                             
                                                         <ul>
-                                                            <li align="center"><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
-                                                            <li><a href="#"><span><span><i class="fa fa-twitter"></i></span></a></li>
-                                                            <li><a href="#"><span><span><i class="fa fa-instagram"></i></span></a></li>
-                                                            <li><a href="#"><span><span><img src="https://img.icons8.com/ios-glyphs/20/000000/filled-message.png"/></span></a></li>
+                                                            <li align="center"><a href="#"><span><i class="fa fa-facebook"></i></span> facebook</a></li>
+                                                            <li><a href="#"><span><i class="fa fa-twitter"></i></span>twitter</a></li>
+                                                            <li><a href="#"><span><i class="fa fa-instagram"></i></span>instagram</a></li>
+                                                            <li><a href="#"><span><img src="https://img.icons8.com/ios-glyphs/20/000000/filled-message.png"/></span>email</a></li>
                                                         </ul>
 
                                                         <p class="bottom-link"><span><i class="fa fa-share"></i></span>this is the link to this product</p>
