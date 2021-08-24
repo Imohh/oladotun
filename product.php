@@ -347,7 +347,7 @@ if($success_message1 != '') {
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="p-title"><h2 class="animate__fadeIn"><?php echo $p_name; ?></h2></div>
+							<div class="p-title"><h2 class="animate__animated animate__bounce"><?php echo $p_name; ?></h2></div>
 							<div class="p-review">
 								<div class="rating">
                                     <?php

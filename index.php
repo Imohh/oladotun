@@ -138,7 +138,7 @@ foreach ($result as $row)
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="wow fadeInUp">double breasted jacket</h2>
+                <h2 class="animate__fadeInDown">double breasted jacket</h2>
                 <p>checkout the latest fashion trend specifically designed for you</p>
                 <button>shop now</button>
             </div>
