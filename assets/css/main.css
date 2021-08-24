@@ -1279,15 +1279,8 @@ ul.nav-tabs {
     letter-spacing: 0.1em;
 }
 
-.new-select {
-}
-
 .new-select .select2 {
     width: 100%;
-}
-
-.new-select select option {
-    background: green;
 }
 
 .select2:after {
@@ -1295,10 +1288,69 @@ ul.nav-tabs {
 }
 
 .product .p-quantity input[type="number"] {
-    height: 30px;
+    /*height: 30px;
     width: 100px;
     border: 2px solid #c7c7c7;
+    padding-left: 45px;*/
 }
+
+
+/*new shit*/
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  background: #ccc;
+  padding: 10px 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.form-guy #decrease {
+  margin-right: -4px;
+}
+
+.form-guy #increase {
+  margin-left: -4px;
+}
+
+.form-guy #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+
 
 .product .btn-cart {
     margin-bottom: 30px;
@@ -1312,7 +1364,7 @@ ul.nav-tabs {
 
 
 .product .btn-cart1 input[type="number"] {
-    width: 30%;
+    /*width: 30%;*/
 }
 
 .product .btn-cart1 input[type="submit"] {

@@ -347,7 +347,7 @@ if($success_message1 != '') {
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="p-title"><h2><?php echo $p_name; ?></h2></div>
+							<div class="p-title"><h2 class="animate__fadeIn"><?php echo $p_name; ?></h2></div>
 							<div class="p-review">
 								<div class="rating">
                                     <?php
@@ -472,10 +472,39 @@ if($success_message1 != '') {
                             <input type="hidden" name="p_current_price" value="<?php echo $p_current_price; ?>">
                             <input type="hidden" name="p_name" value="<?php echo $p_name; ?>">
                             <input type="hidden" name="p_featured_photo" value="<?php echo $p_featured_photo; ?>">
-							<div class="p-quantity new-select">
-                                <span class="span-product"><?php echo LANG_VALUE_55; ?></span> <br>
+							<!-- <div class="p-quantity new-select">
+                                <span class="span-product"><?//php echo LANG_VALUE_55; ?></span> <br>
 								<input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric">
-							</div>
+							</div> -->
+
+                            <div class="form-guy">
+                                <span class="span-product"><?php echo LANG_VALUE_55; ?></span> <br>
+                              <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                  <input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" id="number"/>
+                                  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            </div><br>
+                            <script>
+                                function increaseValue() {
+                                  var value = parseInt(document.getElementById('number').value, 10);
+                                  value = isNaN(value) ? 0 : value;
+                                  value++;
+                                  document.getElementById('number').value = value;
+                                }
+
+                                function decreaseValue() {
+                                  var value = parseInt(document.getElementById('number').value, 10);
+                                  value = isNaN(value) ? 0 : value;
+                                  value < 1 ? value = 1 : '';
+                                  value--;
+                                  document.getElementById('number').value = value;
+                                }
+                            </script>
+
+
+
+
+
+
 							<div class="btn-cart btn-cart1">
                                 <!-- <input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric"> -->
                                 <input type="submit" value="<?php echo LANG_VALUE_154; ?>" name="form_add_to_cart">
@@ -497,7 +526,7 @@ if($success_message1 != '') {
                                                     <div class="modal-body">
                                                         <p class="title">share this</p>
                                                         <h2><?php echo $p_name; ?></h2>
-                                                            
+
                                                         <ul>
                                                             <li align="center"><a href="#"><span><i class="fa fa-facebook"></i></span> facebook</a></li>
                                                             <li><a href="#"><span><i class="fa fa-twitter"></i></span>twitter</a></li>
@@ -505,7 +534,7 @@ if($success_message1 != '') {
                                                             <li><a href="#"><span><img src="https://img.icons8.com/ios-glyphs/17/000000/filled-message.png"/></span>email</a></li>
                                                         </ul>
 
-                                                        <p class="bottom-link"><span><i class="fa fa-share"></i></span>this is the link to this product</p>
+                                                        <p class="bottom-link"><span><i class="fa fa-share"></i></span>http://localhost/php-ecommerce/product.php?id=<?php echo $row['p_id']; ?></p>
                                                     </div>
                                                 </div>
                                             </div>
