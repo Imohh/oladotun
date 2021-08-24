@@ -505,7 +505,7 @@ if($success_message1 != '') {
                                                             <li><a href="#"><span><span><img src="https://img.icons8.com/ios-glyphs/20/000000/filled-message.png"/></span></a></li>
                                                         </ul>
 
-                                                        <p><span><i class="fa fa-share"></i></span>this is the link to this product</p>
+                                                        <p class="bottom-link"><span><i class="fa fa-share"></i></span>this is the link to this product</p>
                                                     </div>
                                                 </div>
                                             </div>
