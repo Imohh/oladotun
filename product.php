@@ -310,6 +310,9 @@ if($success_message1 != '') {
                 </div>
 
 				<div class="product">
+                    <div class="container">
+
+                        
 					<div class="row">
 						<div class="col-md-8">
 							<ul class="prod-slider">
