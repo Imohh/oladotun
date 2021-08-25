@@ -1173,9 +1173,10 @@ Mobile style's
 
 ul.prod-slider li {
     height: 550px;
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: 60% 100%;
     background-position: top center;
     position: relative;
 }
@@ -1304,7 +1305,8 @@ ul.nav-tabs {
   height: 40px;
   text-align: center;
   vertical-align: middle;
-  background: #ccc;
+  background: #000;
+  color: #fff;
   padding: 10px 0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
