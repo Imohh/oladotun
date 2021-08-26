@@ -70,7 +70,7 @@ foreach ($result as $row) {
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="text-section">
+                <div class="third-text-section">
                     <h2>New Selection</h2>
                     <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress.</p>
                     <img src="assets/img/display.jpg" width="100%">

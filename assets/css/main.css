@@ -2980,3 +2980,18 @@ div.pagination span.disabled {
 .first-about-section .second-image-section h2 {
     font-size: 6em;
 }
+
+.first-about-section .third-text-section{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.first-about-section .third-text-section h2 {
+    font-size: 6em;
+}
+
+
+.first-about-section .third-text-section p {
+    width: 80%;
+    margin: 0 auto;
+}    
