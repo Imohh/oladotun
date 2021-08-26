@@ -86,19 +86,27 @@ foreach ($result as $row) {
     <div class="container">
         <div class="row">
             <div class="col-lg-7">
-                <div class="text-section">
+                <div class="forth-text-section">
                     <h2>Why Dotun</h2>
                     <div class="col-lg-6">
-                        hello world
+                        <i class="fa fa-facebook"></i>
+                        <h4>hello world</h4>
+                        <p>and all those events that require a WOW dress. has made you shine on your</p>
                     </div>
                     <div class="col-lg-6">
-                        hello world
+                        <i class="fa fa-facebook"></i>
+                        <h4>hello world</h4>
+                        <p>and all those events that require a WOW dress. has made you shine on your</p>
                     </div>
                     <div class="col-lg-6">
-                        hello world
+                        <i class="fa fa-facebook"></i>
+                        <h4>hello world</h4>
+                        <p>and all those events that require a WOW dress. has made you shine on your</p>
                     </div>
                     <div class="col-lg-6">
-                        hello world
+                        <i class="fa fa-facebook"></i>
+                        <h4>hello world</h4>
+                        <p>and all those events that require a WOW dress. has made you shine on your</p>
                     </div>
                 </div>
             </div>

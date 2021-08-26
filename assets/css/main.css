@@ -2983,7 +2983,6 @@ div.pagination span.disabled {
 
 .first-about-section .third-text-section{
     text-align: center;
-    padding-bottom: 20px;
 }
 
 .first-about-section .third-text-section h2 {
@@ -2994,4 +2993,17 @@ div.pagination span.disabled {
 .first-about-section .third-text-section p {
     width: 80%;
     margin: 0 auto;
-}    
+    padding-bottom: 40px;
+}
+
+.first-about-section .forth-text-section h2 {
+    font-size: 6em;
+}
+
+.first-about-section .forth-text-section h4 {
+    font-weight: 600;
+}
+
+.first-about-section .forth-text-section p {
+    width: 80%;
+}
