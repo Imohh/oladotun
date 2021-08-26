@@ -24,7 +24,7 @@ foreach ($result as $row) {
         <div class="row">
             <div class="col-lg-5">
                 <div class="image-section">
-                    <img src="assets/img/display.jpg" width="100%">
+                    <img src="assets/img/portrait.jpg" width="100%">
                 </div>
             </div>
             <div class="col-lg-7">
@@ -47,7 +47,7 @@ foreach ($result as $row) {
             <div class="col-lg-5">
                 <div class="second-image-section">
                     <h2>About us</h2>
-                    <img src="assets/img/display.jpg" width="100%">
+                    <img src="assets/img/portrait.jpg" width="100%">
                 </div>
             </div>
             <div class="col-lg-7">
@@ -55,7 +55,7 @@ foreach ($result as $row) {
                     <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women.</p>
 
                     <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women. tion whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women.</p>
-                    <img src="assets/img/display.jpg" width="100%">
+                    <img src="assets/img/portrait.jpg" width="100%">
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@ foreach ($result as $row) {
             </div>
             <div class="col-lg-5">
                 <div class="image-section">
-                    <img src="assets/img/display.jpg" width="100%">
+                    <img src="assets/img/portrait.jpg" width="100%">
                 </div>
             </div>
             
