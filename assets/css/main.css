@@ -2929,84 +2929,87 @@ div.pagination span.disabled {
 
 
 /*PRODUCTS DETAIL PAGE*/
+/*DESKTOP*/
+@media (min-width: 768px) {
 
-.first-about-section {
-    padding: 60px 0;
-}
+    .first-about-section {
+        padding: 60px 0;
+    }
 
-.first-about-section .text-section-first h2 {
-    padding: 20px 0;
-    font-size: 6em;
-    line-height: 1.1;
-}
+    .first-about-section .text-section-first h2 {
+        padding: 20px 0;
+        font-size: 6em;
+        line-height: 1.1;
+    }
 
-.first-about-section .text-section-first p {
-    width: 50%;
-}
+    .first-about-section .text-section-first p {
+        width: 50%;
+    }
 
-.first-about-section .text-section-first button {
-    background: transparent;
-    text-transform: uppercase;
-    font-size: 11px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    color: rgb(36, 36, 36);
-    padding: 13px 30px;
-    text-decoration: none;
-    background: transparent;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(36, 36, 36);
-    border-image: initial;
-}
+    .first-about-section .text-section-first button {
+        background: transparent;
+        text-transform: uppercase;
+        font-size: 11px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        color: rgb(36, 36, 36);
+        padding: 13px 30px;
+        text-decoration: none;
+        background: transparent;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(36, 36, 36);
+        border-image: initial;
+    }
 
-.first-about-section .text-section-first button:hover {
-    background: #000;
-    border: 1px solid #000;
-    color: #fff;
-    transition: 0.4s;
-}
+    .first-about-section .text-section-first button:hover {
+        background: #000;
+        border: 1px solid #000;
+        color: #fff;
+        transition: 0.4s;
+    }
 
-.first-about-section .text-section-second p {
-    width: 70%;
-}
+    .first-about-section .text-section-second p {
+        width: 70%;
+    }
 
-.second-about-right {
-    margin-left: 10%;
-}
+    .second-about-right {
+        margin-left: 10%;
+    }
 
-.first-about-section .second-image-section h2 {
-    font-size: 6em;
-}
+    .first-about-section .second-image-section h2 {
+        font-size: 6em;
+    }
 
-.first-about-section .third-text-section{
-    text-align: center;
-}
+    .first-about-section .third-text-section{
+        text-align: center;
+    }
 
-.first-about-section .third-text-section h2 {
-    font-size: 6em;
-}
+    .first-about-section .third-text-section h2 {
+        font-size: 6em;
+    }
 
-.first-about-section .third-text-section p {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 40px;
-}
+    .first-about-section .third-text-section p {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
 
-.first-about-section .forth-text-section h2 {
-    font-size: 6em;
-}
+    .first-about-section .forth-text-section h2 {
+        font-size: 6em;
+    }
 
-.first-about-section .forth-text-section h4 {
-    font-weight: 600;
-}
+    .first-about-section .forth-text-section h4 {
+        font-weight: 600;
+    }
 
-.first-about-section .forth-text-section p {
-    width: 80%;
+    .first-about-section .forth-text-section p {
+        width: 80%;
+    }
 }
