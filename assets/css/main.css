@@ -2933,3 +2933,13 @@ div.pagination span.disabled {
 .first-about-section {
     padding: 40px 0;
 }
+
+.first-about-section .text-section-first h2 {
+    padding: 20px 0;
+    font-size: 6em;
+    line-height: 1.1;
+}
+
+.first-about-section .text-section-first p {
+    width: 60%;
+}

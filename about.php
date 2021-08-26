@@ -28,9 +28,9 @@ foreach ($result as $row) {
                 </div>
             </div>
             <div class="col-lg-7">
-                <div class="text-section">
+                <div class="text-section-first">
                     <h2>Discover fashion. New collection</h2>
-                    <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress.</p>
+                    <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women.</p>
                 </div>
             </div>
         </div>
