@@ -2941,5 +2941,34 @@ div.pagination span.disabled {
 }
 
 .first-about-section .text-section-first p {
-    width: 60%;
+    width: 50%;
+}
+
+.first-about-section .text-section-first button {
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: rgb(36, 36, 36);
+    padding: 13px 30px;
+    text-decoration: none;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(36, 36, 36);
+    border-image: initial;
+}
+
+.first-about-section .text-section-first button:hover {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    transition: 0.4s;
 }
