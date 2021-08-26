@@ -50,7 +50,7 @@ foreach ($result as $row) {
                     <img src="assets/img/portrait.jpg" width="100%">
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-5 second-about-right">
                 <div class="text-section-second">
                     <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women.</p>
 
@@ -136,18 +136,18 @@ foreach ($result as $row) {
 
 
 
-<div class="page">
+<!-- <div class="page">
     <div class="container">
         <div class="row">            
             <div class="col-md-12">
                 
                 <p>
-                    <?php echo $about_content; ?>
+                    <?//php echo $about_content; ?>
                 </p>
 
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <?php require_once('footer.php'); ?>

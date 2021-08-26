@@ -2931,7 +2931,7 @@ div.pagination span.disabled {
 /*PRODUCTS DETAIL PAGE*/
 
 .first-about-section {
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 .first-about-section .text-section-first h2 {
@@ -2977,6 +2977,10 @@ div.pagination span.disabled {
     width: 70%;
 }
 
+.second-about-right {
+    margin-left: 10%;
+}
+
 .first-about-section .second-image-section h2 {
     font-size: 6em;
 }
@@ -2988,7 +2992,6 @@ div.pagination span.disabled {
 .first-about-section .third-text-section h2 {
     font-size: 6em;
 }
-
 
 .first-about-section .third-text-section p {
     width: 80%;
