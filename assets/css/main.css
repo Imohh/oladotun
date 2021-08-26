@@ -2976,3 +2976,7 @@ div.pagination span.disabled {
 .first-about-section .text-section-second p {
     width: 70%;
 }
+
+.first-about-section .second-image-section h2 {
+    font-size: 6em;
+}
