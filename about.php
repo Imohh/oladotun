@@ -39,7 +39,7 @@ foreach ($result as $row) {
 
 
 
-<!-- SECOND SECTION -->
+<!-- THIRD SECTION -->
 <section class="first-about-section">
     <div class="container">
         <div class="row">
@@ -55,7 +55,36 @@ foreach ($result as $row) {
 </section>
 
 
-
+<!-- FORTH SECTION -->
+<section class="first-about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="text-section">
+                    <h2>Why Dotun</h2>
+                    <div class="col-lg-6">
+                        hello world
+                    </div>
+                    <div class="col-lg-6">
+                        hello world
+                    </div>
+                    <div class="col-lg-6">
+                        hello world
+                    </div>
+                    <div class="col-lg-6">
+                        hello world
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="image-section">
+                    <img src="assets/img/display.jpg" width="100%">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 
 
 
