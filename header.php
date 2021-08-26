@@ -100,6 +100,7 @@ foreach ($result as $row) {
 	<link rel="stylesheet" href="assets/css/tree-menu.css">
 	<link rel="stylesheet" href="assets/css/select2.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/main.scss">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
