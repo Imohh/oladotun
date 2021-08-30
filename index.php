@@ -533,7 +533,7 @@ foreach ($result as $row)
 
 <!-- MY SECOND SECTION -->
 
-<section class="second-home-section">
+<!-- <section class="second-home-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12 second-home-inner">
@@ -545,7 +545,7 @@ foreach ($result as $row)
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <!-- END OF MY SECOND SECTION -->
