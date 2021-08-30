@@ -342,7 +342,7 @@ a:hover {
 .menu > ul > li > ul {
     display: none;
     width: 100%;
-    background: red;
+    background: #f0f0f0;
     padding: 20px;
     position: absolute;
     z-index: 999999;
