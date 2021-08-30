@@ -246,6 +246,42 @@ a:hover {
     background: #fff;
 }
 
+@media (max-width: 600px) {
+    .center-logo {
+        background: green;
+        width: 50%;
+    }
+
+    .center-logo:after {
+    content: "\f067";
+    font-family: "FontAwesome";
+    font-size: 2.5rem;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+/*.menu-dropdown-icon:before {
+    content: "\f067";
+    font-family: "FontAwesome";
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 1.5em 2em;
+    background: #fff;
+    color: #333;
+}*/
+
+
+    .search-area {
+        display: none;
+    }
+}
+
 .menu-mobile {
     display: none;
     padding: 20px;
