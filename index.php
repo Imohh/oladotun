@@ -137,7 +137,7 @@ foreach ($result as $row)
 <section class="little-intro">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12 col-sm-12">
                 <h2 class="animate__fadeInDown">double breasted jacket</h2>
                 <p>checkout the latest fashion trend specifically designed for you</p>
                 <button>shop now</button>
@@ -155,13 +155,13 @@ foreach ($result as $row)
 <section class="first-home-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 first-home-inne">
+            <div class="col-lg-4 col-md-4 col-sm-12 first-home-inne">
                 <div class="first-text">
                     <h2>Men's Fall-Winter 2021</h2>
                     <button>shop now</button>
                 </div>
             </div>
-            <div class="col-lg-8 first-home-inner">
+            <div class="col-lg-8 col-md-8 col-sm-12 first-home-inner">
                 <div class="first-text">
                     
                 </div>

@@ -2492,201 +2492,288 @@ div.pagination span.disabled {
 
 /*HOME PAGE*/
 /*little intro*/
-.little-intro {
-    text-align: center;
-    padding: 30px 0px 70px 0px;
-}
 
-.little-intro h2 {
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    line-height: 36px;
-}
+    .little-intro {
+        text-align: center;
+        padding: 30px 0px 70px 0px;
+    }
 
-.little-intro p {
-    font-size: 17px;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    letter-spacing: 0.1em;
-    line-height: 24px;
-}
+    .little-intro h2 {
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        line-height: 36px;
+    }
 
-.little-intro button {
-    background: transparent;
-    text-transform: uppercase;
-    font-size: 11px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    color: rgb(36, 36, 36);
-    padding: 13px 30px;
-    text-decoration: none;
-    background: transparent;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(36, 36, 36);
-    border-image: initial;
-}
+    .little-intro p {
+        font-size: 17px;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        letter-spacing: 0.1em;
+        line-height: 24px;
+    }
 
-.little-intro button:hover {
-    background: #000;
-    border: 1px solid #000;
-    color: #fff;
-    transition: 0.4s;
-}
+    .little-intro button {
+        background: transparent;
+        text-transform: uppercase;
+        font-size: 11px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        color: rgb(36, 36, 36);
+        padding: 13px 30px;
+        text-decoration: none;
+        background: transparent;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(36, 36, 36);
+        border-image: initial;
+    }
+
+    .little-intro button:hover {
+        background: #000;
+        border: 1px solid #000;
+        color: #fff;
+        transition: 0.4s;
+    }
+
 
 /*first section*/
 
-.first-home-section {
-    margin-bottom: 5%;
+@media (min-width: 1200px) {
+    .first-text {
+        margin-top: 100%;
+    }
 }
 
-.first-bg {
-    margin-top: 5%;
+@media (min-width: 768px) {
+    .first-home-section {
+        margin-bottom: 5%;
+    }
+
+    .first-bg {
+        margin-top: 5%;
+    }
+
+    .first-home-inner {
+        background: url(../img/display.jpg);
+        background-position: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    .first-text {
+        margin-bottom: 5%;
+    }
+
+    .first-text-right {
+        text-align: right;
+    }
+
+    .first-text h2 {
+        font-size: 2rem;
+        font-family: 'Futura Bold', sans-serif;
+        letter-spacing: 0.14em;
+        line-height: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .first-text button {
+        background: transparent;
+        text-transform: uppercase;
+        font-size: 11px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        color: rgb(36, 36, 36);
+        padding: 13px 30px;
+        text-decoration: none;
+        background: transparent;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(36, 36, 36);
+        border-image: initial;
+    }
+
+    .first-text button:hover {
+        background: #000;
+        border: 1px solid #000;
+        color: #fff;
+        transition: 0.4s;
+    }
 }
 
-.first-home-inner {
-    background: url(../img/display.jpg);
-    background-position: 100% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-}
+@media (max-width: 767px) {
+    .first-home-section {
+        margin-bottom: 5%;
+    }
 
-.first-text {
-    margin-top: 100%;
-}
+    .first-bg {
+        margin-top: 5%;
+    }
 
-.first-text-right {
-    text-align: right;
-}
+    .first-home-inner {
+        background: url(../img/display.jpg);
+        background-position: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
 
-.first-text h2 {
-    font-size: 2rem;
-    font-family: 'Futura Bold', sans-serif;
-    letter-spacing: 0.14em;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+    .first-text {
+        margin-bottom: 5%;
+    }
 
-.first-text button {
-    background: transparent;
-    text-transform: uppercase;
-    font-size: 11px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    color: rgb(36, 36, 36);
-    padding: 13px 30px;
-    text-decoration: none;
-    background: transparent;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(36, 36, 36);
-    border-image: initial;
-}
+    .first-text-right {
+        text-align: right;
+    }
 
-.first-text button:hover {
-    background: #000;
-    border: 1px solid #000;
-    color: #fff;
-    transition: 0.4s;
+    .first-text h2 {
+        font-size: 2rem;
+        font-family: 'Futura Bold', sans-serif;
+        letter-spacing: 0.14em;
+        line-height: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .first-text button {
+        background: transparent;
+        text-transform: uppercase;
+        font-size: 11px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        color: rgb(36, 36, 36);
+        padding: 13px 30px;
+        text-decoration: none;
+        background: transparent;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(36, 36, 36);
+        border-image: initial;
+    }
+
+    .first-text button:hover {
+        background: #000;
+        border: 1px solid #000;
+        color: #fff;
+        transition: 0.4s;
+    }
 }
 
 /*second section*/
 
-.second-home-section {
-    margin-top: 5%;
-    margin-bottom: 5%;
+
+@media (max-width: 991px) {
+    .second-text {
+        background: red;
+    }
 }
 
-.second-home-section .second-home-inner {
-    background: url(../img/display.jpg);
-    background-position: 100% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-}
 
-.second-text {
-    width: 49%;
-    margin-top: 17%;
-    margin-left: 5%;
-}
 
-.second-text h2 {
-    font-weight: 900;
-    font-size: 4rem;
-    color: #000;
-    margin-bottom: 5%;
-}
 
-.second-text button {
-    background: transparent;
-    text-transform: uppercase;
-    font-size: 11px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    color: rgb(36, 36, 36);
-    padding: 13px 30px;
-    text-decoration: none;
-    background: transparent;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(36, 36, 36);
-    border-image: initial;
-}
 
-.second-text .first-button {
-    background: #000;
-    text-transform: uppercase;
-    font-size: 11px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    padding: 13px 30px;
-    text-decoration: none;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(36, 36, 36);
-    border-image: initial;
-}
 
-.second-text button:hover {
-    background: #fff;
-    border: 1px solid #fff;
-    color: #000;
-    transition: 0.4s;
-}
+@media (min-width: 992px) {
+    .second-home-section {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 
+    .second-home-section .second-home-inner {
+        background: url(../img/display.jpg);
+        background-position: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    .second-text {
+        width: 49%;
+        margin-top: 17%;
+        margin-left: 5%;
+    }
+
+    .second-text h2 {
+        font-weight: 900;
+        font-size: 4rem;
+        color: #000;
+        margin-bottom: 5%;
+    }
+
+    .second-text button {
+        background: transparent;
+        text-transform: uppercase;
+        font-size: 11px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        color: rgb(36, 36, 36);
+        padding: 13px 30px;
+        text-decoration: none;
+        background: transparent;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(36, 36, 36);
+        border-image: initial;
+    }
+
+    .second-text .first-button {
+        background: #000;
+        text-transform: uppercase;
+        font-size: 11px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        color: #fff;
+        padding: 13px 30px;
+        text-decoration: none;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(36, 36, 36);
+        border-image: initial;
+    }
+
+    .second-text button:hover {
+        background: #fff;
+        border: 1px solid #fff;
+        color: #000;
+        transition: 0.4s;
+    }
+}
 
 
 
