@@ -17,7 +17,7 @@ $dbuser = 'root';
 // Database Password
 $dbpass = '';
 
-// Defining base url
+// Defining base url for LOGOUT AND LOGIN
 define("BASE_URL", "http://fashionys.com/");
 
 // Getting Admin url
