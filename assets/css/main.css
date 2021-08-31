@@ -221,6 +221,9 @@ a:hover {
     color: #000;
 }
 
+.header .right ul li .name-tag{    text-transform: capitalize;
+}
+
 .header .right ul li a {
 	color: #000;
     display: block;
