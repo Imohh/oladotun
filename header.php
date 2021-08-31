@@ -314,7 +314,7 @@ foreach ($result as $row) {
 					}
 					?>
 
-					<li><a href="cart.php"><img src="https://img.icons8.com/ios/15/000000/shopping-bag.png"/><?php echo LANG_VALUE_19; ?> (<?php echo LANG_VALUE_1; ?><?php
+					<li><a href="cart.php"><img src="https://img.icons8.com/ios/15/000000/shopping-bag.png"/><!-- <?//php echo LANG_VALUE_19; ?> --> (<?php echo LANG_VALUE_1; ?><?php
 					if(isset($_SESSION['cart_p_id'])) {
 						$table_total_price = 0;
 						$i=0;

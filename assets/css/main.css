@@ -207,6 +207,7 @@ a:hover {
 	display: table-cell;
 	vertical-align: middle;
 	padding-right: 0;
+    background: red;
 }
 
 .header .right ul {

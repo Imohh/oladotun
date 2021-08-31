@@ -221,6 +221,39 @@ foreach ($result as $row)
 </div>
 
 
+<!-- <script type="text/javascript">
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+myModal.show()
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- LATEST PRODUCTS -->
 <?php if($home_latest_product_on_off == 1): ?>
