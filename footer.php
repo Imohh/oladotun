@@ -123,7 +123,7 @@ This link will be active only for 24 hours.
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
+			<div class="col-md-3 col-sm-6 col-xs-12  footer-end">
 				<h4>About Dotun</h4>
 				<p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and many more.</p>
 				<ul class="d-flex flex-row align-items-center justify-content-start">
