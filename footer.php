@@ -152,7 +152,7 @@ This link will be active only for 24 hours.
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>Sign up for Dotun updates</h4>
 				<p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and many more.</p>
-				<ul class="d-flex flex-row align-items-center justify-content-start" style="list-style-type: none;">
+				<ul class="d-flex flex-row align-items-center justify-content-start">
 					<li><a href="#"><img src="assets/img/card_1.jpg" alt=""></a></li>
 					<li><a href="#"><img src="assets/img/card_2.jpg" alt=""></a></li>
 					<li><a href="#"><img src="assets/img/card_3.jpg" alt=""></a></li>

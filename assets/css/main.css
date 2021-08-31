@@ -1151,6 +1151,21 @@ Mobile style's
     line-height: 24px;
 }
 
+
+.footer-bottom .footer-end .d-flex li {
+    margin-right: 2%;
+    float: left;
+}
+
+.footer-bottom .footer-end .d-flex  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+
 .footer-bottom .footer-end ul {
     list-style-type: none;
     text-align: left;
