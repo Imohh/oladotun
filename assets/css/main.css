@@ -255,7 +255,7 @@ a:hover {
         width: 50%;
     }
 
-    .center-logo:after {
+    /*.center-logo:after {
     content: "\f067";
     font-family: "FontAwesome";
     font-size: 2.5rem;
@@ -266,7 +266,7 @@ a:hover {
     -webkit-transform: translateY(-25%);
     -ms-transform: translateY(-25%);
     transform: translateY(-25%);
-}
+}*/
 
 /*.menu-dropdown-icon:before {
     content: "\f067";
@@ -1266,6 +1266,22 @@ ul.prod-slider li a {
 ul.nav-tabs {
     margin-top: 50px;
 }
+
+@media (max-width: 600px) {
+    .product #prod-pager {
+        background: green;
+    }
+
+    .product .p-title h2 {
+        width: 100%;
+        display: none;
+    }
+
+    .prod-pager {
+        background: blue;
+    }
+}
+
 .product .p-title h2 {
     color: #000;
     font-family: 'Futura Extra Black', sans-serif;

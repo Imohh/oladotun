@@ -149,7 +149,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                             $prod_table_ecat_ids[] = $row['ecat_id'];
                         }
 
-                        for($ii=0;$ii<count($final_ecat_ids);$ii++):
+                        for($ii=1;$ii<count($final_ecat_ids);$ii++):
                             if(in_array($final_ecat_ids[$ii],$prod_table_ecat_ids)) {
                                 $prod_count++;
                             }

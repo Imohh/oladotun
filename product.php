@@ -333,7 +333,7 @@ if($success_message1 != '') {
                                 }
                                 ?>
 							</ul>
-							<div id="prod-pager">
+							<div id="prod-pager" class="prod-pager">
 								<a data-slide-index="0" href=""><div class="prod-pager-thumb" style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>"></div></a>
                                 <?php
                                 $i=1;
@@ -349,7 +349,7 @@ if($success_message1 != '') {
                                 ?>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-12"><br>
 							<div class="p-title"><h2 class="animate__animated animate__bounce"><?php echo $p_name; ?></h2></div>
 							<div class="p-review">
 								<div class="rating">
