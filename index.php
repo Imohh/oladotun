@@ -179,9 +179,8 @@ foreach ($result as $row)
 
 
 
-
-<div class="container">
-    <div class="row">
+<div class="container" id="main">
+    <div class="row" id="pop-up">
         <div class="col-md-12">
             <div class="modal-box">
                 <!-- Button trigger modal -->
