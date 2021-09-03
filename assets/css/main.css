@@ -3471,7 +3471,7 @@ Layout - Offcanvas
   color:#eaeaea;
   width: 300px;
   overflow-x: hidden;
-   box-shadow: 0 3.4px 2.7px rgb(0 0 0 / 1%), 0 8.7px 6.9px rgb(0 0 0 / 1%), 0 17.7px 14.2px rgb(0 0 0 / 1%), 0 36.5px 29.2px rgb(0 0 0 / 1%), 0 100px 80px rgb(0 0 0 / 2%);
+  box-shadow: 0 3.4px 2.7px rgb(0 0 0 / 1%), 0 8.7px 6.9px rgb(0 0 0 / 1%), 0 17.7px 14.2px rgb(0 0 0 / 1%), 0 36.5px 29.2px rgb(0 0 0 / 1%), 0 100px 80px rgb(0 0 0 / 2%);
 }
 
 .offcanvas-leftside {
@@ -3508,8 +3508,9 @@ Layout - Offcanvas
   height: 28px;
   line-height: 28px;
   text-align: center;
-  background:#fff;
-  border-radius: 50%;
+  color: #000;
+/*  background:#fff;
+  border-radius: 50%;*/
   transition: all 0.3s ease 0s;
 }
 .offcanvas-close:hover {
