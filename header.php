@@ -394,13 +394,8 @@ foreach ($result as $row) {
                         <div class="main-menu">
                             <nav>
                                 <ul>
-                                    <li class="has-dropdown">
-                                        <a class="active main-menu-link" href="index.html">Home <i class="fa fa-angle-down"></i></a>
-                                        <!-- Sub Menu -->
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Link Variable 0</a></li>
-                                            <li><a href="#">Link Variable 0</a></li>
-                                        </ul>
+                                    <li>
+                                        <a class="active main-menu-link" href="index.html">Home <!-- <i class="fa fa-angle-down"></i> --></a> 
                                     </li>
                                     <?php
 										$statement = $pdo->prepare("SELECT * FROM tbl_top_category WHERE show_on_menu=1");
@@ -442,99 +437,29 @@ foreach ($result as $row) {
 							?>
 
 
+							<?php
+							$statement = $pdo->prepare("SELECT * FROM tbl_page WHERE id=1");
+							$statement->execute();
+							$result = $statement->fetchAll(PDO::FETCH_ASSOC);		
+							foreach ($result as $row) {
+								$about_title = $row['about_title'];
+								$faq_title = $row['faq_title'];
+								$blog_title = $row['blog_title'];
+								$contact_title = $row['contact_title'];
+								$pgallery_title = $row['pgallery_title'];
+								$vgallery_title = $row['vgallery_title'];
+							}
+							?>
+
+							<li><a href="about.php"><?php echo $about_title; ?></a></li>
+							<li><a href="faq.php"><?php echo $faq_title; ?></a></li>
+
+							<li><a href="contact.php"><?php echo $contact_title; ?></a></li>
 
 
 
 
-                                    <li class="has-dropdown has-megaitem">
-                                        <a href="product-details-default.html">Shop <i class="fa fa-angle-down"></i></a>
-                                        <!-- Mega Menu -->
-                                        <div class="mega-menu">
-                                            <ul class="mega-menu-inner">
-                                                <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Shop Layouts</a>
-                                                    <ul class="mega-menu-sub">
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Other Pages</a>
-                                                    <ul class="mega-menu-sub">
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Product Types</a>
-                                                    <ul class="mega-menu-sub">
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                        <li><a href="#">Link Variable</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Product Types</a>
-                                                    <ul class="mega-menu-sub">
-                                                        <li><a href="#">Link Variable</a></li>
-														 <li><a href="#">Link Variable</a></li>
-														 <li><a href="#">Link Variable</a></li>
-														 <li><a href="#">Link Variable</a></li>
-														 <li><a href="#">Link Variable</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                            <div class="menu-banner">
-                                                <a href="" class="menu-banner-link">
-                                                    <img class="menu-banner-img" src="assets/banner.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="has-dropdown">
-                                        <a href="blog-single-sidebar-left.html">Blog <i class="fa fa-angle-down"></i></a>
-                                        <!-- Sub Menu -->
-                                        <ul class="sub-menu">
-											<div class="menu-banner mb-3">
-                                                <a href="" class="menu-banner-link">
-                                                    <img class="menu-banner-img" src="assets/11.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <li><a href="#">Link Variable 1</a></li>
-                                            <li><a href="#">Link Variable 1</a></li>
-                                            <li><a href="#">Link Variable 1</a></li>
-                                            <li><a href="#">Link Variable 1</a></li>
-                                            <li><a href="#">Link Variable 1</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-dropdown">
-                                        <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                                        <!-- Sub Menu -->
-                                        <ul class="sub-menu">
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="faq.html">Frequently Questions</a></li>
-                                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="about-us.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact-us.html">Contact Us</a>
-                                    </li>
+                                    
                                 </ul>
                             </nav>
                         </div> <!-- Header Main Menu Start -->
@@ -576,11 +501,11 @@ foreach ($result as $row) {
                                 <svg class="d-block" width="42" height="42" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path></svg>
                             </a>
                         </div>
-                        <!-- <div class="mobile-header--left" >
+                        <div class="mobile-header--left" >
                             <a href="" class="mobile-logo-link">
                                 <svg class="d-block" width="42" height="42" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path></svg>
                             </a>
-                        </div> -->
+                        </div>
                         <div class="mobile-header--right">
                             <a href="#mobile-menu-offcanvas" class="mobile-menu offcanvas-toggle">
                                 <span class="mobile-menu-dash"></span>
@@ -712,3 +637,694 @@ foreach ($result as $row) {
         </div> <!-- End Offcanvas Mobile Menu Wrapper -->
     </div> <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+	
+
+
+/*NEW NAVBAR DESIGN*/
+@charset "UTF-8";
+/*Header Bottom Area*/
+.header-bottom {
+    background: #fff;
+    position: relative;
+    box-shadow: 0 3.4px 2.7px rgb(0 0 0 / 1%), 0 8.7px 6.9px rgb(0 0 0 / 1%), 0 17.7px 14.2px rgb(0 0 0 / 1%), 0 36.5px 29.2px rgb(0 0 0 / 1%), 0 100px 80px rgb(0 0 0 / 2%);
+}
+
+.sticky-header.sticky {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  background: #333;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  animation-name: fadeInDown;
+  animation-duration: 900ms;
+  animation-timing-function: cubic-bezier(0.2, 1, 0.22, 1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  border-bottom: 0;
+}
+
+.main-menu {
+  position: relative;
+}
+.main-menu nav > ul > li {
+  position: relative;
+  display: inline-block;
+}
+.main-menu nav > ul > .has-dropdown {
+  margin-right: 5px;
+}
+.main-menu nav > ul > .has-dropdown:last-child {
+  margin-right: 0;
+}
+.main-menu nav > ul > .has-megaitem {
+  position: static;
+}
+.main-menu nav > ul > li > a {
+  display: block;
+  line-height: 24px;
+  padding: 15px 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+.main-menu nav > ul > li > a:hover, .main-menu nav > ul > li > a.active {
+  /*background: red;*/
+  color: #333;
+}
+
+.sub-menu > li > a,
+.mega-menu-sub > li > a {
+  font-weight: 400;
+  display: block;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: #666;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.sub-menu > li > a::after,
+.mega-menu-sub > li > a::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translate(0px, -50%);
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #261146;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+}
+.sub-menu > li > a:hover,
+.mega-menu-sub > li > a:hover {
+  color: #261146;
+  transform: translateX(10px);
+}
+.sub-menu > li > a:hover::after,
+.mega-menu-sub > li > a:hover::after {
+  transform: translate(-10px, -50%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.sub-menu {
+  position: absolute;
+  min-width: 230px;
+  padding: 25px 20px;
+  background: #FFF;
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
+  transform: perspective(600px) rotateX(-20deg);
+  transform-origin: 0 0 0;
+  left: 0;
+  right: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 99;
+  top: 100%;
+  text-align: left;
+}
+
+.mega-menu {
+  position: absolute;
+  min-width: 100%;
+  padding: 25px 30px 30px 30px;
+  background: #FFF;
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
+  transform: perspective(600px) rotateX(-20deg);
+  transform-origin: 0 0 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 99;
+  top: 100%;
+  text-align: left;
+}
+
+.mega-menu-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mega-menu-item-title {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 13px;
+  color: #333;
+}
+.mega-menu-item-title:hover {
+  color: #261146;
+}
+
+.mega-menu-sub > li {
+  display: block;
+}
+
+.main-menu nav > ul > li:hover .sub-menu,
+.main-menu nav > ul > li:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: perspective(600px) rotateX(0deg);
+}
+
+.menu-banner {
+  margin-top: 20px;
+}
+.menu-banner > a {
+  display: block;
+  width: 100%;
+}
+.menu-banner img {
+  width: 100%;
+}
+
+.mobile-header-wrapper {
+  padding-right: 25px;
+  padding-left: 20px;
+}
+
+.mobile-header--left {
+    float: right;
+}
+
+.mobile-menu {
+    float: left;
+  border: 1px solid #000;
+  padding: 5px;
+  display: block;
+  border-radius: 4px;
+}
+
+.mobile-menu-dash {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*****************************
+Layout - Offcanvas
+*****************************/
+.offcanvas {
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease 0s;
+  transform: translateX(100%);
+  box-shadow: none;
+  background: #212121;
+  color:#eaeaea;
+  width: 300px;
+  overflow-x: hidden;
+  box-shadow: 0 3.4px 2.7px rgb(0 0 0 / 1%), 0 8.7px 6.9px rgb(0 0 0 / 1%), 0 17.7px 14.2px rgb(0 0 0 / 1%), 0 36.5px 29.2px rgb(0 0 0 / 1%), 0 100px 80px rgb(0 0 0 / 2%);
+}
+
+.offcanvas-leftside {
+  left: 0%;
+  transform: translateX(-100%);
+}
+
+.offcanvas-rightside {
+  right: 0%;
+  transform: translateX(100%);
+}
+
+.offcanvas.offcanvas-open {
+  transform: translateX(0);
+}
+
+.offcanvas-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.offcanvas-header {
+  margin-bottom: 30px;
+}
+
+.offcanvas-close {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+/*  background: #fff;
+  border-radius: 50%;*/
+  transition: all 0.3s ease 0s;
+}
+.offcanvas-close:hover {
+  color: #261146;
+  border-color: #261146;
+}
+
+.offcanvas-title {
+  margin-bottom: 40px;
+}
+
+/*mobile-menu Top Area*/
+.mobile-menu-top {
+  font-size: 13px;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mobile-menu-user-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mobile-menu-user-menu > li {
+  margin-right: 40px;
+  position: relative;
+}
+.mobile-menu-user-menu > li:last-child {
+  margin-right: 0;
+}
+.mobile-menu-user-menu > li::after {
+  position: absolute;
+  content: "|";
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc(0% - 20px);
+}
+.mobile-menu-user-menu > li:last-child::after {
+  display: none;
+}
+.mobile-menu-user-menu > li > a {
+  display: inline-block;
+  line-height: 46px;
+  color: #666 !important;
+}
+.mobile-menu-user-menu > li > a:hover {
+  color: #261146;
+}
+
+.has-mobile-user-dropdown {
+  position: relative;
+  padding-right: 15px;
+}
+.has-mobile-user-dropdown::before {
+  content: "";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-weight: 400;
+}
+
+.mobile-user-sub-menu {
+  position: absolute;
+  top: calc(100%);
+  left: 50%;
+  transform: translate(-50%, -30px);
+  padding: 10px 15px;
+  width: 160px;
+  background: #FFF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+}
+.mobile-user-sub-menu > li {
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding: 5px 0;
+}
+.mobile-user-sub-menu > li:last-child {
+  border-bottom: none;
+}
+.mobile-user-sub-menu > li > a {
+  position: relative;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+.mobile-user-sub-menu > li > a:hover {
+  color: #261146;
+}
+
+.user-sub-menu-link-icon {
+  padding-right: 5px;
+}
+
+.has-mobile-user-dropdown:hover .mobile-user-sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/*Mobile Menu Center Area*/
+.mobile-menu-customer-support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Futura", sans-serif;
+}
+
+.mobile-menu-customer-support-icon {
+  max-width: 50px;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.mobile-menu-customer-support-icon img {
+  width: 100%;
+}
+
+.mobile-menu-customer-support-text-phone {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  transition: all 0.3s ease 0s;
+}
+.mobile-menu-customer-support-text-phone:hover {
+  color: #261146;
+}
+
+.mobile-menu-customer-support-text {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.mobile-action-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-action-icon-item {
+  margin-right: 40px;
+}
+.mobile-action-icon-item:last-child {
+  margin-right: 0;
+}
+
+.mobile-action-icon-link {
+  position: relative;
+  font-size: 27px;
+  color: #333;
+  transition: all 0.3s ease 0s;
+}
+.mobile-action-icon-link:hover {
+  color: #261146;
+}
+
+.mobile-action-icon-item-count {
+  position: absolute;
+  top: 0;
+  right: calc(0% - 10px);
+  font-size: 11px;
+  display: inline-block;
+  background: #333;
+  color: #FFF;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.mobile-action-icon-link:hover .mobile-action-icon-item-count {
+  background: #261146;
+}
+
+/*Mobile Menu Bottom Area*/
+.mobile-menu-bottom {
+    position: fixed;
+    bottom: 5%;
+}
+.offcanvas-menu {
+  margin: 20px 0;
+}
+
+.offcanvas-menu li {
+  position: relative;
+  padding: 5px 5px;
+}
+
+.offcanvas-menu > ul > li {
+  border-bottom: 1px solid transparent;
+}
+
+.offcanvas-menu > ul > li:last-child {
+  border-bottom: none;
+}
+
+.offcanvas-menu li a {
+  display: block;
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+.offcanvas-menu li a:hover {
+  color: #ddd;
+}
+
+.offcanvas-menu li .mobile-sub-menu {
+  display: none;
+}
+
+.offcanvas-menu-expand::after {
+  content: "";
+  position: absolute;
+  font-family: "FontAwesome";
+  right: 0;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.offcanvas-menu .active > .offcanvas-menu-expand:last-child,
+.sub-menu > .active .offcanvas-menu-expand:last-child {
+  border-bottom: none;
+}
+
+.offcanvas-menu .active > .offcanvas-menu-expand::after,
+.sub-menu > .active .offcanvas-menu-expand::after {
+  color: #777;
+  content: "";
+}
+
+.mobile-menu-email {
+  color: #999;
+  text-align: center;
+  display: block;
+}
+.mobile-menu-email:hover {
+  color: #261146;
+}
+
+.mobile-menu-social {
+  margin-top: 25px;
+  text-align: center;
+}
+.mobile-menu-social > li {
+  display: inline-block;
+  margin-right: 13px;
+}
+.mobile-menu-social > li:last-child {
+  margin-right: 0px;
+}
+.mobile-menu-social > li > a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  color: #FFF !important;
+}
+.mobile-menu-social > li > a:hover {
+  opacity: 0.7;
+}
+.mobile-menu-social > li > a.facebook {
+  background: #4867AA;
+}
+.mobile-menu-social > li > a.twitter {
+  background: #1DA1F2;
+}
+.mobile-menu-social > li > a.youtube {
+  background: #FE0000;
+}
+.mobile-menu-social > li > a.pinterest {
+  background: #BD081B;
+}
+.mobile-menu-social > li > a.instagram {
+  background: #B23A94;
+}
+
+.offcanvas-cart-item-single {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.offcanvas-cart-item-single:last-child {
+  margin-bottom: 0;
+}
+
+.offcanvas-cart-item-block {
+  display: flex;
+  align-items: center;
+}
+
+.offcanvas-cart-item-image-link {
+  width: 90px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  margin-right: 20px;
+}
+
+.offcanvas-cart-image {
+  width: 100%;
+}
+
+.offcanvas-cart-item-link {
+  display: block;
+  font-weight: 700;
+}
+
+.offcanvas-cart-item-details {
+  font-family: "Futura", sans-serif;
+}
+
+.offcanvas-cart-total-price {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Futura", sans-serif;
+}
+
+.offcanvas-cart-total-price-text {
+  font-weight: 700;
+}
+
+.offcanvas-cart-action-button-list {
+  margin-bottom: 25px;
+  display: block;
+}
+
+.offcanvas-cart-action-button-link {
+  display: block;
+  background: #000;
+  color: #FFF;
+  padding: 10px 30px;
+  text-align: center;
+  font-weight: 600;
+}
+.offcanvas-cart-action-button-link:hover {
+  background: #261146;
+  color: #FFF;
+}
+
+.offcanvas-wishlist-item-single {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.offcanvas-wishlist-item-single:last-child {
+  margin-bottom: 0;
+}
+
+.offcanvas-wishlist-item-block {
+  display: flex;
+  align-items: center;
+}
+
+.offcanvas-wishlist-item-image-link {
+  width: 90px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  margin-right: 20px;
+}
+
+.offcanvas-wishlist-image {
+  width: 100%;
+}
+
+.offcanvas-wishlist-item-link {
+  display: block;
+  font-weight: 700;
+}
+
+.offcanvas-wishlist-item-details {
+  font-family: "Raleway", sans-serif;
+}
+
+.offcanvas-wishlist-total-price-text {
+  font-weight: 700;
+}
+
+.offcanvas-wishlist-action-button {
+  margin-top: 40px;
+}
+
+.offcanvas-wishlist-action-button-list {
+  margin-bottom: 25px;
+  display: block;
+}
+
+.offcanvas-wishlist-action-button-link {
+  display: block;
+  background: #000;
+  color: #FFF;
+  padding: 10px 30px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.offcanvas-wishlist-action-button-link:hover {
+  background: #261146;
+  color: #FFF;
+}
+</style>
