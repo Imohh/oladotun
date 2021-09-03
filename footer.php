@@ -205,6 +205,9 @@ foreach ($result as $row) {
 <script src="assets/js/select2.full.min.js"></script>
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/customs.js"></script>
+    <script src="assetss/js/jquery-3.5.1.min.js"></script>
+    <!-- Main JS -->
+    <script src="assetss/js/main.js"></script>
 <script>
 	function confirmDelete()
 	{
