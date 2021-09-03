@@ -353,37 +353,72 @@ foreach ($result as $row) {
 </div>
 
 
+
+
+
+
+
 <!-- MENU LINKS -->
 
-<div class="nav">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 pl_0 pr_0">
-				<div class="menu-container">
-					<div class="menu">
-						<div class="center-logo">
-							<div class="center-logos">
-								<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a>
-							</div>
-						</div>
-						<ul>
-							<li><a href="index.php">Home</a></li>
-							
-							<?php
-							$statement = $pdo->prepare("SELECT * FROM tbl_top_category WHERE show_on_menu=1");
-							$statement->execute();
-							$result = $statement->fetchAll(PDO::FETCH_ASSOC);
-							foreach ($result as $row) {
-								?>
-								<li><a href="product-category.php?id=<?php echo $row['tcat_id']; ?>&type=top-category"><?php echo $row['tcat_name']; ?></a>
-									<ul>
-										<?php
-										$statement1 = $pdo->prepare("SELECT * FROM tbl_mid_category WHERE tcat_id=?");
-										$statement1->execute(array($row['tcat_id']));
-										$result1 = $statement1->fetchAll(PDO::FETCH_ASSOC);
-										foreach ($result1 as $row1) {
+`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ...:::: Start Header Section:::... -->
+    <header class="header-section d-lg-block d-none">
+        <!-- Start Bottom Area -->
+        <div class="header-bottom sticky-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Header Main Menu -->
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li class="has-dropdown">
+                                        <a class="active main-menu-link" href="index.html">Home <i class="fa fa-angle-down"></i></a>
+                                        <!-- Sub Menu -->
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Link Variable 0</a></li>
+                                            <li><a href="#">Link Variable 0</a></li>
+                                        </ul>
+                                    </li>
+                                    <?php
+										$statement = $pdo->prepare("SELECT * FROM tbl_top_category WHERE show_on_menu=1");
+										$statement->execute();
+										$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+										foreach ($result as $row) {
+									?>
+									<li class="has-dropdown">
+										<a href="product-category.php?id=<?php echo $row['tcat_id']; ?>&type=top-category"><?php echo $row['tcat_name']; ?></a>
+                                        <ul class="sub-menu">
+											<?php
+												$statement1 = $pdo->prepare("SELECT * FROM tbl_mid_category WHERE tcat_id=?");
+												$statement1->execute(array($row['tcat_id']));
+												$result1 = $statement1->fetchAll(PDO::FETCH_ASSOC);
+												foreach ($result1 as $row1) {
 											?>
-											<li><a href="product-category.php?id=<?php echo $row1['mcat_id']; ?>&type=mid-category"><?php echo $row1['mcat_name']; ?></a>
+											<li>
+												<a href="product-category.php?id=<?php echo $row1['mcat_id']; ?>&type=mid-category"><?php echo $row1['mcat_name']; ?></a>
 												<ul>
 													<?php
 													$statement2 = $pdo->prepare("SELECT * FROM tbl_end_category WHERE mcat_id=?");
@@ -406,41 +441,269 @@ foreach ($result as $row) {
 							}
 							?>
 
-							<?php
-							$statement = $pdo->prepare("SELECT * FROM tbl_page WHERE id=1");
-							$statement->execute();
-							$result = $statement->fetchAll(PDO::FETCH_ASSOC);		
-							foreach ($result as $row) {
-								$about_title = $row['about_title'];
-								$faq_title = $row['faq_title'];
-								$blog_title = $row['blog_title'];
-								$contact_title = $row['contact_title'];
-								$pgallery_title = $row['pgallery_title'];
-								$vgallery_title = $row['vgallery_title'];
-							}
-							?>
-
-							<li><a href="about.php"><?php echo $about_title; ?></a></li>
-							<li><a href="faq.php"><?php echo $faq_title; ?></a></li>
-
-							<li><a href="contact.php"><?php echo $contact_title; ?></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
 
 
 
 
+                                    <li class="has-dropdown has-megaitem">
+                                        <a href="product-details-default.html">Shop <i class="fa fa-angle-down"></i></a>
+                                        <!-- Mega Menu -->
+                                        <div class="mega-menu">
+                                            <ul class="mega-menu-inner">
+                                                <!-- Mega Menu Sub Link -->
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-menu-item-title">Shop Layouts</a>
+                                                    <ul class="mega-menu-sub">
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Mega Menu Sub Link -->
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-menu-item-title">Other Pages</a>
+                                                    <ul class="mega-menu-sub">
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Mega Menu Sub Link -->
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-menu-item-title">Product Types</a>
+                                                    <ul class="mega-menu-sub">
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                        <li><a href="#">Link Variable</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Mega Menu Sub Link -->
+                                                <li class="mega-menu-item">
+                                                    <a href="#" class="mega-menu-item-title">Product Types</a>
+                                                    <ul class="mega-menu-sub">
+                                                        <li><a href="#">Link Variable</a></li>
+														 <li><a href="#">Link Variable</a></li>
+														 <li><a href="#">Link Variable</a></li>
+														 <li><a href="#">Link Variable</a></li>
+														 <li><a href="#">Link Variable</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <div class="menu-banner">
+                                                <a href="" class="menu-banner-link">
+                                                    <img class="menu-banner-img" src="assets/banner.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="blog-single-sidebar-left.html">Blog <i class="fa fa-angle-down"></i></a>
+                                        <!-- Sub Menu -->
+                                        <ul class="sub-menu">
+											<div class="menu-banner mb-3">
+                                                <a href="" class="menu-banner-link">
+                                                    <img class="menu-banner-img" src="assets/11.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <li><a href="#">Link Variable 1</a></li>
+                                            <li><a href="#">Link Variable 1</a></li>
+                                            <li><a href="#">Link Variable 1</a></li>
+                                            <li><a href="#">Link Variable 1</a></li>
+                                            <li><a href="#">Link Variable 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                                        <!-- Sub Menu -->
+                                        <ul class="sub-menu">
+                                            <li><a href="service.html">Service</a></li>
+                                            <li><a href="faq.html">Frequently Questions</a></li>
+                                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                            <li><a href="404.html">404 Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="about-us.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div> <!-- Header Main Menu Start -->
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Bottom Area -->
+    </header> <!-- ...:::: End Header Section:::... -->
+
+
+<style>
+	@media (min-width: 767px) {
+		.mobile-header-section {
+			background: red;
+			display: none;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.header-section {
+			display: none;
+		}
+	}
+
+</style>
 
 
 
 
+    <!-- ...:::: Start Mobile Header Section:::... -->
+    <div class="mobile-header-section d-block d-lg-none">
+        <!-- Start Mobile Header Wrapper -->
+        <div class="mobile-header-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <div class="mobile-header--left">
+                            <a href="" class="mobile-logo-link">
+                                <svg class="d-block" width="42" height="42" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path></svg>
+                            </a>
+                        </div>
+                        <div class="mobile-header--right">
+                            <a href="#mobile-menu-offcanvas" class="mobile-menu offcanvas-toggle">
+                                <span class="mobile-menu-dash"></span>
+                                <span class="mobile-menu-dash"></span>
+                                <span class="mobile-menu-dash"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Mobile Header Wrapper -->
+    </div> <!-- ...:::: Start Mobile Header Section:::... -->
 
+    <!-- ...:::: Start Offcanvas Mobile Menu Section:::... -->
+    <div id="mobile-menu-offcanvas" class="offcanvas offcanvas-leftside offcanvas-mobile-menu-section">
+        <!-- Start Offcanvas Header -->
+        <div class="offcanvas-header text-right">
+            <button class="offcanvas-close"><i class="fa fa-times"></i></button>
+        </div> <!-- End Offcanvas Header -->
+        <!-- Start Offcanvas Mobile Menu Wrapper -->
+        <div class="offcanvas-mobile-menu-wrapper">
+            <!-- Start Mobile Menu User Top -->
+            <div class="mobile-menu-top">
+                <span>Welcome to our store!</span>
+            </div> <!-- End Mobile Menu User Top -->
+            <!-- Start Mobile Menu Center -->
+            <div class="mobile-menu-center">
+                <!-- Start Mobile Menu Nav -->
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li>
+                            <a href="#"><span>Home</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="#">Link Variable 0</a></li>
+                                <li><a href="#">Link Variable 0</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Shop</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Shop Layout</a>
+                                    <ul class="mobile-sub-menu">
+										<li><a href="#">Link Variable 1</a></li>
+										<li><a href="#">Link Variable 1</a></li>
+										<li><a href="#">Link Variable 1</a></li>
+										<li><a href="#">Link Variable 1</a></li>
+										<li><a href="#">Link Variable 1</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Shop Pages</a>
+                                    <ul class="mobile-sub-menu">
+										<li><a href="#">Link Variable 2</a></li>
+										<li><a href="#">Link Variable 2</a></li>
+										<li><a href="#">Link Variable 2</a></li>
+										<li><a href="#">Link Variable 2</a></li>
+										<li><a href="#">Link Variable 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Product Single</a>
+                                    <ul class="mobile-sub-menu">
+										<li><a href="#">Link Variable 3</a></li>
+										<li><a href="#">Link Variable 3</a></li>
+										<li><a href="#">Link Variable 3</a></li>
+										<li><a href="#">Link Variable 3</a></li>
+										<li><a href="#">Link Variable 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Blogs</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Blog 1</a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="#">Link Variable 1</a></li>
+                                        <li><a href="#">Link Variable 1</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="blog-full-width.html">Blog Full Width</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog 2</a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="#">Link Variable 1</a></li>
+                                        <li><a href="#">Link Variable 1</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>Pages</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="service.html">Service</a></li>
+                                <li><a href="faq.html">Frequently Questions</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="404.html">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div> <!-- End Mobile Menu Nav -->
 
+               
+            </div> <!-- End Mobile Menu Center -->
+			<!-- Start Mobile Menu  Bottom -->
+            <div class="mobile-menu-bottom">
+                 <!-- Mobile Manu Mail Address -->
+                <a class="mobile-menu-email icon-text-right" href="mailto:info@yourdomain.com"><i class="fa fa-envelope-o"> info@yourdomain.com</i></a>
 
+                <!-- Mobile Manu Social Link -->
+                <ul class="mobile-menu-social">
+                    <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div> <!-- End Mobile Menu Bottom -->
+        </div> <!-- End Offcanvas Mobile Menu Wrapper -->
+    </div> <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
 
