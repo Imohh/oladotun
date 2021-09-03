@@ -553,7 +553,7 @@ foreach ($result as $row) {
 		}
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 766px) {
 		.header-section {
 			display: none;
 		}
