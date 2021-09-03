@@ -2563,11 +2563,17 @@ div.pagination span.disabled {
 /*HOME PAGE*/
 /*little intro*/
 
-    .little-intro {
-        text-align: center;
-        padding: 30px 0px 70px 0px;
+@media (max-width: 766px) {
+    .little-intro h2 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        line-height: 36px;
     }
 
+
+@media (min-width: 767px) {
     .little-intro h2 {
         text-transform: uppercase;
         font-size: 4rem;
@@ -2575,6 +2581,13 @@ div.pagination span.disabled {
         letter-spacing: 0.14em;
         line-height: 36px;
     }
+}
+    .little-intro {
+        text-align: center;
+        padding: 30px 0px 70px 0px;
+    }
+
+    
 
     .little-intro p {
         font-size: 17px;
