@@ -667,7 +667,7 @@ foreach ($result as $row) {
   z-index: 99;
   width: 100%;
   top: 0;
-  background: #333;
+  background: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   animation-name: fadeInDown;
   animation-duration: 900ms;
@@ -708,7 +708,7 @@ foreach ($result as $row) {
 }
 .main-menu nav > ul > li > a:hover, .main-menu nav > ul > li > a.active {
   /*background: red;*/
-  color: #333;
+  color: red;
 }
 
 .sub-menu > li > a,
