@@ -2571,7 +2571,7 @@ div.pagination span.disabled {
         letter-spacing: 0.14em;
         line-height: 36px;
     }
-
+}
 
 @media (min-width: 767px) {
     .little-intro h2 {
