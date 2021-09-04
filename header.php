@@ -363,26 +363,6 @@ foreach ($result as $row) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ...:::: Start Header Section:::... -->
     <header class="header-section d-lg-block d-none">
         <!-- Start Bottom Area -->
@@ -395,7 +375,7 @@ foreach ($result as $row) {
                             <nav>
                                 <ul>
                                     <li>
-                                        <a class="active main-menu-link" href="index.html">Home <!-- <i class="fa fa-angle-down"></i> --></a> 
+                                        <a class="active main-menu-link" href="index.php">Home <!-- <i class="fa fa-angle-down"></i> --></a> 
                                     </li>
                                     <?php
 										$statement = $pdo->prepare("SELECT * FROM tbl_top_category WHERE show_on_menu=1");
@@ -537,11 +517,8 @@ foreach ($result as $row) {
                 <div class="offcanvas-menu">
                     <ul>
                         <li>
-                            <a href="#"><span>Home</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li><a href="#">Link Variable 0</a></li>
-                                <li><a href="#">Link Variable 0</a></li>
-                            </ul>
+                            <a href="index.php"><span>Home</span></a>
+                            
                         </li>
                         <li>
                             <a href="#"><span>Shop</span></a>
@@ -582,39 +559,26 @@ foreach ($result as $row) {
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#"><span>Blogs</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Blog 1</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="#">Link Variable 1</a></li>
-                                        <li><a href="#">Link Variable 1</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="blog-full-width.html">Blog Full Width</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog 2</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="#">Link Variable 1</a></li>
-                                        <li><a href="#">Link Variable 1</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><span>Pages</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="service.html">Service</a></li>
-                                <li><a href="faq.html">Frequently Questions</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="404.html">404 Page</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
+                        
+                        <?php
+							$statement = $pdo->prepare("SELECT * FROM tbl_page WHERE id=1");
+							$statement->execute();
+							$result = $statement->fetchAll(PDO::FETCH_ASSOC);		
+							foreach ($result as $row) {
+								$about_title = $row['about_title'];
+								$faq_title = $row['faq_title'];
+								$blog_title = $row['blog_title'];
+								$contact_title = $row['contact_title'];
+								$pgallery_title = $row['pgallery_title'];
+								$vgallery_title = $row['vgallery_title'];
+							}
+						?>
+
+						<li><a href="about.php"><?php echo $about_title; ?></a></li>
+						<li><a href="faq.php"><?php echo $faq_title; ?></a></li>
+						<li><a href="contact.php"><?php echo $contact_title; ?></a></li>
+
+
                     </ul>
                 </div> <!-- End Mobile Menu Nav -->
 
@@ -645,12 +609,3 @@ foreach ($result as $row) {
 
 
 
-
-
-
-
-<style>
-	
-
-
-</style>

@@ -3286,6 +3286,9 @@ div.pagination span.disabled {
   position: fixed;
   z-index: 99;
   width: 100%;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   top: 0;
   background: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
@@ -3322,7 +3325,7 @@ div.pagination span.disabled {
   padding: 15px 30px;
   font-size: 16px;
   line-height: 30px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 500;
   color: #2a2a2a;
 }
@@ -3336,7 +3339,7 @@ div.pagination span.disabled {
   font-weight: 400;
   display: block;
   line-height: 35px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #666;
   position: relative;
   transition: all 0.3s ease 0s;
@@ -3918,7 +3921,7 @@ Layout - Offcanvas
 }
 
 .offcanvas-wishlist-item-details {
-  font-family: "Raleway", sans-serif;
+  font-family: "Futura", sans-serif;
 }
 
 .offcanvas-wishlist-total-price-text {
