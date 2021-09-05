@@ -532,8 +532,8 @@ if($success_message1 != '') {
                                                         <h2><?php echo $p_name; ?></h2>
 
                                                         <ul>
-                                                            <li align="center"><a href="#"><span><i class="fa fa-facebook"></i></span> facebook</a></li>
-                                                            <li><a href="#"><span><i class="fa fa-twitter"></i></span>twitter</a></li>
+                                                            <li align="center"><a href="https://facebook.com/"><span><i class="fa fa-facebook"></i></span> facebook</a></li>
+                                                            <li><a href="https://twitter.com/"><span><i class="fa fa-twitter"></i></span>twitter</a></li>
                                                             <li><a href="#"><span><i class="fa fa-instagram"></i></span>instagram</a></li>
                                                             <li><a href="#"><span><img src="https://img.icons8.com/ios-glyphs/17/000000/filled-message.png"/></span>email</a></li>
                                                         </ul>
