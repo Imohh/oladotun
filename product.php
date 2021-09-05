@@ -516,35 +516,35 @@ if($success_message1 != '') {
                             </form>
 							<div class="share">
                                 <!-- <?//php echo LANG_VALUE_58; ?>  <br> -->
-                                    <div class="modal-box">
-                                        <!-- Button trigger modal -->
-                                        <a class="btn show-modal" data-toggle="modal" data-target="#myModal">
-                                          <img src="https://img.icons8.com/ios-glyphs/20/000000/share--v1.png"/>
-                                        </a> | <a href="faq.php"> may we help you?</a>
+                                <div class="modal-box">
+                                    <!-- Button trigger modal -->
+                                    <a class="btn show-modal" data-toggle="modal" data-target="#myModal">
+                                      <img src="https://img.icons8.com/ios-glyphs/20/000000/share--v1.png"/>
+                                    </a> | <a href="faq.php"> may we help you?</a>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content clearfix">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                                    <div class="modal-body">
-                                                        <p class="title">share this</p>
-                                                        <h2><?php echo $p_name; ?></h2>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content clearfix">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                <div class="modal-body">
+                                                    <p class="title">share this</p>
+                                                    <h2><?php echo $p_name; ?></h2>
 
-                                                        <ul>
-                                                            <li align="center"><a href="https://facebook.com/"><span><i class="fa fa-facebook"></i></span> facebook</a></li>
-                                                            <li><a href="https://twitter.com/"><span><i class="fa fa-twitter"></i></span>twitter</a></li>
-                                                            <li><a href="#"><span><i class="fa fa-instagram"></i></span>instagram</a></li>
-                                                            <li><a href="#"><span><img src="https://img.icons8.com/ios-glyphs/17/000000/filled-message.png"/></span>email</a></li>
-                                                        </ul>
+                                                    <ul>
+                                                        <li align="center"><a href="https://facebook.com/"><span><i class="fa fa-facebook"></i></span> facebook</a></li>
+                                                        <li><a href="https://twitter.com/"><span><i class="fa fa-twitter"></i></span>twitter</a></li>
+                                                        <li><a href="#"><span><i class="fa fa-instagram"></i></span>instagram</a></li>
+                                                        <li><a href="#"><span><img src="https://img.icons8.com/ios-glyphs/17/000000/filled-message.png"/></span>email</a></li>
+                                                    </ul>
 
-                                                        <p class="bottom-link"><span><i class="fa fa-share"></i></span><?php echo "http://localhost/php-ecommerce/product.php?id=$p_id" ?></p>
-                                                    </div>
+                                                    <p id="myInput" class="bottom-link"><span><i class="fa fa-share"></i></span><?php echo "http://localhost/php-ecommerce/product.php?id=$p_id" ?></p>
+                                                    <button onclick="myFunction()">Copy text</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
+                                </div>
 							</div>
 						</div>
 					</div>
