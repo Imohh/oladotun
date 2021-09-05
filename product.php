@@ -18,6 +18,7 @@ if(!isset($_REQUEST['id'])) {
 
 foreach($result as $row) {
     $p_name = $row['p_name'];
+    $p_id = $row['p_id'];
     $p_old_price = $row['p_old_price'];
     $p_current_price = $row['p_current_price'];
     $p_qty = $row['p_qty'];
@@ -537,7 +538,7 @@ if($success_message1 != '') {
                                                             <li><a href="#"><span><img src="https://img.icons8.com/ios-glyphs/17/000000/filled-message.png"/></span>email</a></li>
                                                         </ul>
 
-                                                        <p class="bottom-link"><span><i class="fa fa-share"></i></span>http://localhost/php-ecommerce/product.php?id=<?php echo $row['p_id']; ?></p>
+                                                        <p class="bottom-link"><span><i class="fa fa-share"></i></span><?php echo "http://localhost/php-ecommerce/product.php?id=?" ?></p>
                                                     </div>
                                                 </div>
                                             </div>
