@@ -177,29 +177,7 @@ foreach ($result as $row)
 
 
 
-<!-- POPUP ALERT -->
 
-<div id="ac-wrapper" style='display:none'>
-    <div id="popup">
-        <center>
-             <h2>Popup Content Here</h2>    
-            <input type="submit" name="submit" value="Submit" onClick="PopUp('hide')" />
-        </center>
-    </div>
-</div>
-
-
-<script type="text/javascript">
-function PopUp(hideOrshow) {
-    if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
-    else document.getElementById('ac-wrapper').removeAttribute('style');
-}
-window.onload = function () {
-    setTimeout(function () {
-        PopUp('show');
-    }, 5000);
-}
-</script>
 
 <div class="container">
     <div class="row">
