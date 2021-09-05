@@ -538,7 +538,7 @@ if($success_message1 != '') {
                                                             <li><a href="#"><span><img src="https://img.icons8.com/ios-glyphs/17/000000/filled-message.png"/></span>email</a></li>
                                                         </ul>
 
-                                                        <p class="bottom-link"><span><i class="fa fa-share"></i></span><?php echo "http://localhost/php-ecommerce/product.php?id=?" ?></p>
+                                                        <p class="bottom-link"><span><i class="fa fa-share"></i></span><?php echo "http://localhost/php-ecommerce/product.php?id=$p_id" ?></p>
                                                     </div>
                                                 </div>
                                             </div>
