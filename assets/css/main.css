@@ -3995,14 +3995,19 @@ Layout - Offcanvas
     z-index:999999;
     -webkit-transition:.6s;
     -o-transition:.6s;
-    transition:.6s;margin:0 auto}
+    transition:.6s;
+    margin:0 auto;
+    text-align: center;
+}
 .preloader .preloader-circle{
     width:100px;
     height:100px;
+    margin: 0 auto;
+    top: 50%;
     position:relative;
     border-style:solid;
     border-width:3px;
-    border-top-color:#8f1bdc;
+    border-top-color:#000;
     border-bottom-color:transparent;
     border-left-color:transparent;
     border-right-color:transparent;
