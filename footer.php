@@ -268,6 +268,14 @@ foreach ($result as $row) {
         }
     }
 </script>
+<script>
+    $(window).on('load', function () {
+      $('#preloader-active').delay(450).fadeOut('slow');
+      $('body').delay(450).css({
+        'overflow': 'visible'
+      });
+    });
+</script>
 <?php echo $before_body; ?>
 </body>
 </html>

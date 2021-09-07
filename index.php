@@ -30,6 +30,11 @@ foreach ($result as $row)
 
 
 ?>
+<style>
+
+
+</style>
+
 
 
 

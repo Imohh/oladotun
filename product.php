@@ -318,7 +318,7 @@ if($success_message1 != '') {
 						<div class="col-md-8">
 							<ul class="prod-slider">
                                 
-								<li style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>);max-width:100%;max-height:100%;">
+								<li style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>);background-position: center;background-size: contain;">
                                     <a class="popup" href="assets/uploads/<?php echo $p_featured_photo; ?>"></a>
 								</li>
                                 <?php

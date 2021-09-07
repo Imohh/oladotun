@@ -33,7 +33,6 @@
 							<?php
 							$i=0;
 							$statement = $pdo->prepare("SELECT
-														
 														t1.p_id,
 														t1.p_name,
 														t1.p_old_price,
