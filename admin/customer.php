@@ -29,7 +29,7 @@
 							$statement = $pdo->prepare("SELECT * 
 														FROM tbl_customer t1
 														JOIN tbl_country t2
-														-- ON t1.cust_country = t2.country_id
+														ON t1.cust_country = t2.country_id
 														ORDER BY t1.cust_datetime ASC;
 													");
 							$statement->execute();
