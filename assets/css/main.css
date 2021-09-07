@@ -4032,9 +4032,9 @@ Layout - Offcanvas
     -webkit-transform:translateY(-50%);
     -ms-transform:translateY(-50%);
     transform:translateY(-50%);
-    padding-top:6px;-webkit-transition:.6s;-o-transition:.6s;transition:.6s}
+    padding-top:6px;
+    -webkit-transition:.6s;
+    -o-transition:.6s;transition:.6s}
 .preloader .preloader-img img{max-width:55px}
 .preloader .pere-text strong{font-weight:800;color:#dca73a;
     text-transform:uppercase}
-
-    @-webkit-keyframes zoom{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.6s;-o-transition:.6s;transition:.6s}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);-webkit-transition:.6s;-o-transition:.6s;transition:.6s}}@keyframes zoom{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.6s;-o-transition:.6s;transition:.6s}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);-webkit-transition:.6s;-o-transition:.6s;transition:.6s}}.section-padding2{padding-top:200px;padding-bottom:200px}
