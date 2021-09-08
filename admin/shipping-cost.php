@@ -170,7 +170,9 @@ if(isset($_POST['form2'])) {
             	$statement = $pdo->prepare("SELECT * 
                                         FROM tbl_shipping_cost t1
                                         JOIN tbl_country t2 
-                                        ON t1.country_id = t2.country_id 
+                                        ON t1.country_id = t2.country_id
+                                        group by t1.shipping_cost_id
+                                        having count(t2.country_id) > 0
                                         ORDER BY t2.country_name ASC");
             	$statement->execute();
             	$result = $statement->fetchAll(PDO::FETCH_ASSOC);							

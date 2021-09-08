@@ -30,7 +30,8 @@
             <tbody>
             	<?php
             	$i=0;
-            	$statement = $pdo->prepare("SELECT * FROM tbl_color ORDER BY color_id ASC");
+            	$statement = $pdo->prepare("SELECT * FROM tbl_color t1 group by t1.color_id
+														having count(t1.color_id) > 0 ORDER BY color_id ASC");
             	$statement->execute();
             	$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
             	foreach ($result as $row) {

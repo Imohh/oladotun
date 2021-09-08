@@ -30,7 +30,8 @@
             <tbody>
             	<?php
             	$i=0;
-            	$statement = $pdo->prepare("SELECT * FROM tbl_country ORDER BY country_id ASC");
+            	$statement = $pdo->prepare("SELECT * FROM tbl_country t1 group by t1.country_id
+														having count(t1.country_id) > 0 ORDER BY country_id ASC");
             	$statement->execute();
             	$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
             	foreach ($result as $row) {

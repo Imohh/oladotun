@@ -55,8 +55,25 @@
 							                           	FROM tbl_product t1
 							                           	JOIN tbl_end_category t2
 							                           	ON t1.ecat_id = t2.ecat_id
+
+
+
+
+
+							                           	FROM tbl_customer t1
+														JOIN tbl_country t2
+														ON t1.cust_country = t2.country_id
+														group by t1.cust_id
+														having count(t2.country_id) > 0
+
+
+
+
+
+
 							                           	JOIN tbl_mid_category t3
 							                           	ON t2.mcat_id = t3.mcat_id
+
 							                           	JOIN tbl_top_category t4
 							                           	ON t3.tcat_id = t4.tcat_id
 							                           	ORDER BY t1.p_id DESC
