@@ -60,11 +60,11 @@
 
 
 
-							                           	FROM tbl_customer t1
-														JOIN tbl_country t2
-														ON t1.cust_country = t2.country_id
-														group by t1.cust_id
-														having count(t2.country_id) > 0
+							       --                     	FROM tbl_customer t1
+														-- JOIN tbl_country t2
+														-- ON t1.cust_country = t2.country_id
+														-- group by t1.cust_id
+														-- having count(t2.country_id) > 0
 
 
 
