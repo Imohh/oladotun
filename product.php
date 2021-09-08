@@ -446,7 +446,8 @@ if($success_message1 != '') {
                                         <span class="span-product"><?php echo LANG_VALUE_53; ?></span> <br>
                                         <select name="color_id" class="form-control select2">
                                             <?php
-                                            $statement = $pdo->prepare("SELECT * FROM tbl_color");
+                                            $statement = $pdo->prepare("SELECT * FROM tbl_color t1 group by t1.color_id
+                                                        having count(t1.color_id) > 0");
                                             $statement->execute();
                                             $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                                             foreach ($result as $row) {
