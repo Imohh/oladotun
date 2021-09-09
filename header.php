@@ -689,7 +689,7 @@ foreach ($result as $row) {
 
 
 <!-- Preloader Start -->
-    <div id="preloader-active">
+    <!-- <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
@@ -698,7 +698,10 @@ foreach ($result as $row) {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Preloader Start -->
 
 
+<div id="preloader">
+  <div id="loader"></div>
+</div>
