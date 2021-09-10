@@ -29,8 +29,8 @@ if(!isset($_SESSION['cart_p_id'])) {
             <div class="col-md-12">
                 
                 <?php if(!isset($_SESSION['customer'])): ?>
-                    <p>
-                        <a href="login.php" class="btn btn-md btn-danger"><?php echo LANG_VALUE_160; ?></a>
+                    <p class="heygirl">
+                        <a href="login.php" class="btn btn-md"><?php echo LANG_VALUE_160; ?></a>
                     </p>
                 <?php else: ?>
 
