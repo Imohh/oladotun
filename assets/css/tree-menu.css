@@ -109,20 +109,20 @@
     margin-bottom: 10px;
 }
 #left ul.nav>li.cat-level-1.parent>a {
-    border: solid 1px #e4144d;
-    background: #e4144d;
+    border: solid 1px #000;
+    background: #000;
     color: #fff;
 }
 #left ul.nav>li.cat-level-1.parent>a>.sign,
 #left ul.nav>li.cat-level-1 li.parent>a>.sign{
     margin-left: 0px;
-    background-color: #e4144d;
+    background-color: #000;
 }
 #left ul.nav>li.cat-level-1 .lbl {
     color: #fff;
 }
 #left ul.nav>li.cat-level-1 .lbl1 {
-    color: #e4144d;
+    color: #fff;
 }
 #left ul.nav>li.cat-level-1 li.current>a .lbl {
     background-color: #e4144d;
