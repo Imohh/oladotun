@@ -159,8 +159,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                             echo '<div class="pl_15">'.LANG_VALUE_153.'</div>';
                         } else {
                             for($ii=0;$ii<count($final_ecat_ids);$ii++) {
-                                $statement = $pdo->prepare("SELECT * FROM tbl_product t1 WHERE ecat_id=? AND p_is_active=? group by t1.p_id
-                                                        having count(t1.p_id) > 0");
+                                $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE ecat_id=? AND p_is_active=?");
                                 $statement->execute(array($final_ecat_ids[$ii],1));
                                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($result as $row) {
