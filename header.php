@@ -601,45 +601,51 @@ foreach ($result as $row) {
                             <a href="index.php"><span>Home</span></a>
                             
                         </li>
-                        <li>
-                            <a href="#"><span>Shop</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Shop Layout</a>
-                                    <ul class="mobile-sub-menu">
-										<li><a href="#">Link Variable 1</a></li>
-										<li><a href="#">Link Variable 1</a></li>
-										<li><a href="#">Link Variable 1</a></li>
-										<li><a href="#">Link Variable 1</a></li>
-										<li><a href="#">Link Variable 1</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Shop Pages</a>
-                                    <ul class="mobile-sub-menu">
-										<li><a href="#">Link Variable 2</a></li>
-										<li><a href="#">Link Variable 2</a></li>
-										<li><a href="#">Link Variable 2</a></li>
-										<li><a href="#">Link Variable 2</a></li>
-										<li><a href="#">Link Variable 2</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Product Single</a>
-                                    <ul class="mobile-sub-menu">
-										<li><a href="#">Link Variable 3</a></li>
-										<li><a href="#">Link Variable 3</a></li>
-										<li><a href="#">Link Variable 3</a></li>
-										<li><a href="#">Link Variable 3</a></li>
-										<li><a href="#">Link Variable 3</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                        
+
+
+
+
+                        <?php
+							$statement = $pdo->prepare("SELECT * FROM tbl_top_category WHERE show_on_menu=1");
+							$statement->execute();
+							$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+							foreach ($result as $row) {
+						?>
+                        <li class="has-dropdown">
+							<a href="product-category.php?id=<?php echo $row['tcat_id']; ?>&type=top-category"><?php echo $row['tcat_name']; ?></a>
+                                <ul class="mobile-sub-menu">
+								<?php
+									$statement1 = $pdo->prepare("SELECT * FROM tbl_mid_category WHERE tcat_id=?");
+									$statement1->execute(array($row['tcat_id']));
+									$result1 = $statement1->fetchAll(PDO::FETCH_ASSOC);
+									foreach ($result1 as $row1) {
+								?>
+									<li>
+										<a href="product-category.php?id=<?php echo $row1['mcat_id']; ?>&type=mid-category"><?php echo $row1['mcat_name']; ?></a>
+										<ul class="mobile-sub-menu">
+										<?php
+											$statement2 = $pdo->prepare("SELECT * FROM tbl_end_category WHERE mcat_id=?");
+											$statement2->execute(array($row1['mcat_id']));
+											$result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
+											foreach ($result2 as $row2) {
+										?>
+											<li><a href="product-category.php?id=<?php echo $row2['ecat_id']; ?>&type=end-category"><?php echo $row2['ecat_name']; ?></a></li>
+										<?php
+											}
+										?>
+										</ul>
+									</li>
+									<?php
+										}
+									?>
+								</ul>
+						</li>
+						<?php
+							}
+						?>
+
+
                         
                         <?php
 							$statement = $pdo->prepare("SELECT * FROM tbl_page WHERE id=1");
@@ -668,7 +674,7 @@ foreach ($result as $row) {
 			<!-- Start Mobile Menu  Bottom -->
             <div class="mobile-menu-bottom">
                  <!-- Mobile Manu Mail Address -->
-                <a class="mobile-menu-email icon-text-right" href="mailto:info@yourdomain.com"><i class="fa fa-envelope-o"> info@yourdomain.com</i></a>
+                <!-- <a class="mobile-menu-email icon-text-right" href="mailto:info@yourdomain.com"><i class="fa fa-envelope-o"> info@yourdomain.com</i></a> -->
 
                 <!-- Mobile Manu Social Link -->
                 <ul class="mobile-menu-social">

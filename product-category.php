@@ -164,7 +164,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($result as $row) {
                                     ?>
-                                    <div class="col-md-4 item item-product-cat">
+                                    <div class="col-md-4 col-xs-6 item item-product-cat">
                                         <div class="inner">
                                             <div class="thumb">
                                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
