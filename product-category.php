@@ -153,7 +153,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                             if(in_array($final_ecat_ids[$ii],$prod_table_ecat_ids)) {
                                 $prod_count++;
                             }
-                        endfor;
+                        endfor;s
 
                         if($prod_count==0) {
                             echo '<div class="pl_15">'.LANG_VALUE_153.'</div>';
