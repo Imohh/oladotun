@@ -3506,14 +3506,14 @@ Layout - Offcanvas
   top: 0;
   overflow: auto;
   height: 100vh;
-  padding: 20px;
   transition: all 0.3s ease 0s;
   transform: translateX(100%);
   box-shadow: none;
-  background: #212121;
+  background: #fff;
   color:#eaeaea;
   width: 300px;
   overflow-x: hidden;
+  overflow-y: scroll;
   box-shadow: 0 3.4px 2.7px rgb(0 0 0 / 1%), 0 8.7px 6.9px rgb(0 0 0 / 1%), 0 17.7px 14.2px rgb(0 0 0 / 1%), 0 36.5px 29.2px rgb(0 0 0 / 1%), 0 100px 80px rgb(0 0 0 / 2%);
 }
 
@@ -3549,6 +3549,8 @@ Layout - Offcanvas
 .offcanvas-close {
   width: 28px;
   height: 28px;
+  margin-top: 10px;
+  margin-right: 10px;
   line-height: 28px;
   text-align: center;
   color: #000;
@@ -3561,7 +3563,7 @@ Layout - Offcanvas
   border-color: #261146;
 }
 .offcanvas-close i{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .offcanvas-title {
@@ -3756,7 +3758,20 @@ Layout - Offcanvas
 /*Mobile Menu Bottom Area*/
 .mobile-menu-bottom {
     position: fixed;
-    bottom: 5%;
+}
+.mobile-menu-bottom ul li {
+    color: #000;
+}
+
+.mobile-menu-bottom ul li a{
+    display: block;
+    padding: 5px 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 .offcanvas-menu {
   margin: 20px 0;
@@ -3765,6 +3780,7 @@ Layout - Offcanvas
 .offcanvas-menu li {
   position: relative;
   padding: 5px 5px;
+  list-style-type: none;
 }
 
 .offcanvas-menu > ul > li {
@@ -3777,9 +3793,12 @@ Layout - Offcanvas
 
 .offcanvas-menu li a {
   display: block;
-  color: #eaeaea;
+  padding: 5px 20px;
+  color: #000;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.1;
   text-transform: uppercase;
 }
 
@@ -3809,6 +3828,40 @@ Layout - Offcanvas
 .sub-menu > .active .offcanvas-menu-expand::after {
   color: #777;
   content: "";
+}
+
+.create-account {
+    background: red;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.create-account p {
+    text-align: center;
+}
+
+.create-account button {
+    margin: 0 auto;
+    background: #000;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 13px 30px;
+    text-decoration: none;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(36, 36, 36);
+    border-image: initial;
 }
 
 .mobile-menu-email {

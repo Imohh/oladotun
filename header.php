@@ -582,16 +582,16 @@ foreach ($result as $row) {
         <!-- Start Offcanvas Mobile Menu Wrapper -->
         <div class="offcanvas-mobile-menu-wrapper">
             <!-- Start Mobile Menu User Top -->
-            <div class="mobile-menu-top">
+            <!-- <div class="mobile-menu-top">
                 <span>Welcome to our store!</span>
                 <form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
-					<?php $csrf->echoInputField(); ?>
+					<?//php $csrf->echoInputField(); ?>
 					<div class="form-group">
 						<input type="text" class="form-control search-top" placeholder="<?php echo LANG_VALUE_2; ?>" name="search_text">
 					</div>
 					<button type="submit" class="btn btn-default"><i class="fa fa-search"></i><?//php echo LANG_VALUE_3; ?></button>
 				</form>
-            </div> <!-- End Mobile Menu User Top -->
+            </div>  --><!-- End Mobile Menu User Top -->
             <!-- Start Mobile Menu Center -->
             <div class="mobile-menu-center">
                 <!-- Start Mobile Menu Nav -->
@@ -671,19 +671,36 @@ foreach ($result as $row) {
 
                
             </div> <!-- End Mobile Menu Center -->
+
+            <div class="create-account" align="center">
+            		<p>View your recent orders, track shipping and manage returns</p>
+            		<button>create my account</button>
+            	
+            </div>
+
 			<!-- Start Mobile Menu  Bottom -->
             <div class="mobile-menu-bottom">
-                 <!-- Mobile Manu Mail Address -->
-                <!-- <a class="mobile-menu-email icon-text-right" href="mailto:info@yourdomain.com"><i class="fa fa-envelope-o"> info@yourdomain.com</i></a> -->
+                 
+            	<ul>
+            		<li><a href="">Sign In</a></li>
+            		<ul>
+					
+					<?php
+					if(isset($_SESSION['customer'])) {
+						?>
+						<li> <?php echo LANG_VALUE_13; ?> <?php echo $_SESSION['customer']['cust_name']; ?></li>
+						<li><a href="dashboard.php">
+							<?php echo LANG_VALUE_89; ?></a></li>
+						<?php
+					} else {
+						?>
+						<li><a href="login.php"> <?php echo LANG_VALUE_9; ?></a></li>
+						<li><a href="registration.php"> <?php echo LANG_VALUE_15; ?></a></li>
+						<?php	
+					}
+					?>
+            	</ul>
 
-                <!-- Mobile Manu Social Link -->
-                <ul class="mobile-menu-social">
-                    <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="" class="youtube"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a href="" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                </ul>
             </div> <!-- End Mobile Menu Bottom -->
         </div> <!-- End Offcanvas Mobile Menu Wrapper -->
     </div> <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
