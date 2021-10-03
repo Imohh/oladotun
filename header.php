@@ -682,8 +682,6 @@ foreach ($result as $row) {
             <div class="mobile-menu-bottom">
                  
             	<ul>
-            		<li><a href="">Sign In</a></li>
-            		<ul>
 					
 					<?php
 					if(isset($_SESSION['customer'])) {
