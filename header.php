@@ -674,7 +674,7 @@ foreach ($result as $row) {
 
             <div class="create-account" align="center">
             		<p>View your recent orders, track shipping and manage returns</p>
-            		<button>create my account</button>
+            		<button><a href="registration.php"> create my account</a></button>
             	
             </div>
 
@@ -693,7 +693,6 @@ foreach ($result as $row) {
 					} else {
 						?>
 						<li><a href="login.php"> <?php echo LANG_VALUE_9; ?></a></li>
-						<li><a href="registration.php"> <?php echo LANG_VALUE_15; ?></a></li>
 						<?php	
 					}
 					?>
