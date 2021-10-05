@@ -303,7 +303,7 @@ foreach ($result as $row) {
 					<?php
 					if(isset($_SESSION['customer'])) {
 						?>
-						<li><i class="fa fa-user"></i> Hello, <?php echo $_SESSION['customer']['cust_name']; ?></li>
+						<li class="customer-name"><i class="fa fa-user"></i> Hello, <?php echo $_SESSION['customer']['cust_name']; ?></li>
 						<li><a href="dashboard.php"><i class="fa fa-home"></i> <?php echo LANG_VALUE_89; ?></a></li>
 						<?php
 					} else {
