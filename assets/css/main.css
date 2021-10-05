@@ -243,6 +243,11 @@ a:hover {
     color: #000;
 }
 
+.header .right ul .customer-name {
+    background: red;
+    text-transform: capitalize;
+}
+
 .header .right ul li .name-tag{    text-transform: capitalize;
 }
 
