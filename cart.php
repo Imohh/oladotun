@@ -176,7 +176,7 @@ if(isset($_POST['form1'])) {
                             <td>
                                 <input type="hidden" name="product_id[]" value="<?php echo $arr_cart_p_id[$i]; ?>">
                                 <input type="hidden" name="product_name[]" value="<?php echo $arr_cart_p_name[$i]; ?>">
-                                <input type="number" class="input-text qty text" step="1" min="1" max="" name="quantity[]" value="<?php echo $arr_cart_p_qty[$i]; ?>" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric">
+                                <?php echo $arr_cart_p_qty[$i]; ?>
                             </td>
                             <td class="text-right">
                                 <?php
