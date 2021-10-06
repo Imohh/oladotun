@@ -360,7 +360,7 @@ a:hover {
 .center-logos {
     display: inline-block;
     float: none;
-    background: red;
+    margin-top: 2%;
 }
 
 .menu > ul {

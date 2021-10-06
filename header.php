@@ -84,7 +84,7 @@ foreach ($result as $row) {
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="assets/uploads/<?php echo $favicon; ?>">
+	<link rel="icon" type="image/png" href="assets/img/eminence-3.png">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
