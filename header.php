@@ -374,7 +374,7 @@ foreach ($result as $row) {
                         <div class="main-menu">
                             <div class="center-logo">
 								<div class="center-logos">
-									<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a>
+									<a href="index.php"><img src="assets/img/eminence-2.png" alt="logo image" width="50%"></a>
 								</div>
 							</div>
                             <nav>
@@ -556,7 +556,7 @@ foreach ($result as $row) {
                         </div>
                         <div class="col-4 mobile-header--left">
                             <a href="index.php" class="mobile-logo-link">
-                                <img src="assets/uploads/<?php echo $logo; ?>" height="70%" width="70%" alt="logo image">
+                                <img src="assets/img/eminence-2.png" height="70%" width="70%" alt="logo image">
                             </a>
                         </div>
 

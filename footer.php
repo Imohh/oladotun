@@ -169,7 +169,7 @@ This link will be active only for 24 hours.
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 copyright bottom-hr">
-				<a href="index.php"><img src="assets/uploads/<?php echo $logo; ?>" alt="logo image"></a><br>
+				<a href="index.php"><img src="assets/img/eminence-3.png" alt="logo image" width="100px"></a><br>
 				<?php echo $footer_copyright; ?>
 			</div>
 		</div>
