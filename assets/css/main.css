@@ -4248,10 +4248,10 @@ Layout - Offcanvas
     width: 100px;
     text-align: center;
     padding-top: 0;
-  z-index:200;
+    z-index:200;
 }
 .ct-language__dropdown li{
-    background: #222;
+    background: #000;
     padding: 5px;
 }
 .ct-language__dropdown li a{
@@ -4284,8 +4284,7 @@ Layout - Offcanvas
 }
 .ct-language{
     position: relative;
-    background: #00aced;
-    color: #fff;
+    color: #000;
     padding: 10px 0;
 }
 .ct-language:hover .ct-language__dropdown{
