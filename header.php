@@ -292,6 +292,21 @@ foreach ($result as $row) {
 			<div class="col-lg-4 col-sm-3 col-xs-3 logo">
 				<a href="#">Nigeria(NGN)</a><!-- <i class="fa fa-phone"></i> -->
 				<a href="contact.php">Contact Us</a>
+				<div class="ct-topbar">
+  <div class="container">
+	<ul class="list-unstyled list-inline ct-topbar__list">
+	  <li class="ct-language">Language <i class="fa fa-arrow-down"></i>
+		<ul class="list-unstyled ct-language__dropdown">
+		  <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a></li>
+		  <li><a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es"><img src="https://www.solodev.com/assets/google-translate/flag-mexico.png" alt="MEXICO"></a></li>
+		  <li><a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr"><img src="https://www.solodev.com/assets/google-translate/flag-france.png" alt="FRANCE"></a></li>
+		  <li><a href="#googtrans(en|zh-CN)" class="lang-es lang-select" data-lang="zh-CN"><img src="https://www.solodev.com/assets/google-translate/flag-china.png" alt="CHINA"></a></li>
+		  <li><a href="#googtrans(en|ja)" class="lang-es lang-select" data-lang="ja"><img src="https://www.solodev.com/assets/google-translate/flag-japan.png" alt="JAPAN"></a></li>
+		</ul>
+	  </li>
+	</ul>
+  </div>
+</div>
 			</div>
 			<div class="col-lg-3">
 				
