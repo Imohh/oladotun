@@ -292,8 +292,6 @@ foreach ($result as $row) {
 			<div class="col-lg-4 col-sm-3 col-xs-3 logo">
 				<a href="#">Nigeria(NGN)</a><!-- <i class="fa fa-phone"></i> -->
 				<a href="contact.php">Contact Us</a>
-				<div class="ct-topbar">
-  <div class="container">
 	<ul class="list-unstyled list-inline ct-topbar__list">
 	  <li class="ct-language">Language <i class="fa fa-arrow-down"></i>
 		<ul class="list-unstyled ct-language__dropdown">
@@ -305,8 +303,6 @@ foreach ($result as $row) {
 		</ul>
 	  </li>
 	</ul>
-  </div>
-</div>
 			</div>
 			<div class="col-lg-3">
 				
