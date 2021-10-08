@@ -4256,6 +4256,7 @@ Layout - Offcanvas
 }
 .ct-language__dropdown li a{
     display: block;
+    color: #fff;
 }
 .ct-language__dropdown li:first-child{
     padding-top: 10px;

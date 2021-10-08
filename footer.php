@@ -124,7 +124,7 @@ This link will be active only for 24 hours.
 		<div class="row">
 
 			<div class="col-md-3 col-sm-6 col-xs-12 footer-end">
-				<h4>About Dotun</h4>
+				<h4>About Eminence</h4>
 				<p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and many more.</p>
 				<ul class="d-flex flex-row align-items-center justify-content-start">
 					<li><a href="#"><img src="assets/img/card_1.jpg" alt=""></a></li>
@@ -146,7 +146,7 @@ This link will be active only for 24 hours.
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>the company</h4>
 				<ul>
-					<li><a href="#">About Dotun</a></li>
+					<li><a href="#">About Eminence</a></li>
 					<li><a href="#">Legal</a></li>
 					<li><a href="#">Privacy</a></li>
 				</ul>
