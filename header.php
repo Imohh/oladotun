@@ -540,7 +540,7 @@ foreach ($result as $row) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-between align-items-center">
-                        <div class="col-4 mobile-header--left">
+                        <div class="col-4 " style="float: right;">
                             <a href="cart.php"><img src="https://img.icons8.com/ios/15/000000/shopping-bag.png"/><!-- <?//php echo LANG_VALUE_19; ?> --> (<?php echo LANG_VALUE_1; ?><?php
 					if(isset($_SESSION['cart_p_id'])) {
 						$table_total_price = 0;
@@ -565,19 +565,23 @@ foreach ($result as $row) {
 					}
 					?>)</a>
                         </div>
-                        <div class="col-4 mobile-header--left">
-                            <a href="index.php" class="mobile-logo-link">
-                                <img src="assets/img/eminence-2.png" height="70%" width="70%" alt="logo image">
-                            </a>
-                        </div>
+                        
 
-                        <div class="col-4 mobile-header--right">
+                        <div class="col-4 " >
                             <a href="#mobile-menu-offcanvas" class="mobile-menu offcanvas-toggle">
                                 <span class="mobile-menu-dash"></span>
                                 <span class="mobile-menu-dash"></span>
                                 <span class="mobile-menu-dash"></span>
                             </a>
                         </div>
+
+                        <div class="col-4" style="float: left;width:70%" align="center">
+                            <a href="index.php" class="mobile-logo-link">
+                                <img src="assets/img/eminence-2.png" height="80%" width="80%" alt="logo image">
+                            </a>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
