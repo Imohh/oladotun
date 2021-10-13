@@ -407,7 +407,7 @@ if($success_message1 != '') {
                                     }                                    
                                     ?>
                                 </div>
-							</div>s
+							</div>
 							<div class="p-short-des">
 								<p>
 									<?php echo $p_short_description; ?>
