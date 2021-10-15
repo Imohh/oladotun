@@ -561,7 +561,7 @@ foreach ($result as $row) {
 	                    }
 						echo $table_total_price; //view cart
 					} else {
-						echo '0.00';s
+						echo '0.00';
 					}
 					?>)</a>
                         </div>
