@@ -140,14 +140,14 @@ This link will be active only for 24 hours.
 					<li><a href="contact.php">Contact Us</a></li>
 					<li><a href="#">Shipping services</a></li>
 					<li><a href="#">Payment Options</a></li>
-					<li><a href="#">FAQs</a></li>
+					<li><a href="faq.php">FAQs</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>the company</h4>
 				<ul>
 					<li><a href="about.php">About Eminence</a></li>
-					<li><a href="#">Legal</a></li>
+					<li><a href="legal.php">Legal</a></li>
 					<li><a href="privacy.php">Privacy</a></li>
 				</ul>
 			</div>
