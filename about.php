@@ -29,8 +29,12 @@ foreach ($result as $row) {
             </div>
             <div class="col-lg-7">
                 <div class="text-section-first">
-                    <h2>Discover fashion. New collection</h2>
-                    <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women.</p>
+                    <h2>ABOUT US</h2>
+                    <p>Welcome to Eminence By GTX, where we do justice to fabrics.
+
+                        Eminence By GTX is the place of luxurious designs, trends and styles in men and women’s clothing. One of the reasons why Eminence By GTX has earned its reputation in Fashion Journey is because of the creative ways of doing justice to fabrics and swift delivery.
+                        We see fashion as a way of life and decided to own it by providing an impressive range of luxurious styles you can select from.
+                    </p>
                     <button>shop now</button>
                 </div>
             </div>
@@ -46,13 +50,18 @@ foreach ($result as $row) {
         <div class="row">
             <div class="col-lg-5">
                 <div class="second-image-section">
-                    <h2>About us</h2>
+                    <h2>WHY CHOOSE US</h2>
                     <img src="assets/img/portrait.jpg" width="100%">
                 </div>
             </div>
             <div class="col-lg-5 second-about-right">
                 <div class="text-section-second">
-                    <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women.</p>
+                    <p>We create a stunning identity for our customers 
+                        Fashion wears for an uninterrupted classic-boss lifestyle.
+                        Extraordinary fashion exposure through the right colour materials selection.
+                        A mixture of ancient and contemporary fashion styles for special experiences (all ethnicities).
+                        We are a chosen brand for comfortable wears
+                    </p>
 
                     <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women. tion whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women.</p>
                     <img src="assets/img/portrait.jpg" width="100%">
