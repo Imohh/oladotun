@@ -99,7 +99,7 @@ He is also certified in Fashion from prestigious private institutions.  He is a 
         <div class="row">
             <div class="col-lg-7">
                 <div class="forth-text-section">
-                    <h2>Our core values</h2>
+                    <h2>OUR CORE VALUES</h2>
                     <div class="col-lg-6">
                         <i class="fa fa-facebook"></i>
                         <h4>Integrity</h4>
