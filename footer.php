@@ -146,7 +146,7 @@ This link will be active only for 24 hours.
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>the company</h4>
 				<ul>
-					<li><a href="#">About Eminence</a></li>
+					<li><a href="about.php">About Eminence</a></li>
 					<li><a href="#">Legal</a></li>
 					<li><a href="privacy.php">Privacy</a></li>
 				</ul>
