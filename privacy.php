@@ -2,6 +2,17 @@
 
 
 
+<section class="top-policy">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2> Privacy Policy</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+
 <section class="policy">
 	<div class="container">
 		<div class="row">
