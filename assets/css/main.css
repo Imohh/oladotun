@@ -4327,8 +4327,13 @@ Layout - Offcanvas
 
 /*PRIVACY PAGE*/
 @media (min-width: 768px) {
-    .privacy {
-        padding: 0 140px;
-        background: red;
+    .policy {
+        padding: 50px;
+    }
+
+    .policy-paragraph {
+        width: 50%;
+        margin: 0 auto;
+        line-height: 1.4;
     }
 }
