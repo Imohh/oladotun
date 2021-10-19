@@ -137,7 +137,7 @@ This link will be active only for 24 hours.
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
 				<h4>need help</h4>
 				<ul>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="contact.php">Contact Us</a></li>
 					<li><a href="#">Shipping services</a></li>
 					<li><a href="#">Payment Options</a></li>
 					<li><a href="#">FAQs</a></li>
@@ -148,7 +148,7 @@ This link will be active only for 24 hours.
 				<ul>
 					<li><a href="#">About Eminence</a></li>
 					<li><a href="#">Legal</a></li>
-					<li><a href="#">Privacy</a></li>
+					<li><a href="privacy.php">Privacy</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 copyright footer-end">
