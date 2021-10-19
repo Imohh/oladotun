@@ -80,8 +80,11 @@ foreach ($result as $row) {
         <div class="row">
             <div class="col-lg-12">
                 <div class="third-text-section">
-                    <h2>New Selection</h2>
-                    <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress.</p>
+                    <h2>CHIEF EXECUTIVE OFFICER</h2>
+
+<p>Mr Gbotemi, the Chief Executive Officer of GTX, is an entrepreneur with experience in fashion and designs. Mr Gbotemi has B.Sc in Electronic Engineering from a state university in Nigeria and he is in the United Kingdom pursuing his Master in Elect/Elect.
+He is also certified in Fashion from prestigious private institutions.  He is a passionate, dedicated and value-driven professional and he runs several pieces of training for the newbies. He is the founder of GTX fashion academy. He seeks innovation and a tech approach to provide the best customer experience in the fashion industry. 
+</p>
                     <img src="assets/img/display.jpg" width="100%">
                 </div>
             </div>
