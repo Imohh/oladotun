@@ -1610,7 +1610,8 @@ input[type=number]::-webkit-outer-spin-button {
 .cart {
     width: 100%;
     height: auto;
-    background: blue;
+    background: #f5f5f5;
+    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);*/
 }
 
 .cart table img {
