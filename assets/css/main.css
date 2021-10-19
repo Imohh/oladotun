@@ -4320,3 +4320,15 @@ Layout - Offcanvas
     padding-left: 0;
     list-style: none;
 }
+
+
+
+
+
+/*PRIVACY PAGE*/
+@media (min-width: 768px) {
+    .privacy {
+        padding: 0 140px;
+        background: red;
+    }
+}
