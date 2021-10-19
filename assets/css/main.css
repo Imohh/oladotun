@@ -4328,9 +4328,15 @@ Layout - Offcanvas
 /*PRIVACY PAGE*/
 @media (min-width: 768px) {
     .top-policy {
-
+        margin: 0 auto;
     }
-    
+
+    .top-policy h2 {
+        font-size: 5em;
+        line-height: 1.1;
+        text-align: center;
+    }
+
     .policy {
         padding: 50px;
     }
