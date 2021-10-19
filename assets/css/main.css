@@ -4329,10 +4329,11 @@ Layout - Offcanvas
 @media (min-width: 768px) {
     .top-policy {
         margin: 0 auto;
+        margin-top: 5%;
     }
 
     .top-policy h2 {
-        font-size: 5em;
+        font-size: 3em;
         line-height: 1.1;
         text-align: center;
     }
