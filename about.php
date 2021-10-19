@@ -89,6 +89,25 @@ foreach ($result as $row) {
     </div>
 </section>
 
+Our core values
+
+Integrity
+
+ We have strong principles behind our minds which guide our policy and output. Our customers' experience in Nigeria and the Diaspora is based on honesty.
+
+Accountability
+ 
+Taking responsibility for giving our customers the best is our primary objective. Eminence By GTX honours and takes responsibility when necessary.
+
+Creative
+
+We create fantasy designs aimed at giving customers grandeur entry wherever they appear. Every customer is unique to us.
+
+Passion
+
+All our staff are hardworking, creative, smart and detail-focused.
+We always provide all-around support for excellent delivery of the designs and styles selected.
+
 
 
 <!-- FORTH SECTION -->
@@ -101,7 +120,7 @@ foreach ($result as $row) {
                     <div class="col-lg-6">
                         <i class="fa fa-facebook"></i>
                         <h4>Integrity</h4>
-                        <p>We have strong principles behind our minds which guide our policy and output. Our customers' experience in Nigeria and the Diaspora is based on honesty.</p>
+                        <p>We have strong principles behind our minds which guide our policy and output. Honesty is the key.</p>
                     </div>
                     <div class="col-lg-6">
                         <i class="fa fa-facebook"></i>
@@ -110,13 +129,14 @@ foreach ($result as $row) {
                     </div>
                     <div class="col-lg-6">
                         <i class="fa fa-facebook"></i>
-                        <h4>Creative</h4>
+                        <h4>Cretive</h4>
                         <p>We create fantasy designs aimed at giving customers grandeur entry wherever they appear. Every customer is unique to us.</p>
                     </div>
                     <div class="col-lg-6">
                         <i class="fa fa-facebook"></i>
                         <h4>Passion</h4>
-                        <p>All our staff are hardworking, creative, smart and detail-focused. We always provide all-around support for excellent delivery of the designs and styles selected.</p>
+                        <p>All our staff are hardworking, creative, smart and detail-focused.
+We always provide all-around support for excellent delivery of the designs and styles selected.</p>
                     </div>
                 </div>
             </div>
