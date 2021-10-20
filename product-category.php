@@ -127,13 +127,13 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
     </div>
 </div>
 
-<div class="page">
+<div class="page" align="center">
     <div class="container">
         <div class="row">
-          <div class="col-md-3">
-                <?php require_once('sidebar-category.php'); ?>
-            </div>
-            <div class="col-md-9">
+          <!-- <div class="col-md-3">
+                <?//php require_once('sidebar-category.php'); ?>
+            </div> -->
+            <div class="col-md-12" >
                 
                 <h3><?php echo LANG_VALUE_51; ?> "<?php echo $title; ?>"</h3>
                 <div class="product product-cat">
@@ -159,12 +159,12 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                             echo '<div class="pl_15">'.LANG_VALUE_153.'</div>';
                         } else {
                             for($ii=0;$ii<count($final_ecat_ids);$ii++) {
-                                $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE ecat_id=? AND p_is_active=?");
+                                $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE ecat_id=? AND p_is_active=? GROUP BY p_name");
                                 $statement->execute(array($final_ecat_ids[$ii],1));
                                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($result as $row) {
                                     ?>
-                                    <div class="col-md-4 col-xs-6 item item-product-cat">
+                                    <div class="col-md-3 col-xs-6 item item-product-cat">
                                         <div class="inner">
                                             <div class="thumb">
                                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>

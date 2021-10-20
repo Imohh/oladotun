@@ -18,8 +18,6 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="policy-paragraph">
-					
-					TERMS AND CONDITIONS
 
 					<p>This website is operated by Eminence By GTX. Throughout the site, the terms “we”, “us” and “our” refer to Eminence By GTX. Eminence By GTX provides this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.
 					By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, customers, and/ or contributors of content.</p>
@@ -144,7 +142,7 @@
 					<p>We may also terminate this agreement at any time without notice if you fail, or we suspect that you have failed, to comply with any term or provision of these Terms of Service, and you will remain liable for all amounts due up to and including the date of termination; and/or if you fail, or we suspect that you have failed, to comply with any term or provision of these Terms of Service; and/or if you fail, or we suspect that you have failed, to comply with any term or provision of these Terms of Service</p>
 
 
-					Support @Eminencebygtx.com
+					<p>Support @Eminencebygtx.com</p>
 
 
 

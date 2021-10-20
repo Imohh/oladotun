@@ -4340,10 +4340,43 @@ Layout - Offcanvas
 
     .policy {
         padding: 50px;
+        margin-bottom: 30px;
+    }
+
+    .policy .policy-paragraph strong {
+        padding-top: 50px;
     }
 
     .policy-paragraph {
         width: 50%;
+        margin: 0 auto;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-policy {
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    .top-policy h2 {
+        font-size: 2em;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .policy {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .policy .policy-paragraph strong {
+        padding-top: 50px;
+    }
+
+    .policy-paragraph {
+        width: 100%;
         margin: 0 auto;
         line-height: 1.4;
     }
