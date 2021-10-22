@@ -267,9 +267,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                         }
                         ?>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>

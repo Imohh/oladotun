@@ -19,7 +19,7 @@ foreach ($result as $row) {
 
 
 <!-- FIRST SECTION -->
-<section class="first-about-section">
+<section class="first-about-section first-effect">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -63,7 +63,7 @@ foreach ($result as $row) {
                         We are a chosen brand for comfortable wears
                     </p>
 
-                    <p>has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women. tion whether youâ€™re attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women.</p>
+                    <p class="second-par">has made you shine on your special days specially for beautiful women. Our goal has always been to celebrate YOU! To get the best in you we brought a huge collection whether you're attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women. tion whether you're attending a party, wedding, and all those events that require a WOW dress. has made you shine on your special days specially for beautiful women.</p>
                     <img src="assets/img/portrait.jpg" width="100%">
                 </div>
             </div>
@@ -94,7 +94,7 @@ He is also certified in Fashion from prestigious private institutions.  He is a 
 
 
 <!-- FORTH SECTION -->
-<section class="first-about-section">
+<section class="first-about-section last-bottom">
     <div class="container">
         <div class="row">
             <div class="col-lg-7">

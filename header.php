@@ -292,7 +292,7 @@ foreach ($result as $row) {
 			<div class="col-lg-4 col-sm-3 col-xs-3 logo">
 				<a href="#">Nigeria(NGN)</a><!-- <i class="fa fa-phone"></i> -->
 				<a href="contact.php">Contact Us</a>
-				<ul class="list-unstyled list-inline ct-topbar__list">
+				<!-- <ul class="list-unstyled list-inline ct-topbar__list">
 				  <li class="ct-language">Language <i class="fa fa-arrow-down"></i>
 					<ul class="list-unstyled ct-language__dropdown">
 					  <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a></li>
@@ -302,7 +302,7 @@ foreach ($result as $row) {
 					  <li><a href="#googtrans(en|ja)" class="lang-es lang-select" data-lang="ja"><img src="https://www.solodev.com/assets/google-translate/flag-japan.png" alt="JAPAN"></a></li>
 					</ul>
 				  </li>
-				</ul>
+				</ul> -->
 			</div>
 			<div class="col-lg-3">
 				
@@ -334,7 +334,7 @@ foreach ($result as $row) {
 	                        $i++;
 	                        $arr_cart_p_qty[$i] = $value;
 	                    }                    $i=0;
-	                    foreach($_SESSION['cart_p_current_price'] as $key => $value) 
+	                    foreach($_SESSION['cart_p_current_price'] as $key => $value)
 	                    {
 	                        $i++;
 	                        $arr_cart_p_current_price[$i] = $value;
@@ -540,7 +540,7 @@ foreach ($result as $row) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-between align-items-center">
-                        <div class="col-4 " style="float: right;">
+                        <div class="col-4 " style="float: right;margin-top: 2%;">
                             <a href="cart.php"><img src="https://img.icons8.com/ios/15/000000/shopping-bag.png"/><!-- <?//php echo LANG_VALUE_19; ?> --> (<?php echo LANG_VALUE_1; ?><?php
 					if(isset($_SESSION['cart_p_id'])) {
 						$table_total_price = 0;
@@ -567,7 +567,8 @@ foreach ($result as $row) {
                         </div>
                         
 
-                        <div class="col-4 " >
+
+                        <div class="col-2 harmburger-mobile">
                             <a href="#mobile-menu-offcanvas" class="mobile-menu offcanvas-toggle">
                                 <span class="mobile-menu-dash"></span>
                                 <span class="mobile-menu-dash"></span>
@@ -575,7 +576,14 @@ foreach ($result as $row) {
                             </a>
                         </div>
 
-                        <div class="col-4" style="float: left;width:70%" align="center">
+
+                        <div class="col-2 search-bar-mobile">
+                        	<a href="#mobile-menu-offcanvas" class="mobile-menu offcanvas-toggle">
+                            <span><i class="fa fa-search"></i></span>
+                        </a>
+                        </div>
+
+                        <div class="col-4 img-mobile" style="" align="center">
                             <a href="index.php" class="mobile-logo-link">
                                 <img src="assets/img/eminence-2.png" height="80%" width="80%" alt="logo image">
                             </a>
