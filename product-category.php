@@ -138,7 +138,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                 <h3><?php echo LANG_VALUE_51; ?> "<?php echo $title; ?>"</h3>
                 <div class="product product-cat">
 
-                    <div class="row">
+                    <!-- <div class="row"> -->
                         <?php
                         // Checking if any product is available or not
                         $prod_count = 0;
@@ -159,7 +159,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                             echo '<div class="pl_15">'.LANG_VALUE_153.'</div>';
                         } else {
                             for($ii=0;$ii<count($final_ecat_ids);$ii++) {
-                                $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE ecat_id=? AND p_is_active=? GROUP BY p_name");
+                                $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE ecat_id=? AND p_is_active=? ORDER BY p_id");
                                 $statement->execute(array($final_ecat_ids[$ii],1));
                                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($result as $row) {
@@ -173,7 +173,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                                             <div class="text">
                                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                                 <h4>
-                                                    <?php echo LANG_VALUE_1; ?><?php echo $row['p_current_price']; ?> 
+                                                    <?php echo LANG_VALUE_1; ?><?php echo $row['p_current_price']; ?>
                                                     <?php if($row['p_old_price'] != ''): ?>
                                                     <del>
                                                         <?php echo LANG_VALUE_1; ?><?php echo $row['p_old_price']; ?>
@@ -266,7 +266,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                             }
                         }
                         ?>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>

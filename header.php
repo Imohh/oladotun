@@ -576,11 +576,10 @@ foreach ($result as $row) {
                             </a>
                         </div>
 
-
                         <div class="col-2 search-bar-mobile">
                         	<a href="#mobile-menu-offcanvas" class="mobile-menu offcanvas-toggle">
-                            <span><i class="fa fa-search"></i></span>
-                        </a>
+                            	<span><i class="fa fa-search"></i></span>
+                        	</a>
                         </div>
 
                         <div class="col-4 img-mobile" style="" align="center">
