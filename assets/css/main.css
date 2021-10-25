@@ -344,9 +344,7 @@ a:hover {
     .img-mobile {
         float:left;
         max-width: 60%;
-        position: relative;
         text-align: center;
-        background: red;
     }
 
     .img-mobile img {
@@ -354,21 +352,16 @@ a:hover {
         margin-top: 2%;
     }
 
-    .harmburger-mobile {
-        background: green;
-    }
-
     .harmburger-mobile span {
-        background: red;
         font-size: 2px;
     }
 
-    .search-bar-mobile {s
+    .search-bar-mobile {
         padding-left: 10%;
     }
 
-    .search-bar-mobile .mobile-menu .offcanvas-toggle {
-        background: green;
+    .search-bar-mobile .offcanvas-toggle {
+        /*background: blue*/
     }
 
     .search-bar-mobile i {
@@ -473,6 +466,82 @@ a:hover {
         background: #333;
         color: #fff;
         border: 1px solid #333;
+    }
+}
+
+@media (min-width: 563px) and (max-width: 600px) {
+    .img-mobile {
+        float:left;
+        max-width: 73%;
+        text-align: center;
+    }
+
+    .img-mobile img {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .harmburger-mobile .mobile-menu {
+        margin-top:2%;
+    }
+
+    .search-bar-mobile .mobile-menu {
+        margin-top: 3%;
+    }
+}
+
+@media (min-width: 485px) and (max-width: 562px) {
+    .img-mobile {
+        float:left;
+        max-width: 70%;
+        text-align: center;
+    }
+
+    .img-mobile img {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .harmburger-mobile .mobile-menu {
+        margin-top:2%;
+    }
+
+    .search-bar-mobile .mobile-menu {
+        margin-top: 3%;
+    }
+}
+
+@media (min-width: 433px) and (max-width: 484px) {
+    .img-mobile {
+        float:left;
+        max-width: 67%;
+        text-align: center;
+    }
+
+    .img-mobile img {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .harmburger-mobile .mobile-menu {
+        margin-top:2%;
+    }
+
+    .search-bar-mobile .mobile-menu {
+        margin-top: 3%;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 432px) {
+    .img-mobile {
+        float:left;
+        max-width: 64%;
+        text-align: center;
+    }
+
+    .img-mobile img {
+        width: 100%;
+        margin-top: 2%;
     }
 }
 
@@ -3718,7 +3787,7 @@ div.pagination span.disabled {
 
 .mobile-header-wrapper {
   padding-right: 25px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .mobile-header--left {
