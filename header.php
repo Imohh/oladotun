@@ -597,11 +597,14 @@ foreach ($result as $row) {
 						                        <div class="modal-content clearfix">
 						                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 						                            <div class="modal-body">
-						                                <div class="form-group">
-						                                    <span class="input-icon"><i class="fa fa-user"></i></span>
-						                                    <input type="email" class="form-control" placeholder="Enter email">
-						                                </div>
-						                                <button class="btn">Login</button>
+						                            	<form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
+						                            		<?php $csrf->echoInputField(); ?>
+						                                	<div class="form-group">
+						                                    	<span class="input-icon"><i class="fa fa-user"></i></span>
+						                                	    <input type="text" class="form-control search-top" placeholder="<?php echo LANG_VALUE_2; ?>" name="search_text">
+						                                	</div>
+						                                	<button type="submit" class="btn btn-default"><i class="fa fa-search"></i><?//php echo LANG_VALUE_3; ?></button>
+						                                </form>
 						                            </div>
 						                        </div>
 						                    </div>
