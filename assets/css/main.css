@@ -467,6 +467,10 @@ a:hover {
         color: #fff;
         border: 1px solid #333;
     }
+
+    .media-bottom {
+        display: none;
+    }
 }
 
 @media (min-width: 563px) and (max-width: 600px) {

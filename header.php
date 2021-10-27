@@ -586,11 +586,14 @@ foreach ($result as $row) {
                         </div>
 
 
-                        <!-- <style>
-                        	.modal-box {
-                        		background: red;
+                        <style>
+                        	.modal-box .btn {
+                        		background: #000;
+                        		color: #fff;
+                        		border: none;
+                        		width: 50%;
                         	}
-                        </style> -->
+                        </style>
 
                         <div class="container">
 						    <div class="row">

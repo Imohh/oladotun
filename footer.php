@@ -119,7 +119,7 @@ This link will be active only for 24 hours.
 
 
 
-<div class="footer-bottom">
+<div class="footer-bottom media-bottom">
 	<div class="container">
 		<div class="row">
 
@@ -164,6 +164,131 @@ This link will be active only for 24 hours.
 		</div>
 	</div>
 </div>
+
+<style type="text/css">
+	@media (min-width: 600px) {
+		.panel-group {
+			display: none;
+		}
+	}
+
+	.panel {
+
+	}
+
+	
+</style>
+
+
+
+
+<div class="page faq-top">
+    <div class="container">
+        <div class="row">            
+            <div class="col-md-8 faq">
+
+                <div class="col-md-10">
+
+					<div class="panel-group" id="faqAccordion">
+	                            
+
+	                    <!-- FIRST -->
+	                    <div class="panel">
+	                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question">
+	                            <h4 class="panel-title">
+	                                About Eminence
+	                                <span><i class="fa fa-plus"></i></span>
+	                            </h4>
+	                                
+	                        </div>
+	                        <div id="question" class="panel-collapse collapse" style="height: 0px;">
+	                            <div class="panel-body">
+	                                <!-- <h5><span class="label label-primary">Answer</span></h5> -->
+	                                <p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and many more.</p>
+									<ul class="d-flex flex-row align-items-center justify-content-start">
+										<li><a href="#"><img src="assets/img/card_1.jpg" alt=""></a></li>
+										<li><a href="#"><img src="assets/img/card_2.jpg" alt=""></a></li>
+										<li><a href="#"><img src="assets/img/card_3.jpg" alt=""></a></li>
+										<li><a href="#"><img src="images/card_4.jpg" alt=""></a></li>
+										<li><a href="#"><img src="images/card_5.jpg" alt=""></a></li>
+									</ul>
+	                            </div>
+	                        </div>
+	                    </div>
+
+	                    <!-- SECOND -->
+                        <div class="panel">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questions">
+                                <h4 class="panel-title">
+                                    need help
+                                    <span><i class="fa fa-plus"></i></span>
+                                </h4>
+                                
+                            </div>
+                            <div id="questions" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <!-- <h5><span class="label label-primary">Answer</span></h5> -->
+                                    <ul>
+										<li><a href="contact.php">Contact Us</a></li>
+										<li><a href="#">Shipping services</a></li>
+										<li><a href="#">Payment Options</a></li>
+										<li><a href="faq.php">FAQs</a></li>
+									</ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- THIRD -->
+                        <div class="panel">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questionss">
+                                <h4 class="panel-title">
+                                    the company
+                                    <span><i class="fa fa-plus"></i></span>
+                                </h4>
+                                
+                            </div>
+                            <div id="questionss" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <!-- <h5><span class="label label-primary">Answer</span></h5> -->
+                                    <ul>
+										<li><a href="about.php">About Eminence</a></li>
+										<li><a href="legal.php">Legal</a></li>
+										<li><a href="privacy.php">Privacy</a></li>
+									</ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FORTH -->
+                        <div class="panel">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questinss">
+                                <h4 class="panel-title">
+                                    find us on
+                                    <span><i class="fa fa-plus"></i></span>
+                                </h4>
+                                
+                            </div>
+                            <div id="questinss" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <!-- <h5><span class="label label-primary">Answer</span></h5> -->
+                                    <ul>
+										<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+										<li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+										<li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+									</ul>
+                                </div>
+                            </div>
+                        </div>
+
+	            	</div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+
 
 <div class="footer-bottom">
 	<div class="container">

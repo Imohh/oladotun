@@ -87,7 +87,7 @@ foreach ($result as $row) {
                         <div class="panel">
                             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questinss">
                                 <h4 class="panel-title">
-                                    tWhat if I'm unable to reach out online?
+                                    that if I'm unable to reach out online?
                                     <span><i class="fa fa-plus"></i></span>
                                 </h4>
                                 
