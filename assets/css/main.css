@@ -471,6 +471,14 @@ a:hover {
     .media-bottom {
         display: none;
     }
+
+    .footer-bottom {
+        background: #f6f5f3;
+    }
+
+    .panel-body ul {
+        list-style-type: none;
+    }
 }
 
 @media (min-width: 563px) and (max-width: 600px) {

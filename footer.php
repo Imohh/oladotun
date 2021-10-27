@@ -171,11 +171,6 @@ This link will be active only for 24 hours.
 			display: none;
 		}
 	}
-
-	.panel {
-
-	}
-
 	
 </style>
 
