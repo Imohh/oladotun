@@ -586,6 +586,11 @@ foreach ($result as $row) {
                         </div>
 
 
+                        <!-- <style>
+                        	.modal-box {
+                        		background: red;
+                        	}
+                        </style> -->
 
                         <div class="container">
 						    <div class="row">
@@ -600,7 +605,7 @@ foreach ($result as $row) {
 						                            	<form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
 						                            		<?php $csrf->echoInputField(); ?>
 						                                	<div class="form-group">
-						                                    	<span class="input-icon"><i class="fa fa-user"></i></span>
+						                                    	<!-- <span class="input-icon"><i class="fa fa-user"></i></span> -->
 						                                	    <input type="text" class="form-control search-top" placeholder="<?php echo LANG_VALUE_2; ?>" name="search_text">
 						                                	</div>
 						                                	<button type="submit" class="btn btn-default"><i class="fa fa-search"></i><?//php echo LANG_VALUE_3; ?></button>
