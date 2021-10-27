@@ -479,6 +479,11 @@ a:hover {
     .panel-body ul {
         list-style-type: none;
     }
+
+    .panel-body ul li a {
+        color: #000;
+        line-height: 1.5;
+    }
 }
 
 @media (min-width: 563px) and (max-width: 600px) {
