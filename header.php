@@ -348,18 +348,18 @@ foreach ($result as $row) {
 						echo '0.00';
 					}
 					?>)</a></li>
-					<li><a href=""><i class="fa fa-search"></i></a></li>
+					<!-- <li><a href=""><i class="fa fa-search"></i></a></li> -->
 				</ul>
 			</div>
-			<div class="col-md-3 search-area">
-				<!-- <form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
+			<!-- <div class="col-md-3 search-area">
+				<form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
 					<?//php $csrf->echoInputField(); ?>
 					<div class="form-group">
-						<input type="text" class="form-control search-top" placeholder="<?php echo LANG_VALUE_2; ?>" name="search_text">
+						<input type="text" class="form-control search-top" placeholder="<?//php echo LANG_VALUE_2; ?>" name="search_text">
 					</div>
 					<button type="submit" class="btn btn-default"><i class="fa fa-search"></i><?//php echo LANG_VALUE_3; ?></button>
-				</form> -->
-			</div>
+				</form>
+			</div> -->
 		</div>
 	</div>
 </div>
@@ -377,7 +377,7 @@ foreach ($result as $row) {
         <div class="header-bottom sticky-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-12">
                         <!-- Header Main Menu -->
                         <div class="main-menu">
                             <div class="center-logo">
@@ -396,10 +396,6 @@ foreach ($result as $row) {
 										$result = $statement->fetchAll(PDO::FETCH_ASSOC);
 										foreach ($result as $row) {
 									?>
-
-
-
-
 
 									<!-- <li class="has-dropdown has-megaitem">
                                         <a href="product-category.php?id=<?//php echo $row['tcat_id']; ?>&type=top-category"><?//php echo $row['tcat_name']; ?><i class="fa fa-angle-down"></i></a>
@@ -494,8 +490,9 @@ foreach ($result as $row) {
 
 									<li><a href="about.php"><?php echo $about_title; ?></a></li>
 									<li><a href="faq.php"><?php echo $faq_title; ?></a></li>
+									
+									<li><a href=""><i class="fa fa-search"></i></a></li>
 
-									<li><a href="contact.php"><?php echo $contact_title; ?></a></li>
 
                                 </ul>
                             </nav>

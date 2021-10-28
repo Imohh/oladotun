@@ -3669,6 +3669,9 @@ div.pagination span.disabled {
   position: relative;
   display: inline-block;
 }
+.main-menu nav > ul > li > a:nth-child(6) {
+    background: red;
+}
 .main-menu nav > ul > .has-dropdown {
   margin-right: 5px;
 }
