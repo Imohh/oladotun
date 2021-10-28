@@ -390,7 +390,7 @@ myModal.show()
                                         </div>
                                     </div>
                                 <?php else: ?>
-                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>">Add to Cart</a></p>
+                                   <!--  <p><a href="product.php?id=<?//php echo $row['p_id']; ?>">Add to Cart</a></p> -->
                                 <?php endif; ?>
                             </div>
                         </div>
