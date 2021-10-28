@@ -636,17 +636,6 @@ foreach ($result as $row) {
         </div> <!-- End Offcanvas Header -->
         <!-- Start Offcanvas Mobile Menu Wrapper -->
         <div class="offcanvas-mobile-menu-wrapper">
-            <!-- Start Mobile Menu User Top -->
-            <!-- <div class="mobile-menu-top">
-                <span>Welcome to our store!</span>
-                <form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
-					<?//php $csrf->echoInputField(); ?>
-					<div class="form-group">
-						<input type="text" class="form-control search-top" placeholder="<?php echo LANG_VALUE_2; ?>" name="search_text">
-					</div>
-					<button type="submit" class="btn btn-default"><i class="fa fa-search"></i><?//php echo LANG_VALUE_3; ?></button>
-				</form>
-            </div>  --><!-- End Mobile Menu User Top -->
             <!-- Start Mobile Menu Center -->
             <div class="mobile-menu-center">
                 <!-- Start Mobile Menu Nav -->

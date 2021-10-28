@@ -91,7 +91,7 @@ if(isset($_POST['form1'])) {
 
                                 <h2>i don't have an account</h2>
 
-                                <p>Get accustomed to Dotun luxury brand</p>
+                                <p>Get accustomed to Eminence by GTX luxury brand</p>
 
                                 <a href="registration.php"><input type="text" class="btn" value="Create an account" name=""></a>
                                 

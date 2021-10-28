@@ -200,12 +200,9 @@ This link will be active only for 24 hours.
 	                            <div class="panel-body">
 	                                <!-- <h5><span class="label label-primary">Answer</span></h5> -->
 	                                <p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and many more.</p>
-									<ul class="d-flex flex-row align-items-center justify-content-start">
-										<li><a href="#"><img src="assets/img/card_1.jpg" alt=""></a></li>
-										<li><a href="#"><img src="assets/img/card_2.jpg" alt=""></a></li>
-										<li><a href="#"><img src="assets/img/card_3.jpg" alt=""></a></li>
-										<li><a href="#"><img src="images/card_4.jpg" alt=""></a></li>
-										<li><a href="#"><img src="images/card_5.jpg" alt=""></a></li>
+										<a href="#"><img src="assets/img/card_1.jpg" alt=""></a>
+										<a href="#"><img src="assets/img/card_2.jpg" alt=""></a>
+										<a href="#"><img src="assets/img/card_3.jpg" alt=""></a>
 									</ul>
 	                            </div>
 	                        </div>
@@ -275,7 +272,6 @@ This link will be active only for 24 hours.
                                 </div>
                             </div>
                         </div>
-
 	            	</div>
 	            </div>
 	        </div>

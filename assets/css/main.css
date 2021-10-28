@@ -484,6 +484,10 @@ a:hover {
         color: #000;
         line-height: 1.5;
     }
+
+    .panel-body ul li a i {
+        padding-right: 10px;
+    }
 }
 
 @media (min-width: 563px) and (max-width: 600px) {
