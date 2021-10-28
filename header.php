@@ -348,16 +348,17 @@ foreach ($result as $row) {
 						echo '0.00';
 					}
 					?>)</a></li>
+					<li><a href=""><i class="fa fa-search"></i></a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 search-area">
-				<form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
-					<?php $csrf->echoInputField(); ?>
+				<!-- <form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
+					<?//php $csrf->echoInputField(); ?>
 					<div class="form-group">
 						<input type="text" class="form-control search-top" placeholder="<?php echo LANG_VALUE_2; ?>" name="search_text">
 					</div>
 					<button type="submit" class="btn btn-default"><i class="fa fa-search"></i><?//php echo LANG_VALUE_3; ?></button>
-				</form>
+				</form> -->
 			</div>
 		</div>
 	</div>
