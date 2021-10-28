@@ -1134,7 +1134,7 @@ Mobile style's
 	border: 0;
 }
 .product .item-product-cat .inner {
-    border: 2px solid #e5e5e5;
+    /*border: 2px solid #e5e5e5;*/
 }
 
 .product .item-search-result {
