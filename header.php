@@ -474,33 +474,29 @@ foreach ($result as $row) {
 									</ul>
 								</li>
 								<?php
-							}
-							?>
+									}
+								?>
 
 
-							<?php
-							$statement = $pdo->prepare("SELECT * FROM tbl_page WHERE id=1");
-							$statement->execute();
-							$result = $statement->fetchAll(PDO::FETCH_ASSOC);		
-							foreach ($result as $row) {
-								$about_title = $row['about_title'];
-								$faq_title = $row['faq_title'];
-								$blog_title = $row['blog_title'];
-								$contact_title = $row['contact_title'];
-								$pgallery_title = $row['pgallery_title'];
-								$vgallery_title = $row['vgallery_title'];
-							}
-							?>
+									<?php
+									$statement = $pdo->prepare("SELECT * FROM tbl_page WHERE id=1");
+									$statement->execute();
+									$result = $statement->fetchAll(PDO::FETCH_ASSOC);		
+									foreach ($result as $row) {
+										$about_title = $row['about_title'];
+										$faq_title = $row['faq_title'];
+										$blog_title = $row['blog_title'];
+										$contact_title = $row['contact_title'];
+										$pgallery_title = $row['pgallery_title'];
+										$vgallery_title = $row['vgallery_title'];
+									}
+									?>
 
-							<li><a href="about.php"><?php echo $about_title; ?></a></li>
-							<li><a href="faq.php"><?php echo $faq_title; ?></a></li>
+									<li><a href="about.php"><?php echo $about_title; ?></a></li>
+									<li><a href="faq.php"><?php echo $faq_title; ?></a></li>
 
-							<li><a href="contact.php"><?php echo $contact_title; ?></a></li>
+									<li><a href="contact.php"><?php echo $contact_title; ?></a></li>
 
-
-
-
-                                    
                                 </ul>
                             </nav>
                         </div> <!-- Header Main Menu Start -->
