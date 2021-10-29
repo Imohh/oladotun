@@ -524,7 +524,7 @@ if($success_message1 != '') {
                                     </a> | <a href="faq.php"> may we help you?</a>
 
                                     <!-- Modal -->
-                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="background:red">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content clearfix">
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>

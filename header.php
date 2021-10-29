@@ -581,18 +581,18 @@ foreach ($result as $row) {
 
 
                         <style>
-                        	.modal-box .btn {
+                        	/*.header-modal .btn {
                         		background: #000;
                         		color: #fff;
                         		border: none;
-                        		width: 50%;
+                        		width: 50%;*/
                         	}
                         </style>
 
                         <div class="container">
 						    <div class="row">
 						        <div class="col-md-12">
-						            <div class="modal-box">
+						            <div class="modal-box header-modal">
 						                <!-- Modal -->
 						                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 						                    <div class="modal-dialog" role="document">

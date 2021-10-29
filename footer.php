@@ -170,6 +170,10 @@ This link will be active only for 24 hours.
 		.panel-group {
 			display: none;
 		}
+
+		.footer-border-no {
+			display: none;
+		}
 	}
 	
 </style>
@@ -177,7 +181,7 @@ This link will be active only for 24 hours.
 
 
 
-<div class="page faq-top">
+<div class="page faq-top footer-border-no">
     <div class="container">
         <div class="row">            
             <div class="col-md-8 faq">
@@ -406,7 +410,7 @@ foreach ($result as $row) {
     function stripeResponseHandler(status, response) {
         if (response.error) {
             $('#submit-button').prop("disabled", false);
-            $("#msg-container").html('<div style="color: red;border: 1px solid;margin: 10px 0px;padding: 5px;"><strong>Error:</strong> ' + response.error.message + '</div>');
+            $("#msg-container").html('<div style="color: red;margin: 10px 0px;padding: 5px;"><strong>Error:</strong> ' + response.error.message + '</div>');
             $("#msg-container").show();
         } else {
             var form$ = $("#stripe_form");

@@ -25,6 +25,7 @@
 body {
 	font-family: 'Futura', sans-serif;
 	font-size: 14px;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1553,7 +1554,6 @@ Mobile style's
     color: #ccc;
     transition: 0.4s;
 }
-
 
 .scrollup {
     position: fixed;
@@ -3894,7 +3894,7 @@ Layout - Offcanvas
   line-height: 28px;
   text-align: center;
   color: #000;
-  background: transparent;
+  background: red;
   border: none;
   transition: all 0.3s ease 0s;
 }
