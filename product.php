@@ -733,16 +733,20 @@ if($success_message1 != '') {
 </div>
 
 
-
+<style>
+    .product-detail-accordion {
+        background: #fff;
+        padding-top: 5%;
+    }
+</style>
 
 
 <div class="page faq-top footer-border-no product-detail-accordion">
     <div class="container">
         <div class="row">            
-            <div class="col-md-8 faq">
+            <div class="col-md-8 faqs">
                 <div class="col-md-10">
                     <div class="panel-group" id="faqAccordion">
-                                                            
 
                         <!-- FIRST -->
                         <div class="panel">
