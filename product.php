@@ -553,7 +553,7 @@ if($success_message1 != '') {
 					<div class="row">
 						<div class="col-md-12">
 							<!-- Nav tabs -->
-							<ul class="nav nav-tabs" role="tablist">
+							<ul class="nav nav-tabs product-nav-tabs" role="tablist">
 								<li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab"><?php echo LANG_VALUE_59; ?></a></li>
 								<li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab"><?php echo LANG_VALUE_60; ?></a></li>
                                 <li role="presentation"><a href="#condition" aria-controls="condition" role="tab" data-toggle="tab"><?php echo LANG_VALUE_61; ?></a></li>
@@ -736,7 +736,138 @@ if($success_message1 != '') {
 
 
 
+<div class="page faq-top footer-border-no product-detail-accordion">
+    <div class="container">
+        <div class="row">            
+            <div class="col-md-8 faq">
+                <div class="col-md-10">
+                    <div class="panel-group" id="faqAccordion">
+                                                            
 
+                        <!-- FIRST -->
+                        <div class="panel">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question">
+                                <h4 class="panel-title">
+                                    <a href="#description" aria-controls="description" role="tab" data-toggle="tab">
+                                        <?php echo LANG_VALUE_59; ?></a>
+                                    <span><i class="fa fa-plus"></i></span>
+                                </h4>
+                                                                
+                            </div>
+                            <div id="question" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                        <?php
+                                        if($p_description == '') {
+                                            echo LANG_VALUE_70;
+                                        } else {
+                                            echo $p_description;
+                                        }
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECOND -->
+                        <div class="panel">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questions">
+                                <h4 class="panel-title">
+                                <a href="#feature" aria-controls="feature" role="tab" data-toggle="tab">
+                                    <?php echo LANG_VALUE_60; ?></a>
+                                <span><i class="fa fa-plus"></i></span>
+                                </h4>                   
+                            </div>
+                            <div id="questions" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                        <?php
+                                        if($p_feature == '') {
+                                            echo LANG_VALUE_71;
+                                        } else {
+                                            echo $p_feature;
+                                        }
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- THIRD -->
+                        <div class="panel">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questionss">
+                                <h4 class="panel-title">
+                                    <a href="#condition" aria-controls="condition" role="tab" data-toggle="tab"><?php echo LANG_VALUE_61; ?></a>
+                                <span><i class="fa fa-plus"></i></span>
+                                </h4>
+                            </div>
+                            <div id="questionss" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                        <?php
+                                            if($p_condition == '') {
+                                                echo LANG_VALUE_72;
+                                            } else {
+                                                echo $p_condition;
+                                            }
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FORTH -->
+                        <div class="panel">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questinss">
+                                <h4 class="panel-title">
+                                    <a href="#return_policy" aria-controls="return_policy" role="tab" data-toggle="tab"><?php echo LANG_VALUE_62; ?></a>
+                                <span><i class="fa fa-plus"></i></span>
+                                </h4>
+                            </div>
+                            <div id="questinss" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                        <?php
+                                            if($p_return_policy == '') {
+                                                echo LANG_VALUE_73;
+                                            } else {
+                                                echo $p_return_policy;
+                                            }
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FIFTH -->
+                        <div class="panel">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questinsss">
+                                <h4 class="panel-title">
+                                    <a href="#payment_option" aria-controls="payment_option" role="tab" data-toggle="tab">Payment Option</a>
+                                <span><i class="fa fa-plus"></i></span>
+                                </h4>
+                            </div>
+                            <div id="questinsss" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                        <?php
+                                        if($p_return_policy == '') {
+                                            echo LANG_VALUE_73;
+                                        } else {
+                                            echo $p_return_policy;
+                                        }
+                                        ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

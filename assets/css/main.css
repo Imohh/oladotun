@@ -489,6 +489,20 @@ a:hover {
     .panel-body ul li a i {
         padding-right: 10px;
     }
+
+    .product-nav-tabs {
+        background: red;
+        display: none;
+    }
+
+    .tab-content {
+        background: green;
+        display: none;
+    }
+
+    .product-detail-accordion {
+        background: red;
+    }
 }
 
 @media (min-width: 563px) and (max-width: 600px) {
