@@ -504,6 +504,11 @@ a:hover {
         background: red;
         margin-top: 20%;
     }
+
+    .new-select .select2 {
+        width: 80%;
+        
+    }
 }
 
 @media (min-width: 563px) and (max-width: 600px) {
@@ -1798,7 +1803,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .product .btn-cart1 input[type="submit"] {
     border: 0;
-    padding: 10px 14px;
+    padding: 15px 14px;
     background: #000;
     color: #fff;
     width: 100%;
