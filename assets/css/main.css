@@ -4157,7 +4157,7 @@ Layout - Offcanvas
 
 .offcanvas-menu li a {
   display: block;
-  margin: 0px 20px;
+  margin: 0px 10px;
   padding: 15px 20px;
   color: #000;
   text-decoration: none;
@@ -4183,6 +4183,8 @@ Layout - Offcanvas
   right: 0;
   transition: all 0.3s ease;
   color: #666;
+  margin-top: 5%;
+  padding-right: 10%;
 }
 
 .offcanvas-menu .active > .offcanvas-menu-expand:last-child,
@@ -4194,6 +4196,7 @@ Layout - Offcanvas
 .sub-menu > .active .offcanvas-menu-expand::after {
   color: #777;
   content: "";
+  background: red;
 }
 
 .create-account {
