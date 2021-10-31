@@ -877,13 +877,6 @@ if($success_message1 != '') {
 
 
 
-
-
-
-
-
-
-
 <div class="product bg-gray pt_70 pb_70">
     <div class="container">
         <div class="row">

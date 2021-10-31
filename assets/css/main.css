@@ -527,7 +527,7 @@ a:hover {
     }
 
     .harmburger-mobile .mobile-menu {
-        margin-top:2%;
+        /*margin-top:2%;*/
     }
 
     .search-bar-mobile .mobile-menu {
@@ -548,7 +548,7 @@ a:hover {
     }
 
     .harmburger-mobile .mobile-menu {
-        margin-top:2%;
+        /*margin-top:2%;*/
     }
 
     .search-bar-mobile .mobile-menu {
@@ -569,7 +569,7 @@ a:hover {
     }
 
     .harmburger-mobile .mobile-menu {
-        margin-top:2%;
+        /*margin-top:2%;*/
     }
 
     .search-bar-mobile .mobile-menu {
@@ -1089,7 +1089,7 @@ Mobile style's
 
 .product .out-of-stock .inner {
     display: inline-block;
-    background: #0d1452;
+    background: #000;
     color: #fff;
     font-size: 14px;
     padding: 6px 10px;
@@ -1813,10 +1813,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .product .btn-cart1 input[type="submit"]:hover {
-    border: 0;
-    padding: 10px 14px;
-    background: #333;
-    color: #fff;
+    border: 2px solid #000;
+    background: #fff;
+    color: #000;
     transition: 0.5s;
 }
 
@@ -4700,7 +4699,7 @@ Layout - Offcanvas
     }
 
     .harmburger-mobile {
-        margin-top: 1.5%;
+        /*margin-top: 1.5%;*/
     }
 
     .search-bar-mobile {
