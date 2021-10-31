@@ -4196,7 +4196,6 @@ Layout - Offcanvas
 .sub-menu > .active .offcanvas-menu-expand::after {
   color: #777;
   content: "";
-  background: red;
 }
 
 .create-account {
