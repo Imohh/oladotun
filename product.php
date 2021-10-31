@@ -750,7 +750,7 @@ if($success_message1 != '') {
 
                         <!-- FIRST -->
                         <div class="panel">
-                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#qquestion">
                                 <h4 class="panel-title">
                                     <a href="#description" aria-controls="description" role="tab" data-toggle="tab">
                                         <?php echo LANG_VALUE_59; ?></a>
@@ -758,7 +758,7 @@ if($success_message1 != '') {
                                 </h4>
                                                                 
                             </div>
-                            <div id="question" class="panel-collapse collapse" style="height: 0px;">
+                            <div id="qquestion" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
                                     <p>
                                         <?php
@@ -775,14 +775,14 @@ if($success_message1 != '') {
 
                         <!-- SECOND -->
                         <div class="panel">
-                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questions">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#qquestions">
                                 <h4 class="panel-title">
                                 <a href="#feature" aria-controls="feature" role="tab" data-toggle="tab">
                                     <?php echo LANG_VALUE_60; ?></a>
                                 <span><i class="fa fa-plus"></i></span>
                                 </h4>                   
                             </div>
-                            <div id="questions" class="panel-collapse collapse" style="height: 0px;">
+                            <div id="qquestions" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
                                     <p>
                                         <?php
@@ -799,13 +799,13 @@ if($success_message1 != '') {
 
                         <!-- THIRD -->
                         <div class="panel">
-                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questionss">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#qquestionss">
                                 <h4 class="panel-title">
                                     <a href="#condition" aria-controls="condition" role="tab" data-toggle="tab"><?php echo LANG_VALUE_61; ?></a>
                                 <span><i class="fa fa-plus"></i></span>
                                 </h4>
                             </div>
-                            <div id="questionss" class="panel-collapse collapse" style="height: 0px;">
+                            <div id="qquestionss" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
                                     <p>
                                         <?php
@@ -822,13 +822,13 @@ if($success_message1 != '') {
 
                         <!-- FORTH -->
                         <div class="panel">
-                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questinss">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#qquestinss">
                                 <h4 class="panel-title">
                                     <a href="#return_policy" aria-controls="return_policy" role="tab" data-toggle="tab"><?php echo LANG_VALUE_62; ?></a>
                                 <span><i class="fa fa-plus"></i></span>
                                 </h4>
                             </div>
-                            <div id="questinss" class="panel-collapse collapse" style="height: 0px;">
+                            <div id="qquestinss" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
                                     <p>
                                         <?php
@@ -845,13 +845,13 @@ if($success_message1 != '') {
 
                         <!-- FIFTH -->
                         <div class="panel">
-                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questinsss">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#qquestinsss">
                                 <h4 class="panel-title">
                                     <a href="#payment_option" aria-controls="payment_option" role="tab" data-toggle="tab">Payment Option</a>
                                 <span><i class="fa fa-plus"></i></span>
                                 </h4>
                             </div>
-                            <div id="questinsss" class="panel-collapse collapse" style="height: 0px;">
+                            <div id="qquestinsss" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
                                     <p>
                                         <?php
