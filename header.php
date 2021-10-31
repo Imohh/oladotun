@@ -626,7 +626,7 @@ foreach ($result as $row) {
     <div id="mobile-menu-offcanvas" class="offcanvas offcanvas-leftside offcanvas-mobile-menu-section">
         <!-- Start Offcanvas Header -->
         <div class="offcanvas-header text-right">
-            <button class="offcanvas-close"><i class="fa fa-times"></i></button>
+            <button class="offcanvas-close"><img src="assets/img/cancel.png" width="20px" height="20px"></button>
         </div> <!-- End Offcanvas Header -->
         <!-- Start Offcanvas Mobile Menu Wrapper -->
         <div class="offcanvas-mobile-menu-wrapper">
