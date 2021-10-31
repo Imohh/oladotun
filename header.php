@@ -491,7 +491,7 @@ foreach ($result as $row) {
 									<li><a href="about.php"><?php echo $about_title; ?></a></li>
 									<li><a href="faq.php"><?php echo $faq_title; ?></a></li>
 									
-									<li><a href=""><img src="assets/img/search.png" width="10px" height="10px"></a></li>
+									<li><a href=""><img src="assets/img/search.png" width="15px" height="15px"></a></li>
 
 
                                 </ul>
@@ -569,7 +569,7 @@ foreach ($result as $row) {
 
                         <div class="col-2 search-bar-mobile">
                         	<a href="#" class="mobile-menu offcanvas-toggle" data-toggle="modal" data-target="#myModal">
-                            	<span><img src="assets/img/search.png" width="10px" height="10px"></span>
+                            	<span><img src="assets/img/search.png" width="12px" height="12px"></span>
                         	</a>
                         </div>
 
