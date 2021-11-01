@@ -57,9 +57,6 @@
 							                           	ON t1.ecat_id = t2.ecat_id
 
 
-
-
-
 							       						-- FROM tbl_customer t1
 														-- JOIN tbl_country t2
 														-- ON t1.cust_country = t2.country_id

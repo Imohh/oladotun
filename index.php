@@ -31,24 +31,34 @@ foreach ($result as $row)
 
 ?>
 
-<script type="text/javascript">
-    $(window).on('load', function() {
-        $('#myModal').modal('show');
-    });
+<script>
+$(window).on('load',function(){
+    var delayMs = 700; // delay in milliseconds
+    
+    setTimeout(function(){
+        $('#pyModal').modal('show');
+    }, delayMs);
+});    
 </script>
 
-<div class="modal hide fade" id="myModal">
-    <div class="modal-header">
-        <a class="close" data-dismiss="modal">×</a>
-        <h3>Modal header</h3>
-    </div>
-    <div class="modal-body">
-        <p>One fine body…</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#" class="btn">Close</a>
-        <a href="#" class="btn btn-primary">Save changes</a>
-    </div>
+
+<div class="modal fade" id="pyModal">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">My Modal</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+      </div>
 </div>
 
 

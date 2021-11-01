@@ -127,7 +127,7 @@ if(isset($_POST['form_add_to_cart'])) {
 		$current_p_qty = $row['p_qty'];
 	}
 	if($_POST['p_qty'] > $current_p_qty):
-		$temp_msg = 'Sorry! There are only '.$current_p_qty.' item(s) in stock';
+		$temp_msg = 'Sorry! This product is currently sold out';
 		?>
 		<script type="text/javascript">alert('<?php echo $temp_msg; ?>');</script>
 		<?php
@@ -524,7 +524,7 @@ if($success_message1 != '') {
                                     </a> | <a href="faq.php"> may we help you?</a>
 
                                     <!-- Modal -->
-                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="background:red">
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content clearfix">
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>

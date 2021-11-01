@@ -105,6 +105,8 @@ foreach ($result as $row) {
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
+
+
 <script>
     $(document).ready(function(){
         $("#myModal").modal('show');
@@ -568,9 +570,9 @@ foreach ($result as $row) {
                         </div>
 
                         <div class="col-2 search-bar-mobile">
-                        	<a href="#" class="mobile-menu offcanvas-toggle" data-toggle="modal" data-target="#myModal">
+                        	
                             	<span><img src="assets/img/search.png" width="12px" height="12px"></span>
-                        	</a>
+                        	
                         </div>
 
                         <div class="col-4 img-mobile" style="" align="center">
@@ -589,32 +591,7 @@ foreach ($result as $row) {
                         	}
                         </style>
 
-                        <div class="container">
-						    <div class="row">
-						        <div class="col-md-12">
-						            <div class="modal-box header-modal">
-						                <!-- Modal -->
-						                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-						                    <div class="modal-dialog" role="document">
-						                        <div class="modal-content clearfix">
-						                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-						                            <div class="modal-body">
-						                            	<form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
-						                            		<?php $csrf->echoInputField(); ?>
-						                                	<div class="form-group">
-						                                    	<!-- <span class="input-icon"><i class="fa fa-user"></i></span> -->
-						                                	    <input type="text" class="form-control search-top" placeholder="<?php echo LANG_VALUE_2; ?>" name="search_text">
-						                                	</div>
-						                                	<button type="submit" class="btn btn-default"><i class="fa fa-search"></i><?//php echo LANG_VALUE_3; ?></button>
-						                                </form>
-						                            </div>
-						                        </div>
-						                    </div>
-						                </div>
-						            </div>
-						        </div>
-						    </div>
-						</div>
+                        
 
                     </div>
                 </div>
