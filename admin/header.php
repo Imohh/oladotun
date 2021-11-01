@@ -49,7 +49,7 @@ $success_message1 = '';
 		<header class="main-header">
 
 			<a href="index.php" class="logo">
-				<span class="logo-lg">Fashionys.com</span>
+				<span class="logo-lg">Eminence By GTX</span>
 			</a>
 
 			<nav class="navbar navbar-static-top">
