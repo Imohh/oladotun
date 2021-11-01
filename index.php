@@ -33,79 +33,7 @@ foreach ($result as $row)
 
 
 
-<div data-wps-popup-content-body="" class="bordered" data-wps-ad="wps_sGw8yi5-qY.1--1" style="background-image: none;"><div data-wps-guard="true" style="position: relative;"><style>
-  .wpst-overlay {
-    width: 410px;
-    background-color:#fff;
-    margin:0 auto;
-    font-family: Gillsans,sans-serif;
-  } 
-  .wpst-image {
-    display:block;
-    margin:0 auto;
-    margin-bottom:15px;
-  }
-  .wpst-text-wrap {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-  }
-  .wpst-title {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 15px;
-    letter-spacing: 1px !important; 
-    text-transform: none !important;
-    font-weight: 700;
-    font-size: 14px !important;
-    line-height: 1.5 !important;
 
-    color: #242424;
-
-  }
-  .wpst-copy {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 15px;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 1px;    
-    color: #242424;
-  }
-
-  .wpst-submit {
-    min-width:200px;
-    margin-bottom:5px;
-    padding:13px 30px;
-    border:1px solid #242424;
-
-    font-size: 12px;
-    line-height:1;
-    text-align: center;
-    letter-spacing: .1em;
-    color: #252525;
-    text-decoration:none;
-    font-weight:700;
-  }
-</style>
-<div class="wpst-overlay">
-  <img class="wpst-image" src="https://link.enews.versace.com/custloads/878021073/md_149522.jpg" width="410">
-  <div class="wpst-text-wrap">
-    <h3 class="wpst-title">STAY IN TOUCH WITH VERSACE NEWS</h3>
-    <p class="wpst-copy">Subscribe to our emails to be the first to shop and<br> discover our brand new collections.</p>
-    <a id="cta" class="wpst-submit" onclick="adobe_track_emarsys_popup_cta()" target="_blank" data-wps-href="https://www.versace.com/international/en/email-subscribe/">SUBSCRIBE</a>
-  </div>
-</div>
-<script>
-  function adobe_track_emarsys_popup_cta(){
-    _satellite.track("emarsys_popup_cta", {
-      "emarsys_popup_type_id": "Welcome_to_NEW_Subscription_EN_internROW",
-      "emarsys_popup_cta_id": "SUBSCRIBE"
-    })
-  }
-</script></div></div>
 
 
 
