@@ -40,11 +40,6 @@ foreach ($result as $row)
 
 
 
-
-
-
-
-
 <div id="bootstrap-touch-slider" class="carousel bs-slider fade control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="false" >
 
     <!-- Indicators -->

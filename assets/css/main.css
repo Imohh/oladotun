@@ -2906,8 +2906,6 @@ div.pagination span.disabled {
 
 
 /*MY MEDIA QUERY*/
-
-
 @media (min-width: 992px) {
     /*.nav {
         position: absolute;
@@ -3240,9 +3238,6 @@ div.pagination span.disabled {
         transition: 0.4s;
     }
 }
-
-
-
 
 
 
@@ -4740,4 +4735,13 @@ Layout - Offcanvas
         margin-bottom: 10%;
     }
 
+}
+
+
+
+.thumb .photo .sold-out {
+    background: #000;
+    padding: 5px 30px;
+    color: #fff;
+    text-align: left;
 }

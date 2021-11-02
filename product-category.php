@@ -164,10 +164,16 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($result as $row) {
                                     ?>
-                                    <div class="col-md-3 col-xs-6 item item-product-cat">
+                                    <div class="col-md-3 col-lg-3 col-xs-6 item item-product-cat" style="background:red">
                                         <div class="inner">
                                             <div class="thumb">
-                                                <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
+                                                <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);">
+                                                    
+                                                    
+                                                    <?php if($row['p_qty'] == 0): ?>
+                                                    <span class="sold-out" align="left">Sold Out</span>
+                                                <?php endif; ?>
+                                                </div>
                                                 <div class="overlay"></div>
                                             </div>
                                             <div class="text">
@@ -249,15 +255,15 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                                                     }
                                                     ?>
                                                 </div>
-                                                <?php if($row['p_qty'] == 0): ?>
+                                                <!-- <?//php if($row['p_qty'] == 0): ?>
                                                     <div class="out-of-stock">
                                                         <div class="inner">
                                                             Out Of Stock
                                                         </div>
                                                     </div>
-                                                <?php else: ?>
-                                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo LANG_VALUE_154; ?></a></p>
-                                                <?php endif; ?>
+                                                <?//php else: ?>
+                                                    <p><a href="product.php?id=<?//php echo $row['p_id']; ?>"><?//php echo LANG_VALUE_154; ?></a></p>
+                                                <?//php endif; ?> -->
                                             </div>
                                         </div>
                                     </div>
