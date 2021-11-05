@@ -154,7 +154,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                                 $prod_count++;
                             }
                         endfor;
-s
+
                         if($prod_count==0) {
                             echo '<div class="pl_15">'.LANG_VALUE_153.'</div>';
                         } else {
