@@ -24,7 +24,7 @@ foreach ($result as $row) {
                 <div class="col-md-10">
                 
                 <div class="panel-group" id="faqAccordion">
-                <h2>find out more about Eminence By GTX</h2>               
+                <h2>find out more about Eminence By GTX</h2>              
 
                     <!-- FIRST -->
                         <div class="panel">

@@ -167,9 +167,9 @@ This link will be active only for 24 hours.
 
 <style type="text/css">
 	@media (min-width: 600px) {
-		.panel-group {
+		/*.panel-group {
 			display: none;
-		}
+		}*/
 
 		.footer-border-no {
 			display: none;
@@ -193,14 +193,14 @@ This link will be active only for 24 hours.
 
 	                    <!-- FIRST -->
 	                    <div class="panel">
-	                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question">
+	                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questiond">
 	                            <h4 class="panel-title">
 	                                About Eminence
 	                                <span><i class="fa fa-plus"></i></span>
 	                            </h4>
 	                                
 	                        </div>
-	                        <div id="question" class="panel-collapse collapse" style="height: 0px;">
+	                        <div id="questiond" class="panel-collapse collapse" style="height: 0px;">
 	                            <div class="panel-body">
 	                                <!-- <h5><span class="label label-primary">Answer</span></h5> -->
 	                                <p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and many more.</p>
@@ -214,14 +214,14 @@ This link will be active only for 24 hours.
 
 	                    <!-- SECOND -->
                         <div class="panel">
-                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questions">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questionsq">
                                 <h4 class="panel-title">
                                     need help
                                     <span><i class="fa fa-plus"></i></span>
                                 </h4>
                                 
                             </div>
-                            <div id="questions" class="panel-collapse collapse" style="height: 0px;">
+                            <div id="questionsq" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
                                     <!-- <h5><span class="label label-primary">Answer</span></h5> -->
                                     <ul>
@@ -236,14 +236,14 @@ This link will be active only for 24 hours.
 
                         <!-- THIRD -->
                         <div class="panel">
-                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questionss">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questionssr">
                                 <h4 class="panel-title">
                                     the company
                                     <span><i class="fa fa-plus"></i></span>
                                 </h4>
                                 
                             </div>
-                            <div id="questionss" class="panel-collapse collapse" style="height: 0px;">
+                            <div id="questionssr" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
                                     <!-- <h5><span class="label label-primary">Answer</span></h5> -->
                                     <ul>
@@ -257,14 +257,14 @@ This link will be active only for 24 hours.
 
                         <!-- FORTH -->
                         <div class="panel">
-                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questinss">
+                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#questinsst">
                                 <h4 class="panel-title">
                                     find us on
                                     <span><i class="fa fa-plus"></i></span>
                                 </h4>
                                 
                             </div>
-                            <div id="questinss" class="panel-collapse collapse" style="height: 0px;">
+                            <div id="questinsst" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
                                     <!-- <h5><span class="label label-primary">Answer</span></h5> -->
                                     <ul>
