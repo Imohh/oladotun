@@ -279,6 +279,10 @@ if(!isset($_SESSION['cart_p_id'])) {
                 <div class="cart-buttons">
                     <ul>
                         <li><a href="cart.php" class="btn btn-primary"><?php echo LANG_VALUE_21; ?></a></li>
+                        <form>
+
+                        </form>
+                        <li><a href="cart.php" class="btn btn-primary">make payment</a></li>
                     </ul>
                 </div>
 
@@ -370,6 +374,111 @@ if(!isset($_SESSION['cart_p_id'])) {
 		                            
 		                        
 		                    </div>
+
+                            <h1>Hey there</h1>
+
+
+                            <form>
+            //Fields for primary address
+            <fieldset>
+                <legend><b>Primary Address</b>
+              </legend>
+                <label for="primaryaddress">
+                  Address:</label>
+                <input type="text" 
+                       name="Address" 
+                       id="primaryaddress" 
+                       required /><br />
+                <label for="primaryzip">Zip code:</label>
+                <input type="text" 
+                       name="Zip code" 
+                       id="primaryzip" 
+                       pattern="[0-9]{6}" 
+                       required /><br />
+            </fieldset>
+  
+            <input type="checkbox" 
+                   id="same" 
+                   name="same" 
+                   onchange="addressFunction()" />
+            <label for="same">
+              If same secondary address select this box.
+          </label>
+  
+            // Fields for secondary address
+            <fieldset>
+                <legend><b>Secondary Address</b></legend>
+                <label for="secondaryaddress">
+                  Address:
+              </label>
+                <input type="text" 
+                       name="Address" 
+                       id="secondaryaddress" 
+                       required /><br />
+                <label for="secondaryzip">
+                  Zip code:</label>
+                <input type="text" 
+                       name="Zip code" 
+                       id="secondaryzip"
+                       pattern="[0-9]{6}" 
+                       required /><br />
+            </fieldset>
+  
+            // Submit button in the form
+            <input type="submit"
+                   value="Submit" />
+        </form>
+
+
+
+                            <!-- PAYSTACK INTEGRATION -->
+                            
+                            <form id="paymentForm">
+                              <div class="form-group">
+                                <label for="email">Email Address</label>
+                                
+                                <input type="email" id="email-address" value="<?php echo $_SESSION['customer']['cust_email']; ?>" required />
+                              </div>
+                              <div class="form-group">
+                                <label for="amount">Amount</label>
+                                <input type="tel" id="amount" required />
+                              </div>
+                              <div class="form-group">
+                                <label for="first-name">Full Name</label>
+                                <input type="text" id="first-name" value="<?php echo $_SESSION['customer']['cust_s_name']; ?>" required />
+                              </div>
+                              <!-- <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" />
+                              </div> -->
+                              <div class="form-submit">
+                                <button type="submit" onclick="payWithPaystack().the"> Pay </button>
+                              </div>
+                            </form>
+
+                            <script>
+                                function addressFunction() {
+                                    if (document.getElementById(
+                                      "same").checked) {
+                                        document.getElementById(
+                                          "secondaryaddress").value = 
+                                        document.getElementById(
+                                          "primaryaddress").value;
+                                        
+                                        document.getElementById(
+                                          "secondaryzip").value = 
+                                        document.getElementById(
+                                          "primaryzip").value;
+                                    } else {
+                                        document.getElementById(
+                                          "secondaryaddress").value = "";
+                                        document.getElementById(
+                                          "secondaryzip").value = "";
+                                    }
+                                }
+                            </script>
+
+
 		                <?php endif; ?>
                         
                 </div>
@@ -381,6 +490,35 @@ if(!isset($_SESSION['cart_p_id'])) {
         </div>
     </div>
 </div>
+
+<!-- PAYSTACK SCRIPT -->
+<script>
+    const paymentForm = document.getElementById('paymentForm');
+    paymentForm.addEventListener("submit", payWithPaystack, false);
+    function payWithPaystack(e) {
+      e.preventDefault();
+      let handler = PaystackPop.setup({
+        key: 'pk_test_7114661f512e87772aefeab61d6811334b084c85', // Replace with your public key
+        email: document.getElementById("email-address").value,
+        amount: document.getElementById("amount").value * 100,
+        ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+        // label: "Optional string that replaces customer email"
+        onClose: function(){
+          alert('Window closed.');
+        },
+        callback: function(response){
+          let message = 'Payment complete! Reference: ' + response.reference;
+          alert(message);
+          //write function for cart items
+        }
+      });
+      handler.openIframe();
+    }
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+
+
 
 
 <?php require_once('footer.php'); ?>

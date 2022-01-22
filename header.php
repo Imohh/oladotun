@@ -240,7 +240,6 @@ foreach ($result as $row) {
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-<!-- 	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5993ef01e2587a001253a261&product=inline-share-buttons"></script> -->
 
 <?php echo $before_head; ?>
 
@@ -721,21 +720,6 @@ foreach ($result as $row) {
 
 
 		
-
-
-<!-- Preloader Start -->
-    <!-- <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Preloader Start -->
-
 
 <div id="preloader">
   <div id="loader"></div>

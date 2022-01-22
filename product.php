@@ -119,19 +119,19 @@ if($tot_rating == 0) {
 
 if(isset($_POST['form_add_to_cart'])) {
 
-	// getting the currect stock of this product
-	$statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_id=?");
-	$statement->execute(array($_REQUEST['id']));
-	$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
-	foreach ($result as $row) {
-		$current_p_qty = $row['p_qty'];
-	}
-	if($_POST['p_qty'] > $current_p_qty):
-		$temp_msg = 'Sorry! This product is currently sold out';
-		?>
-		<script type="text/javascript">alert('<?php echo $temp_msg; ?>');</script>
-		<?php
-	else:
+    // getting the currect stock of this product
+    $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_id=?");
+    $statement->execute(array($_REQUEST['id']));
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
+    foreach ($result as $row) {
+        $current_p_qty = $row['p_qty'];
+    }
+    if($_POST['p_qty'] > $current_p_qty):
+        $temp_msg = 'Sorry! This product is currently sold out';
+        ?>
+        <script type="text/javascript">alert('<?php echo $temp_msg; ?>');</script>
+        <?php
+    else:
     if(isset($_SESSION['cart_p_id']))
     {
         $arr_cart_p_id = array();
@@ -277,25 +277,22 @@ if(isset($_POST['form_add_to_cart'])) {
 
         $success_message1 = 'Product is added to the cart successfully!';
     }
-	endif;
+    endif;
 }
 ?>
 
 <?php
-if($error_message1 != '') {
-    echo "<script>alert('".$error_message1."')</script>";
+if($error_message1 != ''){
+   // echo "<script>alert('".$error_message1."')</script>";
 }
-if($success_message1 != '') {
-    echo "<script>alert('".$success_message1."')</script>";
-    header('location: product.php?id='.$_REQUEST['id']);
-}
+if($success_message1 != ''){header('location: product.php?id='.$_REQUEST['id']);}
 ?>
 
 
 <div class="page">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 <div class="breadcrumb mb_30">
                     <ul>
                         <li><a href="<?php echo BASE_URL; ?>">Home</a></li>
@@ -310,17 +307,17 @@ if($success_message1 != '') {
                     </ul>
                 </div>
 
-				<div class="product">
+                <div class="product">
                     <div class="container">
 
                         
-					<div class="row">
-						<div class="col-md-8">
-							<ul class="prod-slider">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ul class="prod-slider">
                                 
-								<li style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>);background-position: center;background-size: contain;">
+                                <li style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>);background-position: center;background-size: contain;">
                                     <a class="popup" href="assets/uploads/<?php echo $p_featured_photo; ?>"></a>
-								</li>
+                                </li>
                                 <?php
                                 $statement = $pdo->prepare("SELECT * FROM tbl_product_photo WHERE p_id=?");
                                 $statement->execute(array($_REQUEST['id']));
@@ -333,9 +330,9 @@ if($success_message1 != '') {
                                     <?php
                                 }
                                 ?>
-							</ul>
-							<div id="prod-pager" class="prod-pager">
-								<a data-slide-index="0" href=""><div class="prod-pager-thumb" style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>"></div></a>
+                            </ul>
+                            <div id="prod-pager" class="prod-pager">
+                                <a data-slide-index="0" href=""><div class="prod-pager-thumb" style="background-image: url(assets/uploads/<?php echo $p_featured_photo; ?>"></div></a>
                                 <?php
                                 $i=1;
                                 $statement = $pdo->prepare("SELECT * FROM tbl_product_photo WHERE p_id=?");
@@ -348,12 +345,12 @@ if($success_message1 != '') {
                                     $i++;
                                 }
                                 ?>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-12"><br>
-							<div class="p-title"><h2 class="animate__animated animate__bounce"><?php echo $p_name; ?></h2></div>
-							<div class="p-review">
-								<div class="rating">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12"><br>
+                            <div class="p-title"><h2 class="animate__animated animate__bounce"><?php echo $p_name; ?></h2></div>
+                            <div class="p-review">
+                                <div class="rating">
                                     <?php
                                     if($avg_rating == 0) {
                                         echo '';
@@ -407,12 +404,12 @@ if($success_message1 != '') {
                                     }                                    
                                     ?>
                                 </div>
-							</div>
-							<div class="p-short-des">
-								<p>
-									<?php echo $p_short_description; ?>
-								</p>
-							</div>
+                            </div>
+                            <div class="p-short-des">
+                                <p>
+                                    <?php echo $p_short_description; ?>
+                                </p>
+                            </div>
 
 
 
@@ -465,7 +462,7 @@ if($success_message1 != '') {
                                 </div>
                                 
                             </div>
-							<div class="p-price new-select">
+                            <div class="p-price new-select">
                                 <span class="span-product" style="font-size: 17px"><?php echo LANG_VALUE_54; ?></span><br>
                                 <span>
                                     <?php if($p_old_price!=''): ?>
@@ -477,10 +474,10 @@ if($success_message1 != '') {
                             <input type="hidden" name="p_current_price" value="<?php echo $p_current_price; ?>">
                             <input type="hidden" name="p_name" value="<?php echo $p_name; ?>">
                             <input type="hidden" name="p_featured_photo" value="<?php echo $p_featured_photo; ?>">
-							<!-- <div class="p-quantity new-select">
+                            <!-- <div class="p-quantity new-select">
                                 <span class="span-product"><?//php echo LANG_VALUE_55; ?></span> <br>
-								<input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric">
-							</div> -->
+                                <input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric">
+                            </div> -->
 
                             <div class="form-guy">
                                 <span class="span-product"><?php echo LANG_VALUE_55; ?></span> <br>
@@ -510,12 +507,12 @@ if($success_message1 != '') {
 
 
 
-							<div class="btn-cart btn-cart1">
+                            <div class="btn-cart btn-cart1">
                                 <!-- <input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric"> -->
                                 <input type="submit" value="<?php echo LANG_VALUE_154; ?>" name="form_add_to_cart">
-							</div>
+                            </div>
                             </form>
-							<div class="share">
+                            <div class="share">
                                 <!-- <?//php echo LANG_VALUE_58; ?>  <br> -->
                                 <div class="modal-box">
                                     <!-- Button trigger modal -->
@@ -527,7 +524,7 @@ if($success_message1 != '') {
                                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content clearfix">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ã—</span></button>
                                                 <div class="modal-body">
                                                     <p class="title">share this</p>
                                                     <h2><?php echo $p_name; ?></h2>
@@ -546,26 +543,26 @@ if($success_message1 != '') {
                                         </div>
                                     </div>
                                 </div>
-							</div>
-						</div>
-					</div>
+                            </div>
+                        </div>
+                    </div>
 
-					<div class="row">
-						<div class="col-md-12">
-							<!-- Nav tabs -->
-							<ul class="nav nav-tabs product-nav-tabs" role="tablist">
-								<li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab"><?php echo LANG_VALUE_59; ?></a></li>
-								<li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab"><?php echo LANG_VALUE_60; ?></a></li>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs product-nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab"><?php echo LANG_VALUE_59; ?></a></li>
+                                <li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab"><?php echo LANG_VALUE_60; ?></a></li>
                                 <li role="presentation"><a href="#condition" aria-controls="condition" role="tab" data-toggle="tab"><?php echo LANG_VALUE_61; ?></a></li>
                                 <li role="presentation"><a href="#return_policy" aria-controls="return_policy" role="tab" data-toggle="tab"><?php echo LANG_VALUE_62; ?></a></li>
                                 <li role="presentation"><a href="#payment_option" aria-controls="payment_option" role="tab" data-toggle="tab">Payment Option</a></li>
                                <!-- <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab"><?php echo LANG_VALUE_63; ?></a></li> -->
-							</ul>
+                            </ul>
 
-							<!-- Tab panes -->
-							<div class="tab-content">
-								<div role="tabpanel" class="tab-pane active" id="description" style="margin-top: -30px;">
-									<p>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="description" style="margin-top: -30px;">
+                                    <p>
                                         <?php
                                         if($p_description == '') {
                                             echo LANG_VALUE_70;
@@ -573,8 +570,8 @@ if($success_message1 != '') {
                                             echo $p_description;
                                         }
                                         ?>
-									</p>
-								</div>
+                                    </p>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="feature" style="margin-top: -30px;">
                                     <p>
                                         <?php
@@ -619,7 +616,7 @@ if($success_message1 != '') {
                                         ?>
                                     </p>
                                 </div>
-								<div role="tabpanel" class="tab-pane" id="review" style="margin-top: -30px;">
+                                <div role="tabpanel" class="tab-pane" id="review" style="margin-top: -30px;">
 
                                     <div class="review-form">
                                         <?php
@@ -714,22 +711,22 @@ if($success_message1 != '') {
 
                                         <?php else: ?>
                                             <p class="error">
-												<?php echo LANG_VALUE_69; ?> <br>
-												<a href="login.php" style="color:red;text-decoration: underline;"><?php echo LANG_VALUE_9; ?></a>
-											</p>
+                                                <?php echo LANG_VALUE_69; ?> <br>
+                                                <a href="login.php" style="color:red;text-decoration: underline;"><?php echo LANG_VALUE_9; ?></a>
+                                            </p>
                                         <?php endif; ?>                         
                                     </div>
 
-								</div>
-							</div>
-						</div>
-					</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-				</div>
+                </div>
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
