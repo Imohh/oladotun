@@ -7,7 +7,7 @@ if($ref = "") {
   $curl = curl_init();
   
   curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://api.paystack.co/transaction/verify/:reference",
+    CURLOPT_URL => "https://api.paystack.co/transaction/verify/" . rawurlencode($ref),
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
@@ -15,7 +15,7 @@ if($ref = "") {
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "GET",
     CURLOPT_HTTPHEADER => array(
-      "Authorization: Bearer SECRET_KEY",
+      "Authorization: Bearer sk_test_b0c00287324c3096cc4f99f79f1c0412e6e893d9",
       "Cache-Control: no-cache",
     ),
   ));
@@ -27,6 +27,6 @@ if($ref = "") {
   if ($err) {
     echo "cURL Error #:" . $err;
   } else {
-    echo $response;
+    // echo $response;
   }
 ?>
