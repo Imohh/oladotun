@@ -43,7 +43,15 @@ if($ref = "") {
     $Date_time date('m/d/y h:i:s a', time());
 
     include('funtions/function.php');
-    $stmt = $con->prepare("INSERT INTO customer_details (status, reference, fullname, date_purchased, email)")
+    $stmt = $con->prepare("INSERT INTO customer_details (status, reference, fullname, date_purchased, email) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $status, $reference, $fullname, $Date_time, $Cus_email);
+    $stmt->execute();
+    if($stmt) {
+      echo 'There was a problem on your code' . mysqli_error($con)
+    } else {
+      header("Location: success.php?status=success");
+    }
+
 
   } else {
     header("Location: error.html")
