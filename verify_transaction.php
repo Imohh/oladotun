@@ -28,5 +28,25 @@ if($ref = "") {
     echo "cURL Error #:" . $err;
   } else {
     // echo $response;
+    $result = json_decode($response);
+
+
   }
+  if($result->data->status === 'success') {
+    $status = $result->data->status;
+    $reference = $result->data->reference;
+    $lname = $result->data->customer->last_name;
+    $fname = $result->data->customer->first_name;
+    $fullname = $lname . $fname;
+    $Cus_email = $result->data->customer->email;
+    date_default_timezone_set('Africa/Lagos');
+    $Date_time date('m/d/y h:i:s a', time());
+
+    include('funtions/function.php');
+    $stmt = $con->prepare("INSERT INTO customer_details (status, reference, fullname, date_purchased, email)")
+
+  } else {
+    header("Location: error.html")
+  }
+
 ?>
