@@ -1,9 +1,11 @@
 <?php
 $ref = $_GET['reference'];
-if($ref = "") {
+if($ref == "") {
   header("Location:javascript://history.go(-1)");
 }
+?>
 
+<?php
   $curl = curl_init();
   
   curl_setopt_array($curl, array(
@@ -40,7 +42,7 @@ if($ref = "") {
     $fullname = $lname . $fname;
     $Cus_email = $result->data->customer->email;
     date_default_timezone_set('Africa/Lagos');
-    $Date_time date('m/d/y h:i:s a', time());
+    $Date_time = date('m/d/y h:i:s a', time());
 
     include('funtions/function.php');
     $stmt = $con->prepare("INSERT INTO customer_details (status, reference, fullname, date_purchased, email) VALUES (?, ?, ?, ?, ?)");
@@ -50,11 +52,13 @@ if($ref = "") {
       echo 'There was a problem on your code' . mysqli_error($con)
     } else {
       header("Location: success.php?status=success");
+      exit;
     }
 
 
   } else {
     header("Location: error.html")
+    exit;
   }
 
 ?>
