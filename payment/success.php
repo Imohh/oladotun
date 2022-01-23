@@ -15,6 +15,7 @@
 <body>
 
 	<h1>You have successfully made your payent, you will receive a mail concerning your product as well as receipt for payment.</h1>
+	<h2><a href="../index.php">Return Home</a></h2>
 
 </body>
 </html>

@@ -389,11 +389,11 @@ if(!isset($_SESSION['cart_p_id'])) {
                               </div>
                               <div class="form-group">
                                 <label for="amount">Amount</label>
-                                <input class="form-control" type="tel" id="amount" value="" required placeholder="<?php echo $final_total; ?>" />
+                                <input class="form-control" type="tel" id="amount" required value="<?php echo $final_total; ?>" />
                               </div>
                               <div class="form-group">
                                 <label for="first-name">Full Name</label>
-                                <input class="form-control" type="text" id="first-name" value="" required placeholder="<?php echo $_SESSION['customer']['cust_s_name']; ?>" readonly />
+                                <input class="form-control" type="text" id="first-name" required value="<?php echo $_SESSION['customer']['cust_s_name']; ?>" />
                               </div>
                               <!-- <div class="form-group">
                                 <label for="last-name">Last Name</label>
@@ -436,7 +436,7 @@ if(!isset($_SESSION['cart_p_id'])) {
         callback: function(response){
           let message = 'Payment complete! Reference: ' + response.reference;
           alert(message);
-          window.location = "http://www.yoururl.com/payment/verify_transaction.php?reference=" + response.reference;
+          window.location = "http://localhost/php-ecommerce/payment/verify_transaction.php?reference=" + response.reference;
           //write function for cart items
         }
       });
