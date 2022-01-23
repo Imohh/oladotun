@@ -436,7 +436,7 @@ if(!isset($_SESSION['cart_p_id'])) {
         callback: function(response){
           let message = 'Payment complete! Reference: ' + response.reference;
           alert(message);
-          window.location = "http://www.yoururl.com/verify_transaction.php?reference=" + response.reference;
+          window.location = "http://www.yoururl.com/payment/verify_transaction.php?reference=" + response.reference;
           //write function for cart items
         }
       });
