@@ -389,7 +389,7 @@ if(!isset($_SESSION['cart_p_id'])) {
                               </div>
                               <div class="form-group">
                                 <label for="amount">Amount</label>
-                                <input class="form-control" type="tel" id="amount" value="" required placeholder="<?php echo $final_total; ?>" readonly />
+                                <input class="form-control" type="tel" id="amount" value="" required placeholder="<?php echo $final_total; ?>" />
                               </div>
                               <div class="form-group">
                                 <label for="first-name">Full Name</label>
@@ -403,28 +403,6 @@ if(!isset($_SESSION['cart_p_id'])) {
                                 <button type="submit" onclick="payWithPaystack().the"> Pay </button>
                               </div>
                             </form>
-
-                            <script>
-                                function addressFunction() {
-                                    if (document.getElementById(
-                                      "same").checked) {
-                                        document.getElementById(
-                                          "secondaryaddress").value = 
-                                        document.getElementById(
-                                          "primaryaddress").value;
-                                        
-                                        document.getElementById(
-                                          "secondaryzip").value = 
-                                        document.getElementById(
-                                          "primaryzip").value;
-                                    } else {
-                                        document.getElementById(
-                                          "secondaryaddress").value = "";
-                                        document.getElementById(
-                                          "secondaryzip").value = "";
-                                    }
-                                }
-                            </script>
 
 
 		                <?php endif; ?>
@@ -452,11 +430,13 @@ if(!isset($_SESSION['cart_p_id'])) {
         ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
         // label: "Optional string that replaces customer email"
         onClose: function(){
-          alert('Window closed.');
+            window.location = "http://localhost/php-ecommerce/index.php?transaction=cancel"
+          alert('Transaction Cancelled.');
         },
         callback: function(response){
           let message = 'Payment complete! Reference: ' + response.reference;
           alert(message);
+          window.location = "http://www.yoururl.com/verify_transaction.php?reference=" + response.reference;
           //write function for cart items
         }
       });
