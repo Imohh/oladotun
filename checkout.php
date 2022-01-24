@@ -400,7 +400,7 @@ if(!isset($_SESSION['cart_p_id'])) {
                                 <input type="text" id="last-name" />
                               </div> -->
                               <div class="form-submit">
-                                <button type="submit" onclick="payWithPaystack().the"> Pay </button>
+                                <button type="submit" onclick="payWithPaystack().the"> Pay </button>d
                               </div>
                             </form>
 
