@@ -272,7 +272,7 @@ if(!isset($_SESSION['cart_p_id'])) {
                             </table>
                         </div>
                     </div>                    
-                </div>
+                </div>x
 
                 
 
