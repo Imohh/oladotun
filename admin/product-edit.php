@@ -40,7 +40,7 @@ if(isset($_POST['form1'])) {
     if($path!='') {
         $ext = pathinfo( $path, PATHINFO_EXTENSION );
         $file_name = basename( $path, '.' . $ext );
-        if( $ext!='jpg' && $ext!='png' && $ext!='jpeg' && $ext!='gif' ) {
+        if( $ext!='jpg' && $ext!='png' && $ext!='jpeg' && $ext!='gif' && $ext!='webp' ) {
             $valid = 0;
             $error_message .= 'You must have to upload jpg, jpeg, gif or png file<br>';
         }
@@ -72,7 +72,7 @@ if(isset($_POST['form1'])) {
             for($i=0;$i<count($photo);$i++)
             {
                 $my_ext1 = pathinfo( $photo[$i], PATHINFO_EXTENSION );
-		        if( $my_ext1=='jpg' || $my_ext1=='png' || $my_ext1=='jpeg' || $my_ext1=='gif' ) {
+		        if( $my_ext1=='jpg' || $my_ext1=='png' || $my_ext1=='jpeg' || $my_ext1=='gif' || $my_ext1=='webp' ) {
 		            $final_name1[$m] = $z.'.'.$my_ext1;
                     move_uploaded_file($photo_temp[$i],"../assets/uploads/product_photos/".$final_name1[$m]);
                     $m++;

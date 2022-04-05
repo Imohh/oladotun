@@ -133,10 +133,10 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
           <!-- <div class="col-md-3">
                 <?//php require_once('sidebar-category.php'); ?>
             </div> -->
-            <div class="col-md-12" >
+            <div class="col-md-12 col-lg-12">
                 
                 <h3><?php echo LANG_VALUE_51; ?> "<?php echo $title; ?>"</h3>
-                <div class="product product-cat">
+                <div class="product ">
 
                     <!-- <div class="row"> -->
                         <?php
@@ -159,22 +159,23 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                             echo '<div class="pl_15">'.LANG_VALUE_153.'</div>';
                         } else {
                             for($ii=0;$ii<count($final_ecat_ids);$ii++) {
-                                $statement = $pdo->prepare("SELECT * FROM tbl_product where ecat_id=? and p_is_active=? group by p_name");
+                                $statement = $pdo->prepare("SELECT * FROM tbl_product where ecat_id=? and p_is_active=? group by p_id");
                                 $statement->execute(array($final_ecat_ids[$ii],1));
                                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($result as $row) {
                                     ?>
-                                    <div class="col-md-3 col-lg-3 col-xs-6 item item-product-cat" style="background:red">
+                                    <div class="col-md-3 col-lg-3 col-xs-6 item item-product-cat">
                                         <div class="inner">
                                             <div class="thumb">
                                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);">
-                                                    
                                                     
                                                     <?php if($row['p_qty'] == 0): ?>
                                                     <span class="sold-out" align="left">Sold Out</span>
                                                 <?php endif; ?>
                                                 </div>
-                                                <div class="overlay"></div>
+                                                <a href="product.php?id=<?php echo $row['p_id']; ?>">
+                                                    <div class="overlay"></div>
+                                                </a>
                                             </div>
                                             <div class="text">
                                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>

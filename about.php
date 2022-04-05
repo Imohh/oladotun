@@ -112,7 +112,7 @@ He is also certified in Fashion from prestigious private institutions.  He is a 
                     </div>
                     <div class="col-lg-6">
                         <i class="fa fa-facebook"></i>
-                        <h4>Cretive</h4>
+                        <h4>Creativity</h4>
                         <p>We create fantasy designs aimed at giving customers grandeur entry wherever they appear. Every customer is unique to us.</p>
                     </div>
                     <div class="col-lg-6">

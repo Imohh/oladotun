@@ -120,7 +120,7 @@ if($tot_rating == 0) {
 if(isset($_POST['form_add_to_cart'])) {
 
     // getting the currect stock of this product
-    $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_id=?");
+    $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_name=?");
     $statement->execute(array($_REQUEST['id']));
     $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
     foreach ($result as $row) {
@@ -196,7 +196,7 @@ if(isset($_POST['form_add_to_cart'])) {
 
                 $statement = $pdo->prepare("SELECT * FROM tbl_size WHERE size_id=?");
                 $statement->execute(array($size_id));
-                $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+                $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                 foreach ($result as $row) {
                     $size_name = $row['size_name'];
                 }
@@ -418,7 +418,7 @@ if($success_message1 != ''){header('location: product.php?id='.$_REQUEST['id']);
                             <div class="p-quantity">
                                 <div class="row">
                                     <?php if(isset($size)): ?>
-                                    <div class="col-md-12 mb_20 new-select">
+                                    <div class="col-md-6 mb_20 new-select">
                                         <span class="span-product"><?php echo LANG_VALUE_52; ?></span> <br>
 
                                         <select name="size_id" class="form-control select2 selectpicker">
@@ -439,7 +439,7 @@ if($success_message1 != ''){header('location: product.php?id='.$_REQUEST['id']);
                                     <?php endif; ?>
 
                                     <?php if(isset($color)): ?>
-                                    <div class="col-md-12 new-select">
+                                    <div class="col-md-6 new-select">
                                         <span class="span-product"><?php echo LANG_VALUE_53; ?></span> <br>
                                         <select name="color_id" class="form-control select2">
                                             <?php
@@ -506,10 +506,24 @@ if($success_message1 != ''){header('location: product.php?id='.$_REQUEST['id']);
 
 
 
-
+                            <!-- ADD TO CART BUTTON -->
                             <div class="btn-cart btn-cart1">
+
+
+                                <!-- NEW TEST DESIGN -->
+                                <!-- <span>
+                                    <?php if($p_old_price!=''): ?>
+                                        <del><?php echo LANG_VALUE_1; ?><?php echo $p_old_price; ?></del>
+                                    <?php endif; ?> 
+                                        <?php echo LANG_VALUE_1; ?><?php echo $p_current_price; ?>
+                                </span> -->
+
+
                                 <!-- <input type="number" class="input-text qty" step="1" min="1" max="" name="p_qty" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric"> -->
-                                <input type="submit" value="<?php echo LANG_VALUE_154; ?>" name="form_add_to_cart">
+                                <!-- <?//php if(isset($_SESSION['cart_p_id'])) ?>
+                                    <input type="submit" value="E NO DEY WORK" name="form_add_to_cart">
+                                <?//php endif; ?> -->
+                                    <input type="submit" value="<?php echo LANG_VALUE_154; ?>" name="form_add_to_cart">
                             </div>
                             </form>
                             <div class="share">
@@ -873,7 +887,7 @@ if($success_message1 != ''){header('location: product.php?id='.$_REQUEST['id']);
 
 
 
-
+<!-- RELATED PRODUCT -->
 <div class="product bg-gray pt_70 pb_70">
     <div class="container">
         <div class="row">
@@ -898,7 +912,9 @@ if($success_message1 != ''){header('location: product.php?id='.$_REQUEST['id']);
                         <div class="item">
                             <div class="thumb">
                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);"></div>
-                                <div class="overlay"></div>
+                                <a href="product.php?id=<?php echo $row['p_id']; ?>">
+                                    <div class="overlay"></div>
+                                </a>
                             </div>
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>

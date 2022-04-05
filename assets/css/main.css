@@ -1063,7 +1063,7 @@ Mobile style's
 }
 
 .product .text h4 {
-    color: #0d1452;
+    color: #000;
     text-align: center;
     font-size: 18px;
 }
@@ -1796,6 +1796,7 @@ input[type=number]::-webkit-outer-spin-button {
 .product .btn-cart a {
     padding: 10px 14px;
     background: #0d1452;
+    border: 2px solid #000;
     color: #fff;
 }
 
@@ -1808,6 +1809,7 @@ input[type=number]::-webkit-outer-spin-button {
     border: 0;
     padding: 15px 14px;
     background: #000;
+    border: 2px solid #000;
     color: #fff;
     width: 100%;
 }
@@ -2897,10 +2899,15 @@ div.pagination span.disabled {
 }
 .home-newsletter .single .btn {
     min-height: 50px;
-    background: #333;
+    background: #000;
     color: #fff;
     padding-left: 15px;
     padding-right: 15px;
+}
+.home-newsletter .single .btn:hover {
+    background: #333;
+    color: #fff;
+    transition:  0.5s;
 }
 
 
@@ -3498,13 +3505,14 @@ div.pagination span.disabled {
 }
 
 .bottom-faq .btn {
-    color: #000;
+    color: #fff;
+    background: #000;
     border: 1px solid #000;
 }
 
 .bottom-faq .btn:hover {
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     transition: 0.4s;
 }
 

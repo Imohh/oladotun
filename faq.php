@@ -182,7 +182,9 @@ foreach ($result as $row) {
                 <h2>interact with us</h2>
                 <p>you can leave a message with us and well be with you.</p>
 
-                <a href="contact.php"><input type="text" class="btn" value="Contact Us" name=""></a>
+                <a href="contact.php">
+                    <input type="text" class="btn" value="Contact Us" name="">
+                </a>
             </div>
 
         </div>

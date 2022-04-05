@@ -1,19 +1,19 @@
 <?php require_once('header.php'); ?>
 
 <?php
-$statement = $pdo->prepare("SELECT * FROM tbl_settings WHERE id=1");
-$statement->execute();
-$result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
-foreach ($result as $row) {
-    $banner_checkout = $row['banner_checkout'];
-}
+    $statement = $pdo->prepare("SELECT * FROM tbl_settings WHERE id=1");
+    $statement->execute();
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+    foreach ($result as $row) {
+        $banner_checkout = $row['banner_checkout'];
+    }
 ?>
 
 <?php
-if(!isset($_SESSION['cart_p_id'])) {
-    header('location: cart.php');
-    exit;
-}
+    if(!isset($_SESSION['cart_p_id'])) {
+        header('location: cart.php');
+        exit;
+    }
 ?>
 
 <div class="page-banner" style="background-image: url(assets/uploads/<?php echo $banner_checkout; ?>)">
@@ -27,7 +27,6 @@ if(!isset($_SESSION['cart_p_id'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                
                 <?php if(!isset($_SESSION['customer'])): ?>
                     <p class="heygirl">
                         <a href="login.php" class="btn btn-md"><?php echo LANG_VALUE_160; ?></a>
@@ -369,13 +368,8 @@ if(!isset($_SESSION['cart_p_id'])) {
                                             <input type="submit" class="btn btn-primary" value="<?php echo LANG_VALUE_46; ?>" name="form3">
                                         </div>
                                     </form>
-	                                
 	                            </div>
-		                            
-		                        
 		                    </div>
-
-                            <h1>Hey there</h1>
 
 
 
@@ -384,23 +378,23 @@ if(!isset($_SESSION['cart_p_id'])) {
                             
                             <form id="paymentForm">
                               <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input class="form-control" type="email" id="email-address" required value="<?php echo $_SESSION['customer']['cust_email']; ?>" />
+                            <!-- <label for="email">Email Address</label> -->
+                                <input class="form-control" type="hidden" id="email-address" required value="<?php echo $_SESSION['customer']['cust_email']; ?>" />
                               </div>
                               <div class="form-group">
-                                <label for="amount">Amount</label>
-                                <input class="form-control" type="tel" id="amount" required value="<?php echo $final_total; ?>" />
+                                <!-- <label for="amount">Amount</label> -->
+                                <input class="form-control" type="hidden" id="amount" required value="<?php echo $final_total; ?>" />
                               </div>
                               <div class="form-group">
-                                <label for="first-name">Full Name</label>
-                                <input class="form-control" type="text" id="first-name" required value="<?php echo $_SESSION['customer']['cust_s_name']; ?>" />
+                                <!-- <label for="first-name">Full Name</label> -->
+                                <input class="form-control" type="hidden" id="first-name" required value="<?php echo $_SESSION['customer']['cust_s_name']; ?>" />
                               </div>
                               <!-- <div class="form-group">
                                 <label for="last-name">Last Name</label>
                                 <input type="text" id="last-name" />
                               </div> -->
                               <div class="form-submit">
-                                <button type="submit" onclick="payWithPaystack().the"> Pay </button>
+                                <button type="submit" onclick="payWithPaystack()">Pay with paystack</button>
                               </div>
                             </form>
 

@@ -324,7 +324,15 @@ foreach ($result as $row) {
 <script src="assets/js/bootstrap-touch-slider.js"></script>
 <script src="assets/js/select2.full.min.js"></script>
 <script src="assets/js/custom.js"></script>
-<script src="assets/js/customs.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="./assets/js/animated.headline.js"></script>
+
+
+<!-- <script src="assets/js/customs.js"></script> -->
+
+
+
 <script src="assets/js/main.js"></script>
 
 <!-- TRANSLATION -->

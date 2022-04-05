@@ -96,13 +96,12 @@ foreach ($result as $row) {
     <link rel="stylesheet" href="assets/css/rating.css">
 	<link rel="stylesheet" href="assets/css/spacing.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-touch-slider.css">
-	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/tree-menu.css">
 	<link rel="stylesheet" href="assets/css/select2.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/main.scss">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 
@@ -352,15 +351,15 @@ foreach ($result as $row) {
 					<!-- <li><a href=""><i class="fa fa-search"></i></a></li> -->
 				</ul>
 			</div>
-			<!-- <div class="col-md-3 search-area">
+			<div class="col-md-3 search-area">
 				<form class="navbar-form navbar-left" role="search" action="search-result.php" method="get">
-					<?//php $csrf->echoInputField(); ?>
+					<?php $csrf->echoInputField(); ?>
 					<div class="form-group">
-						<input type="text" class="form-control search-top" placeholder="<?//php echo LANG_VALUE_2; ?>" name="search_text">
+						<input type="text" class="form-control search-top" placeholder="<?php echo LANG_VALUE_2; ?>" name="search_text">
 					</div>
 					<button type="submit" class="btn btn-default"><i class="fa fa-search"></i><?//php echo LANG_VALUE_3; ?></button>
 				</form>
-			</div> -->
+			</div>
 		</div>
 	</div>
 </div>
@@ -492,7 +491,7 @@ foreach ($result as $row) {
 									<li><a href="about.php"><?php echo $about_title; ?></a></li>
 									<li><a href="faq.php"><?php echo $faq_title; ?></a></li>
 									
-									<li><a href=""><img src="assets/img/search.png" width="15px" height="15px"></a></li>
+									<!-- <li><a href=""><img src="assets/img/search.png" width="15px" height="15px"></a></li> -->
 
 
                                 </ul>
@@ -721,6 +720,6 @@ foreach ($result as $row) {
 
 		
 
-<div id="preloader">
+<!-- <div id="preloader">
   <div id="loader"></div>
-</div>
+</div> -->

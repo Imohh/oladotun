@@ -34,12 +34,6 @@ foreach ($result as $row)
 
 
 
-
-
-
-
-
-
 <div id="bootstrap-touch-slider" class="carousel bs-slider fade control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="false" >
 
     <!-- Indicators -->
@@ -138,7 +132,7 @@ foreach ($result as $row)
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <h2 class="animate__fadeInDown">double breasted jacket</h2>
+                <h2 class="animate__animated animate__bounce">double breasted jacket</h2>
                 <p>checkout the latest fashion trend specifically designed for you</p>
                 <button>shop now</button>
             </div>
@@ -234,26 +228,6 @@ myModal.show()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- LATEST PRODUCTS -->
 <?php if($home_latest_product_on_off == 1): ?>
 <div class="product pt_70 pb_30">
@@ -279,12 +253,16 @@ myModal.show()
                         ?>
                         <div class="item">
                             <div class="thumb">
-                                <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);">
+                                <a href="product.php?id=<?php echo $row['p_name']; ?>">
+                                    <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);">
                                     </div>
-                                <div class="overlay"></div>
+                                </a>
+                                <a href="product.php?id=<?php echo $row['p_name']; ?>">
+                                    <div class="overlay"></div>
+                                </a>
                             </div>
                             <div class="text">
-                                <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
+                                <h3><a href="product.php?id=<?php echo $row['p_name']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
                                     $<?php echo $row['p_current_price']; ?> 
                                     <?php if($row['p_old_price'] != ''): ?>
