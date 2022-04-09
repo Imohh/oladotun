@@ -97,5 +97,3 @@ The complete ecommerce script with Paypal integration. Some of the features are 
  -- SEO Friendly URL.
  -- Product Database.
  -- Easy to order system.
-
- 
