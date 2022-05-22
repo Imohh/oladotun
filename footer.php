@@ -328,8 +328,24 @@ foreach ($result as $row) {
 <script src="assets/js/wow.min.js"></script>
 <script src="./assets/js/animated.headline.js"></script>
 
+<!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- <script src="assets/js/customs.js"></script> -->
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
 
 
 

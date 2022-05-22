@@ -127,7 +127,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
     </div>
 </div>
 
-<div class="page" align="center">
+<div class="page">
     <div class="container">
         <div class="row">
           <!-- <div class="col-md-3">
@@ -136,7 +136,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
             <div class="col-md-12 col-lg-12">
                 
                 <h3><?php echo LANG_VALUE_51; ?> "<?php echo $title; ?>"</h3>
-                <div class="product ">
+                <div class="product product-cat">
 
                     <!-- <div class="row"> -->
                         <?php
@@ -164,7 +164,7 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($result as $row) {
                                     ?>
-                                    <div class="col-md-3 col-lg-3 col-xs-6 item item-product-cat">
+                                    <div class="col-md-3 col-lg-3 col-xs-6 item item item-search-result">
                                         <div class="inner">
                                             <div class="thumb">
                                                 <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);">

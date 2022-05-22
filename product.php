@@ -120,7 +120,7 @@ if($tot_rating == 0) {
 if(isset($_POST['form_add_to_cart'])) {
 
     // getting the currect stock of this product
-    $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_name=?");
+    $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_id=?");
     $statement->execute(array($_REQUEST['id']));
     $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
     foreach ($result as $row) {
@@ -282,12 +282,14 @@ if(isset($_POST['form_add_to_cart'])) {
 ?>
 
 <?php
-if($error_message1 != ''){
-   // echo "<script>alert('".$error_message1."')</script>";
-}
-if($success_message1 != ''){header('location: product.php?id='.$_REQUEST['id']);}
+    if($error_message1 != '') {
+        echo "<script>alert('".$error_message1."')</script>";
+    }
+    if($success_message1 != '') {
+        echo "<script>alert('".$success_message1."')</script>";
+        header('location: product.php?id='.$_REQUEST['id']);
+    }
 ?>
-
 
 <div class="page">
     <div class="container">
@@ -300,8 +302,8 @@ if($success_message1 != ''){header('location: product.php?id='.$_REQUEST['id']);
                         <li><a href="<?php echo BASE_URL.'product-category.php?id='.$tcat_id.'&type=top-category' ?>"><?php echo $tcat_name; ?></a></li>
                         <li>></li>
                         <li><a href="<?php echo BASE_URL.'product-category.php?id='.$mcat_id.'&type=mid-category' ?>"><?php echo $mcat_name; ?></a></li>
-                        <li>></li>
-                        <li><a href="<?php echo BASE_URL.'product-category.php?id='.$ecat_id.'&type=end-category' ?>"><?php echo $ecat_name; ?></a></li>
+                        <!-- <li>></li>
+                        <li><a href="<?php// echo BASE_URL.'product-category.php?id='.$ecat_id.'&type=end-category' ?>"><?php// echo $ecat_name; ?></a></li> -->
                         <li>></li>
                         <li><?php echo $p_name; ?></li>
                     </ul>
@@ -995,7 +997,7 @@ if($success_message1 != ''){header('location: product.php?id='.$_REQUEST['id']);
                                     }
                                     ?>
                                 </div>
-                                <p><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo LANG_VALUE_154; ?></a></p>
+                                <!-- <p><a href="product.php?id=<?php //echo $row['p_id']; ?>"><?php //echo LANG_VALUE_154; ?></a></p> -->
                             </div>
                         </div>
                         <?php
