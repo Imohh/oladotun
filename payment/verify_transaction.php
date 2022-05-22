@@ -46,26 +46,11 @@ if($ref == "") {
     $Date_time = date('m/d/y h:i:s a', time());
 
     // include('connection.php');
-    include("../admin/inc/config.php");
-    include("../admin/inc/functions.php");
-    $stmt = $pdo->prepare("INSERT INTO customer_details (status, reference, fullname, date_purchased, email) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bindParam("sssss", $status, $reference, $fullname, $Date_time, $Cus_email);
-
-    // $stmt -> bindParam(':status', $status, PDO::PARAM_STR);
-    // $stmt -> bindParam (':reference', $reference, PDO::PARAM_STR);
-    // $stmt -> bindParam (':fullname', $fullname, PDO::PARAM_STR);
-    // $stmt -> bindParam (':date_purchased', $Date_time, PDO::PARAM_STR);
-    // $stmt -> bindParam (':email', $Cus_email, PDO::PARAM_STR);
-
-
-    $stmt->execute($stmt);
-
-
-//     $data = array($username, $password, $name, $email); 
-// $stmta = $this->pdo->prepare("INSERT INTO users (username, password, name, email) VALUES (?, ?, ?, ?)");
-// $stmta->execute($data);
-
-
+    include('db.php');
+    // include("../admin/inc/functions.php");
+    $stmt = $con->prepare("INSERT INTO customer_details (status, reference, fullname, date_purchased, email) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $status, $reference, $fullname, $Date_time, $Cus_email);
+    $stmt->execute();
 
 
     if(!$stmt) {
