@@ -34,65 +34,63 @@ foreach ($result as $row)
 
 
 
-<div id="bootstrap-touch-slider" class="carousel bs-slider fade control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="false" >
+<!-- <div id="bootstrap-touch-slider" class="carousel bs-slider fade control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="false" >
 
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
+
+    <ol class="carousel-indicators"> -->
         <?php
-        $i=0;
-        $statement = $pdo->prepare("SELECT * FROM tbl_slider");
-        $statement->execute();
-        $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
-        foreach ($result as $row) {            
-            ?>
+        // $i=0;
+        // $statement = $pdo->prepare("SELECT * FROM tbl_slider");
+        // $statement->execute();
+        // $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+        // foreach ($result as $row) {            
+        //     ?>
             
             <?php
-            $i++;
-        }
+        //     $i++;
+        // }
         ?>
-    </ol>
+    <!-- </ol> -->
 
     <!-- Wrapper For Slides -->
-    <div class="carousel-inner" role="listbox">
+    <!-- <div class="carousel-inner" role="listbox">
 
         <?php
-        $i=0;
-        $statement = $pdo->prepare("SELECT * FROM tbl_slider");
-        $statement->execute();
-        $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
-        foreach ($result as $row) {            
+        //$i=0;
+        //$statement = $pdo->prepare("SELECT * FROM tbl_slider");
+        //$statement->execute();
+        //$result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+        //foreach ($result as $row) {            
             ?>
-            <div class="item <?php if($i==0) {echo 'active';} ?>" style="background-image:url(assets/uploads/<?php echo $row['photo']; ?>);">
+            <div class="item <?php// if($i==0) {echo 'active';} ?>" style="background-image:url(assets/uploads/<?php// echo $row['photo']; ?>);">
                 <div class="bs-slider-overlay"></div>
                 <div class="container">
                     <div class="row">
-                        <div class="slide-text <?php if($row['position'] == 'Left') {echo 'slide_style_left';} elseif($row['position'] == 'Center') {echo 'slide_style_center';} elseif($row['position'] == 'Right') {echo 'slide_style_right';} ?>">
-                            <!-- <h1 data-animation="animated <?//php if($row['position'] == 'Left') {echo 'zoomInLeft';} elseif($row['position'] == 'Center') {echo 'flipInX';} elseif($row['position'] == 'Right') {echo 'zoomInRight';} ?>"><?//php echo $row['heading']; ?></h1>
-                            <p data-animation="animated <?//php if($row['position'] == 'Left') {echo 'fadeInLeft';} elseif($row['position'] == 'Center') {echo 'fadeInDown';} elseif($row['position'] == 'Right') {echo 'fadeInRight';} ?>"><?//php echo nl2br($row['content']); ?></p>
-                            <a href="<?//php echo $row['button_url']; ?>" target="_blank"  class="btn button-slider" data-animation="animated <?//php if($row['position'] == 'Left') {echo 'fadeInLeft';} elseif($row['position'] == 'Center') {echo 'fadeInDown';} elseif($row['position'] == 'Right') {echo 'fadeInRight';} ?>"><?//php echo $row['button_text']; ?></a> -->
+                        <div class="slide-text <?php// if($row['position'] == 'Left') {echo 'slide_style_left';} elseif($row['position'] == 'Center') {echo 'slide_style_center';} elseif($row['position'] == 'Right') {echo 'slide_style_right';} ?>">
+                            
                         </div>
                     </div>
                 </div>
             </div>
             <?php
-            $i++;
-        }
+            //$i++;
+        //}
         ?>
-    </div>
+    </div> -->
 
-    <!-- Slider Left Control -->
-    <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+
+    <!-- <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
         <span class="fa fa-angle-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
 
-    <!-- Slider Right Control -->
+
     <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
         <span class="fa fa-angle-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
 
-</div>
+</div> -->
 
 
 
@@ -123,6 +121,62 @@ foreach ($result as $row)
     </div>
 </div> -->
 <?// php endif; ?>
+
+
+
+<style>
+.swiper {
+        width: 100%;
+        height: 500px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+</style>
+
+
+
+<!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(assets/img/gucci.webp); background-size: cover; background-position: center"></div>
+        <div class="swiper-slide" style="background-image:url(assets/img/gucci_1.jpg); background-size: cover; background-position: center"></div>
+        <div class="swiper-slide" style="background-image:url(assets/img/gucci_2.jpg); background-size: cover; background-position: center"></div>
+        <!-- <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div> -->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
 
 
@@ -253,7 +307,7 @@ myModal.show()
                         ?>
                         <div class="item">
                             <div class="thumb">
-                                <a href="product.php?id=<?php echo $row['p_name']; ?>">
+                                <a href="product.php?id=<?php echo $row['p_id']; ?>">
                                     <div class="photo" style="background-image:url(assets/uploads/<?php echo $row['p_featured_photo']; ?>);">
                                     </div>
                                 </a>
@@ -262,7 +316,7 @@ myModal.show()
                                 </a>
                             </div>
                             <div class="text">
-                                <h3><a href="product.php?id=<?php echo $row['p_name']; ?>"><?php echo $row['p_name']; ?></a></h3>
+                                <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
                                     $<?php echo $row['p_current_price']; ?> 
                                     <?php if($row['p_old_price'] != ''): ?>
