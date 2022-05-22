@@ -15,7 +15,7 @@ $success_message1 = '';
 $i=1;
 $statement = $pdo->prepare("SELECT * FROM tbl_language");
 $statement->execute();
-$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach ($result as $row) {
 	define('LANG_VALUE_'.$i,$row['lang_value']);
 	$i++;
@@ -102,6 +102,7 @@ foreach ($result as $row) {
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/main.scss">
 	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
 
 
@@ -131,6 +132,12 @@ foreach ($result as $row) {
 		$contact_meta_title = $row['contact_meta_title'];
 		$contact_meta_keyword = $row['contact_meta_keyword'];
 		$contact_meta_description = $row['contact_meta_description'];
+		$legal_meta_title = $row['legal_meta_title'];
+		$legal_meta_keyword = $row['legal_meta_keyword'];
+		$legal_meta_description = $row['legal_meta_description'];
+		$privacy_meta_title = $row['privacy_meta_title'];
+		$privacy_meta_keyword = $row['privacy_meta_keyword'];
+		$privacy_meta_description = $row['privacy_meta_description'];
 		$pgallery_meta_title = $row['pgallery_meta_title'];
 		$pgallery_meta_keyword = $row['pgallery_meta_keyword'];
 		$pgallery_meta_description = $row['pgallery_meta_description'];
@@ -168,6 +175,20 @@ foreach ($result as $row) {
 		<title><?php echo $contact_meta_title; ?></title>
 		<meta name="keywords" content="<?php echo $contact_meta_keyword; ?>">
 		<meta name="description" content="<?php echo $contact_meta_description; ?>">
+		<?php
+	}
+	if($cur_page == 'legal.php') {
+		?>
+		<title><?php echo $legal_meta_title; ?></title>
+		<meta name="keywords" content="<?php echo $legal_meta_keyword; ?>">
+		<meta name="description" content="<?php echo $legal_meta_description; ?>">
+		<?php
+	}
+	if($cur_page == 'privacy.php') {
+		?>
+		<title><?php echo $privacy_meta_title; ?></title>
+		<meta name="keywords" content="<?php echo $privacy_meta_keyword; ?>">
+		<meta name="description" content="<?php echo $privacy_meta_description; ?>">
 		<?php
 	}
 	if($cur_page == 'product.php')
@@ -451,18 +472,18 @@ foreach ($result as $row) {
 											?>
 											<li>
 												<a href="product-category.php?id=<?php echo $row1['mcat_id']; ?>&type=mid-category"><?php echo $row1['mcat_name']; ?></a>
-												<ul>
+												<!-- <ul>
 													<?php
-													$statement2 = $pdo->prepare("SELECT * FROM tbl_end_category WHERE mcat_id=?");
-													$statement2->execute(array($row1['mcat_id']));
-													$result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
-													foreach ($result2 as $row2) {
+													//$statement2 = $pdo->prepare("SELECT * FROM tbl_end_category WHERE mcat_id=?");
+													//$statement2->execute(array($row1['mcat_id']));
+													//$result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
+													//foreach ($result2 as $row2) {
 														?>
-														<li><a href="product-category.php?id=<?php echo $row2['ecat_id']; ?>&type=end-category"><?php echo $row2['ecat_name']; ?></a></li>
+														<li><a href="product-category.php?id=<?php //echo $row2['ecat_id']; ?>&type=end-category"><?php //echo $row2['ecat_name']; ?></a></li>
 														<?php
-													}
+													//}
 													?>
-												</ul>
+												</ul> -->
 											</li>
 											<?php
 										}
@@ -483,6 +504,7 @@ foreach ($result as $row) {
 										$faq_title = $row['faq_title'];
 										$blog_title = $row['blog_title'];
 										$contact_title = $row['contact_title'];
+										$privacy_title = $row['privacy_title'];
 										$pgallery_title = $row['pgallery_title'];
 										$vgallery_title = $row['vgallery_title'];
 									}
@@ -636,18 +658,18 @@ foreach ($result as $row) {
 								?>
 									<li>
 										<a href="product-category.php?id=<?php echo $row1['mcat_id']; ?>&type=mid-category"><?php echo $row1['mcat_name']; ?></a>
-										<ul class="mobile-sub-menu">
+										<!-- <ul class="mobile-sub-menu">
 										<?php
-											$statement2 = $pdo->prepare("SELECT * FROM tbl_end_category WHERE mcat_id=?");
-											$statement2->execute(array($row1['mcat_id']));
-											$result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
-											foreach ($result2 as $row2) {
+											//$statement2 = $pdo->prepare("SELECT * FROM tbl_end_category WHERE mcat_id=?");
+											//$statement2->execute(array($row1['mcat_id']));
+											//$result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
+											//foreach ($result2 as $row2) {
 										?>
-											<li><a href="product-category.php?id=<?php echo $row2['ecat_id']; ?>&type=end-category"><?php echo $row2['ecat_name']; ?></a></li>
+											<li><a href="product-category.php?id=<?php //echo $row2['ecat_id']; ?>&type=end-category"><?php //echo $row2['ecat_name']; ?></a></li>
 										<?php
-											}
+											//}
 										?>
-										</ul>
+										</ul> -->
 									</li>
 									<?php
 										}
@@ -669,6 +691,8 @@ foreach ($result as $row) {
 								$faq_title = $row['faq_title'];
 								$blog_title = $row['blog_title'];
 								$contact_title = $row['contact_title'];
+								$legal_title = $row['legal_title'];
+								$privacy_title = $row['privacy_title'];
 								$pgallery_title = $row['pgallery_title'];
 								$vgallery_title = $row['vgallery_title'];
 							}
