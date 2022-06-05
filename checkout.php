@@ -28,191 +28,24 @@
         <div class="row">
             <div class="col-md-12">
                 <?php if(!isset($_SESSION['customer'])): ?>
-                    <!-- <p class="heygirl">
-                        <a href="login.php" class="btn btn-md"><?php echo LANG_VALUE_160; ?></a>
-                    </p> -->
+                    <p class="heygirl">
+                        <p>Kindly login/register so as to enter your shipping address</p>
+                        <a href="login.php" class="btn btn-primary" style="background:#000;border:none"><?php echo LANG_VALUE_160; ?></a>
+                    </p>
 
-
-                    <h3 class="special"><?php echo LANG_VALUE_26; ?></h3>
-                <div class="cart">
-                    <table class="table table-responsive">
-                        <tr>
-                            <th><?php echo LANG_VALUE_7; ?></th>
-                            <th><?php echo LANG_VALUE_8; ?></th>
-                            <th><?php echo LANG_VALUE_47; ?></th>
-                            <th><?php echo LANG_VALUE_157; ?></th>
-                            <th><?php echo LANG_VALUE_158; ?></th>
-                            <th><?php echo LANG_VALUE_159; ?></th>
-                            <th><?php echo LANG_VALUE_55; ?></th>
-                            <th class="text-right"><?php echo LANG_VALUE_82; ?></th>
-                        </tr>
-                         <?php
-                        $table_total_price = 0;
-
-                        $i=0;
-                        foreach($_SESSION['cart_p_id'] as $key => $value) 
-                        {
-                            $i++;
-                            $arr_cart_p_id[$i] = $value;
-                        }
-
-                        $i=0;
-                        foreach($_SESSION['cart_size_id'] as $key => $value) 
-                        {
-                            $i++;
-                            $arr_cart_size_id[$i] = $value;
-                        }
-
-                        $i=0;
-                        foreach($_SESSION['cart_size_name'] as $key => $value) 
-                        {
-                            $i++;
-                            $arr_cart_size_name[$i] = $value;
-                        }
-
-                        $i=0;
-                        foreach($_SESSION['cart_color_id'] as $key => $value) 
-                        {
-                            $i++;
-                            $arr_cart_color_id[$i] = $value;
-                        }
-
-                        $i=0;
-                        foreach($_SESSION['cart_color_name'] as $key => $value) 
-                        {
-                            $i++;
-                            $arr_cart_color_name[$i] = $value;
-                        }
-
-                        $i=0;
-                        foreach($_SESSION['cart_p_qty'] as $key => $value) 
-                        {
-                            $i++;
-                            $arr_cart_p_qty[$i] = $value;
-                        }
-
-                        $i=0;
-                        foreach($_SESSION['cart_p_current_price'] as $key => $value) 
-                        {
-                            $i++;
-                            $arr_cart_p_current_price[$i] = $value;
-                        }
-
-                        $i=0;
-                        foreach($_SESSION['cart_p_name'] as $key => $value) 
-                        {
-                            $i++;
-                            $arr_cart_p_name[$i] = $value;
-                        }
-
-                        $i=0;
-                        foreach($_SESSION['cart_p_featured_photo'] as $key => $value) 
-                        {
-                            $i++;
-                            $arr_cart_p_featured_photo[$i] = $value;
-                        }
-                        ?>
-                        <?php for($i=1;$i<=count($arr_cart_p_id);$i++): ?>
-                        <tr>
-                            <td><?php echo $i; ?></td>
-                            <td>
-                                <img src="assets/uploads/<?php echo $arr_cart_p_featured_photo[$i]; ?>" alt="">
-                            </td>
-                            <td><?php echo $arr_cart_p_name[$i]; ?></td>
-                            <td><?php echo $arr_cart_size_name[$i]; ?></td>
-                            <td><?php echo $arr_cart_color_name[$i]; ?></td>
-                            <td><?php echo LANG_VALUE_1; ?><?php echo $arr_cart_p_current_price[$i]; ?></td>
-                            <td><?php echo $arr_cart_p_qty[$i]; ?></td>
-                            <td class="text-right">
-                                <?php
-                                $row_total_price = $arr_cart_p_current_price[$i]*$arr_cart_p_qty[$i];
-                                $table_total_price = $table_total_price + $row_total_price;
-                                ?>
-                                <?php echo LANG_VALUE_1; ?><?php echo $row_total_price; ?>
-                            </td>
-                        </tr>
-                        <?php endfor; ?>           
-                        <tr>
-                            <th colspan="7" class="total-text"><?php echo LANG_VALUE_81; ?></th>
-                            <th class="total-amount"><?php echo LANG_VALUE_1; ?><?php echo $table_total_price; ?></th>
-                        </tr>
-                        <tr>
-                            <td colspan="7" class="total-text"><?php echo LANG_VALUE_84; ?></td>
-                            <td class="total-amount"><?php echo LANG_VALUE_1; ?><?php echo $shipping_cost; ?></td>
-                        </tr>
-                        <tr>
-                            <th colspan="7" class="total-text"><?php echo LANG_VALUE_82; ?></th>
-                            <th class="total-amount">
-                                <?php
-                                $final_total = $table_total_price+$shipping_cost;
-                                ?>
-                                <?php echo LANG_VALUE_1; ?><?php echo $final_total; ?>
-                            </th>
-                        </tr>
-                    </table> 
-                </div>
-
-                
-
-                <div class="billing-address">
-                    <div class="row">
-                        
-
-                        <div class="col-md-6">
-                            <h3 class="special"><?php echo LANG_VALUE_33; ?></h3>
-                            <div class="row">
+            </div>
 
 
 
-                            <!-- PAYSTACK INTEGRATION -->
-                            
-                            <form id="paymentForm" action="payment/verify_transaction.php">
-                              <div class="form-group">
-                            <!-- <label for="email">Email Address</label> -->
-                                <input class="form-control" type="text" id="email-address" placeholder="Email Address" required />
-                              </div>
-                              <div class="form-group">
-                                <!-- <label for="amount">Amount</label> -->
-                                <input class="form-control" type="hidden" id="amount" value="<?php echo $final_total; ?>" required />
-                              </div>
-                              <div class="form-group">
-                                <!-- <label for="first-name">Full Name</label> -->
-                                <input class="form-control" type="text" id="first-name" placeholder="Fullname" required />
-                              </div>
-                              <div class="form-group">
-                                <!-- <label for="first-name">Shipping Address</label> -->
-                                <input class="form-control" type="text" id="shipping-address" placeholder="Shipping Address" required />
-                              </div>
-                              <div class="form-group">
-                                <!-- <label for="first-name">State</label> -->
-                                <input class="form-control" type="text" id="state" placeholder="State" required />
-                              </div>
-                              <div class="form-group">
-                                <!-- <label for="first-name">Country</label> -->
-                                <input class="form-control" type="text" id="state" placeholder="Country" required />
-                              </div>
-                              <div class="form-submit">
-                                <button type="submit" onclick="payWithPaystack()">Pay with paystack</button>
-                              </div>
-                            </form>
 
 
-                        <?//php endif; ?>
-                        
-                </div>
-                        </div>
-                        
-                    </div>                    
-                </div>
 
-                
 
-                <div class="cart-buttons">
-                    <ul>
-                        <li><a href="cart.php" class="btn btn-primary"><?php echo LANG_VALUE_21; ?></a></li>
-                        <li><a href="cart.php" class="btn btn-primary">make payment</a></li>
-                    </ul>
-                </div>
+
+
+
+
+
 
 
 
@@ -372,10 +205,6 @@
                                     <td><?php echo $_SESSION['customer']['cust_b_name']; ?></p></td>
                                 </tr>
                                 <tr>
-                                    <td><?php echo LANG_VALUE_103; ?></td>
-                                    <td><?php echo $_SESSION['customer']['cust_b_cname']; ?></td>
-                                </tr>
-                                <tr>
                                     <td><?php echo LANG_VALUE_104; ?></td>
                                     <td><?php echo $_SESSION['customer']['cust_b_phone']; ?></td>
                                 </tr>
@@ -418,10 +247,6 @@
                                 <tr>
                                     <td><?php echo LANG_VALUE_102; ?></td>
                                     <td><?php echo $_SESSION['customer']['cust_s_name']; ?></p></td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo LANG_VALUE_103; ?></td>
-                                    <td><?php echo $_SESSION['customer']['cust_s_cname']; ?></td>
                                 </tr>
                                 <tr>
                                     <td><?php echo LANG_VALUE_104; ?></td>
@@ -506,85 +331,109 @@
 			                    </div>
 	                    	</div>
 	                	<?php else: ?>
-		                	<div class="col-md-4">
-		                		
-	                            <div class="row">
-
-	                                <div class="col-md-12 form-group">
-	                                    <label for=""><?php echo LANG_VALUE_34; ?> *</label>
-	                                    <select name="payment_method" class="form-control select2" id="advFieldsStatus">
-	                                        <option value=""><?php echo LANG_VALUE_35; ?></option>
-	                                        <option value="PayPal"><?php echo LANG_VALUE_36; ?></option>
-	                                        <option value="Bank Deposit"><?php echo LANG_VALUE_38; ?></option>
-	                                    </select>
-	                                </div>
-
-                                    <form class="paypal" action="<?php echo BASE_URL; ?>payment/paypal/payment_process.php" method="post" id="paypal_form" target="_blank">
-                                        <input type="hidden" name="cmd" value="_xclick" />
-                                        <input type="hidden" name="no_note" value="1" />
-                                        <input type="hidden" name="lc" value="UK" />
-                                        <input type="hidden" name="currency_code" value="USD" />
-                                        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest" />
-
-                                        <input type="hidden" name="final_total" value="<?php echo $final_total; ?>">
-                                        <div class="col-md-12 form-group">
-                                            <input type="submit" class="btn btn-primary" value="<?php echo LANG_VALUE_46; ?>" name="form1">
-                                        </div>
-                                    </form>
-
-
-
-                                    <form action="payment/bank/init.php" method="post" id="bank_form">
-                                        <input type="hidden" name="amount" value="<?php echo $final_total; ?>">
-                                        <div class="col-md-12 form-group">
-                                            <label for=""><?php echo LANG_VALUE_43; ?></span></label><br>
-                                            <?php
-                                            $statement = $pdo->prepare("SELECT * FROM tbl_settings WHERE id=1");
-                                            $statement->execute();
-                                            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-                                            foreach ($result as $row) {
-                                                echo nl2br($row['bank_detail']);
-                                            }
-                                            ?>
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <label for=""><?php echo LANG_VALUE_44; ?> <br><span style="font-size:12px;font-weight:normal;">(<?php echo LANG_VALUE_45; ?>)</span></label>
-                                            <textarea name="transaction_info" class="form-control" cols="30" rows="10"></textarea>
-                                        </div>
-                                        <div class="col-md-12 form-group">
-                                            <input type="submit" class="btn btn-primary" value="<?php echo LANG_VALUE_46; ?>" name="form3">
-                                        </div>
-                                    </form>
-	                            </div>
-		                    </div>
+		                	
+                            <div class="col-lg-6">
+                                <h2>Stripe</h2>
+                            </div>
 
 
 
 
                             <!-- PAYSTACK INTEGRATION -->
                             
-                            <form id="paymentForm" action="payment/verify_transaction.php">
+                            <!-- <form id="paymentForm" action="payment/verify_transaction.php">
+
+
+                                <?php
+                                    // $table_total_price = 0;
+
+                                    // $i=0;
+                                    // foreach($_SESSION['cart_p_id'] as $key => $value) 
+                                    // {
+                                    //     $i++;
+                                    //     $arr_cart_p_id[$i] = $value;
+                                    // }
+
+                                    // $i=0;
+                                    // foreach($_SESSION['cart_size_id'] as $key => $value) 
+                                    // {
+                                    //     $i++;
+                                    //     $arr_cart_size_id[$i] = $value;
+                                    // }
+
+                                    // $i=0;
+                                    // foreach($_SESSION['cart_size_name'] as $key => $value) 
+                                    // {
+                                    //     $i++;
+                                    //     $arr_cart_size_name[$i] = $value;
+                                    // }
+
+                                    // $i=0;
+                                    // foreach($_SESSION['cart_color_id'] as $key => $value) 
+                                    // {
+                                    //     $i++;
+                                    //     $arr_cart_color_id[$i] = $value;
+                                    // }
+
+                                    // $i=0;
+                                    // foreach($_SESSION['cart_color_name'] as $key => $value) 
+                                    // {
+                                    //     $i++;
+                                    //     $arr_cart_color_name[$i] = $value;
+                                    // }
+
+                                    // $i=0;
+                                    // foreach($_SESSION['cart_p_qty'] as $key => $value) 
+                                    // {
+                                    //     $i++;
+                                    //     $arr_cart_p_qty[$i] = $value;
+                                    // }
+
+                                    // $i=0;
+                                    // foreach($_SESSION['cart_p_current_price'] as $key => $value) 
+                                    // {
+                                    //     $i++;
+                                    //     $arr_cart_p_current_price[$i] = $value;
+                                    // }
+
+                                    // $i=0;
+                                    // foreach($_SESSION['cart_p_name'] as $key => $value) 
+                                    // {
+                                    //     $i++;
+                                    //     $arr_cart_p_name[$i] = $value;
+                                    // }
+
+                                    // $i=0;
+                                    // foreach($_SESSION['cart_p_featured_photo'] as $key => $value) 
+                                    // {
+                                    //     $i++;
+                                    //     $arr_cart_p_featured_photo[$i] = $value;
+                                    // }
+                                ?>
+                                    <?//php for($i=1;$i<=count($arr_cart_p_id);$i++): ?>
+
+
                               <div class="form-group">
-                            <!-- <label for="email">Email Address</label> -->
-                                <input class="form-control" type="hidden" id="email-address" required value="<?php echo $_SESSION['customer']['cust_email']; ?>" />
+                                <input class="form-control" type="text" id="email-address" placeholder="Email Address" required />
                               </div>
                               <div class="form-group">
-                                <!-- <label for="amount">Amount</label> -->
-                                <input class="form-control" type="hidden" id="amount" required value="<?php echo $final_total; ?>" />
+                                <input class="form-control" type="hidden" id="amount" value="<?//php echo $final_total; ?>" required />
                               </div>
                               <div class="form-group">
-                                <!-- <label for="first-name">Full Name</label> -->
-                                <input class="form-control" type="hidden" id="first-name" required value="<?php echo $_SESSION['customer']['cust_s_name']; ?>" />
+                                <input class="form-control" type="hidden" id="product" value="<?//php echo $arr_cart_p_name[$i]; ?>" required />
                               </div>
-                              <!-- <div class="form-group">
-                                <label for="last-name">Last Name</label>
-                                <input type="text" id="last-name" />
-                              </div> -->
+                              <div class="form-group">
+                                <input class="form-control" type="text" id="fullname" placeholder="Fullname" required />
+                              </div>
+                              <div class="form-group">
+                                <input class="form-control" type="text" id="state" placeholder="State" required />
+                              </div>
                               <div class="form-submit">
                                 <button type="submit" onclick="payWithPaystack()">Pay with paystack</button>
                               </div>
+                              <?//php endfor; ?> 
                             </form>
-
+ -->
 
 		                <?php endif; ?>
                         
@@ -608,7 +457,8 @@
         key: 'pk_test_7114661f512e87772aefeab61d6811334b084c85', // Replace with your public key
         email: document.getElementById("email-address").value,
         amount: document.getElementById("amount").value * 100 * 580,
-        firstname: document.getElementById("first-name").value,
+        fullname: document.getElementById("fullname").value,
+        state: document.getElementById("state").value,
         ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
         // label: "Optional string that replaces customer email"
         onClose: function(){
