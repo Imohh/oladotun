@@ -37,22 +37,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <!-- if user is signed in -->
                 <?php else: ?>
 
@@ -334,6 +318,10 @@
 		                	
                             <div class="col-lg-6">
                                 <h2>Stripe</h2>
+                                <form action="create-checkout-session.php" method="POST">
+                                    <input class="form-control" type="hidden" id="amount" value="<?php echo $final_total; ?>" required />
+                                    <button type="submit" id="checkout-button">Checkout</button>
+                                </form>
                             </div>
 
 
