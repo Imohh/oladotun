@@ -16,6 +16,16 @@
     }
 ?>
 
+
+<!-- MODAL -->
+<script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
+
+
+
 <div class="page-banner" style="background-image: url(assets/uploads/<?php echo $banner_checkout; ?>)">
     <div class="overlay"></div>
     <div class="page-banner-inner">
@@ -277,54 +287,102 @@
                 <div class="cart-buttons">
                     <ul>
                         <li><a href="cart.php" class="btn btn-primary"><?php echo LANG_VALUE_21; ?></a></li>
-                        <li><a href="cart.php" class="btn btn-primary">make payment</a></li>
+                        <!-- <li><a href="cart.php" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">make payment</a></li> -->
+                        <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg">make payment</button>
                     </ul>
                 </div>
 
-				<div class="clear"></div>
-                <h3 class="special"><?php echo LANG_VALUE_33; ?></h3>
-                <div class="row">
+                <!-- PAYMENT MODAL -->
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                        <?php
+                            $checkout_access = 1;
+                            if(
+                                ($_SESSION['customer']['cust_b_name']=='') ||
+                                ($_SESSION['customer']['cust_b_cname']=='') ||
+                                ($_SESSION['customer']['cust_b_phone']=='') ||
+                                ($_SESSION['customer']['cust_b_country']=='') ||
+                                ($_SESSION['customer']['cust_b_address']=='') ||
+                                ($_SESSION['customer']['cust_b_city']=='') ||
+                                ($_SESSION['customer']['cust_b_state']=='') ||
+                                ($_SESSION['customer']['cust_b_zip']=='') ||
+                                ($_SESSION['customer']['cust_s_name']=='') ||
+                                ($_SESSION['customer']['cust_s_cname']=='') ||
+                                ($_SESSION['customer']['cust_s_phone']=='') ||
+                                ($_SESSION['customer']['cust_s_country']=='') ||
+                                ($_SESSION['customer']['cust_s_address']=='') ||
+                                ($_SESSION['customer']['cust_s_city']=='') ||
+                                ($_SESSION['customer']['cust_s_state']=='') ||
+                                ($_SESSION['customer']['cust_s_zip']=='')
+                            ) {
+                                $checkout_access = 0;
+                            }
+                        ?>
+                            <?php if($checkout_access == 0): ?>
+                            <div class="col-md-12">
+                                <div style="color:red;font-size:22px;margin-bottom:50px;">
+                                    You must have to fill up all the billing and shipping information from your dashboard panel in order to checkout the order. Please fill up the information going to <a href="customer-billing-shipping-update.php" style="color:red;text-decoration:underline;">this link</a>.
+                                </div>
+                            </div>
+                            <?php else: ?>
+
+
+                            <h2>Hey there</h2>
+                            <h2>Hey there</h2>
+                            <h2>Hey there</h2>
+                            <h2>Hey there</h2>
+                            <h2>Hey there</h2>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+
+				<!-- <div class="clear"></div>
+                <h3 class="special"><?//php echo LANG_VALUE_33; ?></h3>
+                <div class="row"> -->
                     
                     	<?php
-		                $checkout_access = 1;
-		                if(
-		                    ($_SESSION['customer']['cust_b_name']=='') ||
-		                    ($_SESSION['customer']['cust_b_cname']=='') ||
-		                    ($_SESSION['customer']['cust_b_phone']=='') ||
-		                    ($_SESSION['customer']['cust_b_country']=='') ||
-		                    ($_SESSION['customer']['cust_b_address']=='') ||
-		                    ($_SESSION['customer']['cust_b_city']=='') ||
-		                    ($_SESSION['customer']['cust_b_state']=='') ||
-		                    ($_SESSION['customer']['cust_b_zip']=='') ||
-		                    ($_SESSION['customer']['cust_s_name']=='') ||
-		                    ($_SESSION['customer']['cust_s_cname']=='') ||
-		                    ($_SESSION['customer']['cust_s_phone']=='') ||
-		                    ($_SESSION['customer']['cust_s_country']=='') ||
-		                    ($_SESSION['customer']['cust_s_address']=='') ||
-		                    ($_SESSION['customer']['cust_s_city']=='') ||
-		                    ($_SESSION['customer']['cust_s_state']=='') ||
-		                    ($_SESSION['customer']['cust_s_zip']=='')
-		                ) {
-		                    $checkout_access = 0;
-		                }
+		                // $checkout_access = 1;
+		                // if(
+		                //     ($_SESSION['customer']['cust_b_name']=='') ||
+		                //     ($_SESSION['customer']['cust_b_cname']=='') ||
+		                //     ($_SESSION['customer']['cust_b_phone']=='') ||
+		                //     ($_SESSION['customer']['cust_b_country']=='') ||
+		                //     ($_SESSION['customer']['cust_b_address']=='') ||
+		                //     ($_SESSION['customer']['cust_b_city']=='') ||
+		                //     ($_SESSION['customer']['cust_b_state']=='') ||
+		                //     ($_SESSION['customer']['cust_b_zip']=='') ||
+		                //     ($_SESSION['customer']['cust_s_name']=='') ||
+		                //     ($_SESSION['customer']['cust_s_cname']=='') ||
+		                //     ($_SESSION['customer']['cust_s_phone']=='') ||
+		                //     ($_SESSION['customer']['cust_s_country']=='') ||
+		                //     ($_SESSION['customer']['cust_s_address']=='') ||
+		                //     ($_SESSION['customer']['cust_s_city']=='') ||
+		                //     ($_SESSION['customer']['cust_s_state']=='') ||
+		                //     ($_SESSION['customer']['cust_s_zip']=='')
+		                // ) {
+		                //     $checkout_access = 0;
+		                // }
 		                ?>
-		                <?php if($checkout_access == 0): ?>
-		                	<div class="col-md-12">
+		                <?php// if($checkout_access == 0): ?>
+		                	<!-- <div class="col-md-12">
 				                <div style="color:red;font-size:22px;margin-bottom:50px;">
 			                        You must have to fill up all the billing and shipping information from your dashboard panel in order to checkout the order. Please fill up the information going to <a href="customer-billing-shipping-update.php" style="color:red;text-decoration:underline;">this link</a>.
 			                    </div>
-	                    	</div>
-	                	<?php else: ?>
+	                    	</div> -->
+	                	<?php// else: ?>
 		                	
-                            <div class="col-lg-6">
+                            <!-- <div class="col-lg-6">
                                 <h2>Stripe</h2>
+                                
                                 <form action="create-checkout-session.php" method="POST">
-                                    <input class="form-control" type="hidden" id="amount" value="<?php echo $final_total; ?>" required />
+                                    <input class="form-control" type="hidden" id="amount" value="<?php// echo $final_total; ?>" required />
                                     <button type="submit" id="checkout-button">Checkout</button>
                                 </form>
-                            </div>
+                            </div> -->
 
-
+                            
 
 
                             <!-- PAYSTACK INTEGRATION -->
@@ -423,9 +481,9 @@
                             </form>
  -->
 
-		                <?php endif; ?>
+		                <?php// endif; ?>
                         
-                </div>
+                <!-- </div> -->
                 
 
                 <?php endif; ?>
